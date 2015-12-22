@@ -1,0 +1,427 @@
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: null
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: null
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: null
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: null
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: null
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: null
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: null
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: null
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: null
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: null
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: null
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: null
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"eventType":{"id":"468328","name":"Handball"},"marketCount":56},{"eventType":{"id":"1","name":"Soccer"},"marketCount":7643},{"eventType":{"id":"2","name":"Tennis"},"marketCount":23},{"eventType":{"id":"2378961","name":"Politics"},"marketCount":33},{"eventType":{"id":"6231","name":"Financial Bets"},"marketCount":3},{"eventType":{"id":"3","name":"Golf"},"marketCount":12},{"eventType":{"id":"998917","name":"Volleyball"},"marketCount":46},{"eventType":{"id":"4","name":"Cricket"},"marketCount":83},{"eventType":{"id":"5","name":"Rugby Union"},"marketCount":72},{"eventType":{"id":"6","name":"Boxing"},"marketCount":13},{"eventType":{"id":"7","name":"Horse Racing"},"marketCount":344},{"eventType":{"id":"8","name":"Motor Sport"},"marketCount":3},{"eventType":{"id":"7524","name":"Ice Hockey"},"marketCount":887},{"eventType":{"id":"10","name":"Special Bets"},"marketCount":60},{"eventType":{"id":"26420387","name":"Mixed Martial Arts"},"marketCount":57},{"eventType":{"id":"451485","name":"Winter Sports"},"marketCount":7},{"eventType":{"id":"11","name":"Cycling"},"marketCount":1},{"eventType":{"id":"3503","name":"Darts"},"marketCount":239},{"eventType":{"id":"136332","name":"Chess"},"marketCount":14},{"eventType":{"id":"7522","name":"Basketball"},"marketCount":426},{"eventType":{"id":"1477","name":"Rugby League"},"marketCount":3},{"eventType":{"id":"2152880","name":"Gaelic Games"},"marketCount":4},{"eventType":{"id":"6422","name":"Snooker"},"marketCount":23},{"eventType":{"id":"6423","name":"American Football"},"marketCount":411},{"eventType":{"id":"27388198","name":"Current Affairs"},"marketCount":1},{"eventType":{"id":"7511","name":"Baseball"},"marketCount":1},{"eventType":{"id":"4339","name":"Greyhound Racing"},"marketCount":145}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"eventType":{"id":"468328","name":"Handball"},"marketCount":56},{"eventType":{"id":"1","name":"Soccer"},"marketCount":7644},{"eventType":{"id":"2","name":"Tennis"},"marketCount":23},{"eventType":{"id":"2378961","name":"Politics"},"marketCount":33},{"eventType":{"id":"6231","name":"Financial Bets"},"marketCount":3},{"eventType":{"id":"3","name":"Golf"},"marketCount":12},{"eventType":{"id":"998917","name":"Volleyball"},"marketCount":46},{"eventType":{"id":"4","name":"Cricket"},"marketCount":83},{"eventType":{"id":"5","name":"Rugby Union"},"marketCount":72},{"eventType":{"id":"6","name":"Boxing"},"marketCount":13},{"eventType":{"id":"7","name":"Horse Racing"},"marketCount":344},{"eventType":{"id":"8","name":"Motor Sport"},"marketCount":3},{"eventType":{"id":"7524","name":"Ice Hockey"},"marketCount":887},{"eventType":{"id":"10","name":"Special Bets"},"marketCount":60},{"eventType":{"id":"26420387","name":"Mixed Martial Arts"},"marketCount":57},{"eventType":{"id":"451485","name":"Winter Sports"},"marketCount":7},{"eventType":{"id":"11","name":"Cycling"},"marketCount":1},{"eventType":{"id":"3503","name":"Darts"},"marketCount":239},{"eventType":{"id":"136332","name":"Chess"},"marketCount":14},{"eventType":{"id":"7522","name":"Basketball"},"marketCount":426},{"eventType":{"id":"1477","name":"Rugby League"},"marketCount":3},{"eventType":{"id":"2152880","name":"Gaelic Games"},"marketCount":4},{"eventType":{"id":"6422","name":"Snooker"},"marketCount":23},{"eventType":{"id":"6423","name":"American Football"},"marketCount":411},{"eventType":{"id":"27388198","name":"Current Affairs"},"marketCount":1},{"eventType":{"id":"7511","name":"Baseball"},"marketCount":1},{"eventType":{"id":"4339","name":"Greyhound Racing"},"marketCount":145}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"eventType":{"id":"468328","name":"Handball"},"marketCount":56},{"eventType":{"id":"1","name":"Soccer"},"marketCount":7643},{"eventType":{"id":"2","name":"Tennis"},"marketCount":23},{"eventType":{"id":"2378961","name":"Politics"},"marketCount":33},{"eventType":{"id":"6231","name":"Financial Bets"},"marketCount":3},{"eventType":{"id":"3","name":"Golf"},"marketCount":12},{"eventType":{"id":"998917","name":"Volleyball"},"marketCount":46},{"eventType":{"id":"4","name":"Cricket"},"marketCount":83},{"eventType":{"id":"5","name":"Rugby Union"},"marketCount":72},{"eventType":{"id":"6","name":"Boxing"},"marketCount":13},{"eventType":{"id":"7","name":"Horse Racing"},"marketCount":344},{"eventType":{"id":"8","name":"Motor Sport"},"marketCount":3},{"eventType":{"id":"7524","name":"Ice Hockey"},"marketCount":887},{"eventType":{"id":"10","name":"Special Bets"},"marketCount":60},{"eventType":{"id":"26420387","name":"Mixed Martial Arts"},"marketCount":57},{"eventType":{"id":"451485","name":"Winter Sports"},"marketCount":7},{"eventType":{"id":"11","name":"Cycling"},"marketCount":1},{"eventType":{"id":"3503","name":"Darts"},"marketCount":239},{"eventType":{"id":"136332","name":"Chess"},"marketCount":14},{"eventType":{"id":"7522","name":"Basketball"},"marketCount":426},{"eventType":{"id":"1477","name":"Rugby League"},"marketCount":3},{"eventType":{"id":"2152880","name":"Gaelic Games"},"marketCount":4},{"eventType":{"id":"6422","name":"Snooker"},"marketCount":23},{"eventType":{"id":"6423","name":"American Football"},"marketCount":411},{"eventType":{"id":"27388198","name":"Current Affairs"},"marketCount":1},{"eventType":{"id":"7511","name":"Baseball"},"marketCount":1},{"eventType":{"id":"4339","name":"Greyhound Racing"},"marketCount":145}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"eventType":{"id":"468328","name":"Handball"},"marketCount":56},{"eventType":{"id":"1","name":"Soccer"},"marketCount":7638},{"eventType":{"id":"2","name":"Tennis"},"marketCount":23},{"eventType":{"id":"2378961","name":"Politics"},"marketCount":33},{"eventType":{"id":"6231","name":"Financial Bets"},"marketCount":3},{"eventType":{"id":"3","name":"Golf"},"marketCount":12},{"eventType":{"id":"998917","name":"Volleyball"},"marketCount":46},{"eventType":{"id":"4","name":"Cricket"},"marketCount":83},{"eventType":{"id":"5","name":"Rugby Union"},"marketCount":72},{"eventType":{"id":"6","name":"Boxing"},"marketCount":13},{"eventType":{"id":"7","name":"Horse Racing"},"marketCount":344},{"eventType":{"id":"8","name":"Motor Sport"},"marketCount":3},{"eventType":{"id":"7524","name":"Ice Hockey"},"marketCount":887},{"eventType":{"id":"10","name":"Special Bets"},"marketCount":60},{"eventType":{"id":"26420387","name":"Mixed Martial Arts"},"marketCount":57},{"eventType":{"id":"451485","name":"Winter Sports"},"marketCount":7},{"eventType":{"id":"11","name":"Cycling"},"marketCount":1},{"eventType":{"id":"3503","name":"Darts"},"marketCount":239},{"eventType":{"id":"136332","name":"Chess"},"marketCount":14},{"eventType":{"id":"7522","name":"Basketball"},"marketCount":426},{"eventType":{"id":"1477","name":"Rugby League"},"marketCount":3},{"eventType":{"id":"2152880","name":"Gaelic Games"},"marketCount":4},{"eventType":{"id":"6422","name":"Snooker"},"marketCount":23},{"eventType":{"id":"6423","name":"American Football"},"marketCount":411},{"eventType":{"id":"27388198","name":"Current Affairs"},"marketCount":1},{"eventType":{"id":"7511","name":"Baseball"},"marketCount":1},{"eventType":{"id":"4339","name":"Greyhound Racing"},"marketCount":142}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"eventType":{"id":"468328","name":"Handball"},"marketCount":56},{"eventType":{"id":"1","name":"Soccer"},"marketCount":7638},{"eventType":{"id":"2","name":"Tennis"},"marketCount":23},{"eventType":{"id":"2378961","name":"Politics"},"marketCount":33},{"eventType":{"id":"6231","name":"Financial Bets"},"marketCount":3},{"eventType":{"id":"3","name":"Golf"},"marketCount":12},{"eventType":{"id":"998917","name":"Volleyball"},"marketCount":46},{"eventType":{"id":"4","name":"Cricket"},"marketCount":83},{"eventType":{"id":"5","name":"Rugby Union"},"marketCount":72},{"eventType":{"id":"6","name":"Boxing"},"marketCount":13},{"eventType":{"id":"7","name":"Horse Racing"},"marketCount":344},{"eventType":{"id":"8","name":"Motor Sport"},"marketCount":3},{"eventType":{"id":"7524","name":"Ice Hockey"},"marketCount":887},{"eventType":{"id":"10","name":"Special Bets"},"marketCount":60},{"eventType":{"id":"26420387","name":"Mixed Martial Arts"},"marketCount":57},{"eventType":{"id":"451485","name":"Winter Sports"},"marketCount":7},{"eventType":{"id":"11","name":"Cycling"},"marketCount":1},{"eventType":{"id":"3503","name":"Darts"},"marketCount":239},{"eventType":{"id":"136332","name":"Chess"},"marketCount":14},{"eventType":{"id":"7522","name":"Basketball"},"marketCount":426},{"eventType":{"id":"1477","name":"Rugby League"},"marketCount":3},{"eventType":{"id":"2152880","name":"Gaelic Games"},"marketCount":4},{"eventType":{"id":"6422","name":"Snooker"},"marketCount":23},{"eventType":{"id":"6423","name":"American Football"},"marketCount":411},{"eventType":{"id":"27388198","name":"Current Affairs"},"marketCount":1},{"eventType":{"id":"7511","name":"Baseball"},"marketCount":1},{"eventType":{"id":"4339","name":"Greyhound Racing"},"marketCount":142}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"eventType":{"id":"468328","name":"Handball"},"marketCount":56},{"eventType":{"id":"1","name":"Soccer"},"marketCount":7638},{"eventType":{"id":"2","name":"Tennis"},"marketCount":23},{"eventType":{"id":"2378961","name":"Politics"},"marketCount":33},{"eventType":{"id":"6231","name":"Financial Bets"},"marketCount":3},{"eventType":{"id":"3","name":"Golf"},"marketCount":12},{"eventType":{"id":"998917","name":"Volleyball"},"marketCount":46},{"eventType":{"id":"4","name":"Cricket"},"marketCount":83},{"eventType":{"id":"5","name":"Rugby Union"},"marketCount":72},{"eventType":{"id":"6","name":"Boxing"},"marketCount":13},{"eventType":{"id":"7","name":"Horse Racing"},"marketCount":344},{"eventType":{"id":"8","name":"Motor Sport"},"marketCount":3},{"eventType":{"id":"7524","name":"Ice Hockey"},"marketCount":887},{"eventType":{"id":"10","name":"Special Bets"},"marketCount":60},{"eventType":{"id":"26420387","name":"Mixed Martial Arts"},"marketCount":57},{"eventType":{"id":"451485","name":"Winter Sports"},"marketCount":7},{"eventType":{"id":"11","name":"Cycling"},"marketCount":1},{"eventType":{"id":"3503","name":"Darts"},"marketCount":239},{"eventType":{"id":"136332","name":"Chess"},"marketCount":14},{"eventType":{"id":"7522","name":"Basketball"},"marketCount":426},{"eventType":{"id":"1477","name":"Rugby League"},"marketCount":3},{"eventType":{"id":"2152880","name":"Gaelic Games"},"marketCount":4},{"eventType":{"id":"6422","name":"Snooker"},"marketCount":23},{"eventType":{"id":"6423","name":"American Football"},"marketCount":411},{"eventType":{"id":"27388198","name":"Current Affairs"},"marketCount":1},{"eventType":{"id":"7511","name":"Baseball"},"marketCount":1},{"eventType":{"id":"4339","name":"Greyhound Racing"},"marketCount":142}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"eventType":{"id":"468328","name":"Handball"},"marketCount":56},{"eventType":{"id":"1","name":"Soccer"},"marketCount":7634},{"eventType":{"id":"2","name":"Tennis"},"marketCount":23},{"eventType":{"id":"2378961","name":"Politics"},"marketCount":33},{"eventType":{"id":"6231","name":"Financial Bets"},"marketCount":3},{"eventType":{"id":"3","name":"Golf"},"marketCount":12},{"eventType":{"id":"998917","name":"Volleyball"},"marketCount":46},{"eventType":{"id":"4","name":"Cricket"},"marketCount":83},{"eventType":{"id":"5","name":"Rugby Union"},"marketCount":72},{"eventType":{"id":"6","name":"Boxing"},"marketCount":13},{"eventType":{"id":"7","name":"Horse Racing"},"marketCount":344},{"eventType":{"id":"8","name":"Motor Sport"},"marketCount":3},{"eventType":{"id":"7524","name":"Ice Hockey"},"marketCount":884},{"eventType":{"id":"10","name":"Special Bets"},"marketCount":60},{"eventType":{"id":"26420387","name":"Mixed Martial Arts"},"marketCount":57},{"eventType":{"id":"451485","name":"Winter Sports"},"marketCount":7},{"eventType":{"id":"11","name":"Cycling"},"marketCount":1},{"eventType":{"id":"3503","name":"Darts"},"marketCount":239},{"eventType":{"id":"136332","name":"Chess"},"marketCount":14},{"eventType":{"id":"7522","name":"Basketball"},"marketCount":426},{"eventType":{"id":"1477","name":"Rugby League"},"marketCount":3},{"eventType":{"id":"2152880","name":"Gaelic Games"},"marketCount":4},{"eventType":{"id":"6422","name":"Snooker"},"marketCount":23},{"eventType":{"id":"6423","name":"American Football"},"marketCount":411},{"eventType":{"id":"27388198","name":"Current Affairs"},"marketCount":1},{"eventType":{"id":"7511","name":"Baseball"},"marketCount":1},{"eventType":{"id":"4339","name":"Greyhound Racing"},"marketCount":142}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"eventType":{"id":"468328","name":"Handball"},"marketCount":56},{"eventType":{"id":"1","name":"Soccer"},"marketCount":7630},{"eventType":{"id":"2","name":"Tennis"},"marketCount":23},{"eventType":{"id":"2378961","name":"Politics"},"marketCount":33},{"eventType":{"id":"6231","name":"Financial Bets"},"marketCount":3},{"eventType":{"id":"3","name":"Golf"},"marketCount":12},{"eventType":{"id":"998917","name":"Volleyball"},"marketCount":46},{"eventType":{"id":"4","name":"Cricket"},"marketCount":83},{"eventType":{"id":"5","name":"Rugby Union"},"marketCount":72},{"eventType":{"id":"6","name":"Boxing"},"marketCount":13},{"eventType":{"id":"7","name":"Horse Racing"},"marketCount":344},{"eventType":{"id":"8","name":"Motor Sport"},"marketCount":3},{"eventType":{"id":"7524","name":"Ice Hockey"},"marketCount":884},{"eventType":{"id":"10","name":"Special Bets"},"marketCount":60},{"eventType":{"id":"26420387","name":"Mixed Martial Arts"},"marketCount":57},{"eventType":{"id":"451485","name":"Winter Sports"},"marketCount":7},{"eventType":{"id":"11","name":"Cycling"},"marketCount":1},{"eventType":{"id":"3503","name":"Darts"},"marketCount":239},{"eventType":{"id":"136332","name":"Chess"},"marketCount":14},{"eventType":{"id":"7522","name":"Basketball"},"marketCount":426},{"eventType":{"id":"1477","name":"Rugby League"},"marketCount":3},{"eventType":{"id":"2152880","name":"Gaelic Games"},"marketCount":4},{"eventType":{"id":"6422","name":"Snooker"},"marketCount":23},{"eventType":{"id":"6423","name":"American Football"},"marketCount":411},{"eventType":{"id":"27388198","name":"Current Affairs"},"marketCount":1},{"eventType":{"id":"7511","name":"Baseball"},"marketCount":1},{"eventType":{"id":"4339","name":"Greyhound Racing"},"marketCount":142}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"eventType":{"id":"468328","name":"Handball"},"marketCount":56},{"eventType":{"id":"1","name":"Soccer"},"marketCount":7628},{"eventType":{"id":"2","name":"Tennis"},"marketCount":23},{"eventType":{"id":"2378961","name":"Politics"},"marketCount":33},{"eventType":{"id":"6231","name":"Financial Bets"},"marketCount":3},{"eventType":{"id":"3","name":"Golf"},"marketCount":12},{"eventType":{"id":"998917","name":"Volleyball"},"marketCount":46},{"eventType":{"id":"4","name":"Cricket"},"marketCount":83},{"eventType":{"id":"5","name":"Rugby Union"},"marketCount":72},{"eventType":{"id":"6","name":"Boxing"},"marketCount":13},{"eventType":{"id":"7","name":"Horse Racing"},"marketCount":344},{"eventType":{"id":"8","name":"Motor Sport"},"marketCount":3},{"eventType":{"id":"7524","name":"Ice Hockey"},"marketCount":884},{"eventType":{"id":"10","name":"Special Bets"},"marketCount":60},{"eventType":{"id":"26420387","name":"Mixed Martial Arts"},"marketCount":57},{"eventType":{"id":"451485","name":"Winter Sports"},"marketCount":7},{"eventType":{"id":"11","name":"Cycling"},"marketCount":1},{"eventType":{"id":"3503","name":"Darts"},"marketCount":239},{"eventType":{"id":"136332","name":"Chess"},"marketCount":14},{"eventType":{"id":"7522","name":"Basketball"},"marketCount":426},{"eventType":{"id":"1477","name":"Rugby League"},"marketCount":3},{"eventType":{"id":"2152880","name":"Gaelic Games"},"marketCount":4},{"eventType":{"id":"6422","name":"Snooker"},"marketCount":23},{"eventType":{"id":"6423","name":"American Football"},"marketCount":411},{"eventType":{"id":"27388198","name":"Current Affairs"},"marketCount":1},{"eventType":{"id":"7511","name":"Baseball"},"marketCount":1},{"eventType":{"id":"4339","name":"Greyhound Racing"},"marketCount":142}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"eventType":{"id":"468328","name":"Handball"},"marketCount":56},{"eventType":{"id":"1","name":"Soccer"},"marketCount":7624},{"eventType":{"id":"2","name":"Tennis"},"marketCount":23},{"eventType":{"id":"2378961","name":"Politics"},"marketCount":33},{"eventType":{"id":"6231","name":"Financial Bets"},"marketCount":3},{"eventType":{"id":"3","name":"Golf"},"marketCount":12},{"eventType":{"id":"998917","name":"Volleyball"},"marketCount":46},{"eventType":{"id":"4","name":"Cricket"},"marketCount":83},{"eventType":{"id":"5","name":"Rugby Union"},"marketCount":72},{"eventType":{"id":"6","name":"Boxing"},"marketCount":13},{"eventType":{"id":"7","name":"Horse Racing"},"marketCount":343},{"eventType":{"id":"8","name":"Motor Sport"},"marketCount":3},{"eventType":{"id":"7524","name":"Ice Hockey"},"marketCount":884},{"eventType":{"id":"10","name":"Special Bets"},"marketCount":60},{"eventType":{"id":"26420387","name":"Mixed Martial Arts"},"marketCount":57},{"eventType":{"id":"451485","name":"Winter Sports"},"marketCount":7},{"eventType":{"id":"11","name":"Cycling"},"marketCount":1},{"eventType":{"id":"3503","name":"Darts"},"marketCount":239},{"eventType":{"id":"136332","name":"Chess"},"marketCount":14},{"eventType":{"id":"7522","name":"Basketball"},"marketCount":426},{"eventType":{"id":"1477","name":"Rugby League"},"marketCount":3},{"eventType":{"id":"2152880","name":"Gaelic Games"},"marketCount":4},{"eventType":{"id":"6422","name":"Snooker"},"marketCount":23},{"eventType":{"id":"6423","name":"American Football"},"marketCount":411},{"eventType":{"id":"27388198","name":"Current Affairs"},"marketCount":1},{"eventType":{"id":"7511","name":"Baseball"},"marketCount":1},{"eventType":{"id":"4339","name":"Greyhound Racing"},"marketCount":142}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"eventType":{"id":"468328","name":"Handball"},"marketCount":56},{"eventType":{"id":"1","name":"Soccer"},"marketCount":7628},{"eventType":{"id":"2","name":"Tennis"},"marketCount":23},{"eventType":{"id":"2378961","name":"Politics"},"marketCount":33},{"eventType":{"id":"6231","name":"Financial Bets"},"marketCount":3},{"eventType":{"id":"3","name":"Golf"},"marketCount":12},{"eventType":{"id":"998917","name":"Volleyball"},"marketCount":46},{"eventType":{"id":"4","name":"Cricket"},"marketCount":83},{"eventType":{"id":"5","name":"Rugby Union"},"marketCount":72},{"eventType":{"id":"6","name":"Boxing"},"marketCount":13},{"eventType":{"id":"7","name":"Horse Racing"},"marketCount":344},{"eventType":{"id":"8","name":"Motor Sport"},"marketCount":3},{"eventType":{"id":"7524","name":"Ice Hockey"},"marketCount":884},{"eventType":{"id":"10","name":"Special Bets"},"marketCount":60},{"eventType":{"id":"26420387","name":"Mixed Martial Arts"},"marketCount":57},{"eventType":{"id":"451485","name":"Winter Sports"},"marketCount":7},{"eventType":{"id":"11","name":"Cycling"},"marketCount":1},{"eventType":{"id":"3503","name":"Darts"},"marketCount":239},{"eventType":{"id":"136332","name":"Chess"},"marketCount":14},{"eventType":{"id":"7522","name":"Basketball"},"marketCount":426},{"eventType":{"id":"1477","name":"Rugby League"},"marketCount":3},{"eventType":{"id":"2152880","name":"Gaelic Games"},"marketCount":4},{"eventType":{"id":"6422","name":"Snooker"},"marketCount":23},{"eventType":{"id":"6423","name":"American Football"},"marketCount":411},{"eventType":{"id":"27388198","name":"Current Affairs"},"marketCount":1},{"eventType":{"id":"7511","name":"Baseball"},"marketCount":1},{"eventType":{"id":"4339","name":"Greyhound Racing"},"marketCount":142}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"eventType":{"id":"468328","name":"Handball"},"marketCount":56},{"eventType":{"id":"1","name":"Soccer"},"marketCount":7624},{"eventType":{"id":"2","name":"Tennis"},"marketCount":23},{"eventType":{"id":"2378961","name":"Politics"},"marketCount":33},{"eventType":{"id":"6231","name":"Financial Bets"},"marketCount":3},{"eventType":{"id":"3","name":"Golf"},"marketCount":12},{"eventType":{"id":"998917","name":"Volleyball"},"marketCount":46},{"eventType":{"id":"4","name":"Cricket"},"marketCount":83},{"eventType":{"id":"5","name":"Rugby Union"},"marketCount":72},{"eventType":{"id":"6","name":"Boxing"},"marketCount":13},{"eventType":{"id":"7","name":"Horse Racing"},"marketCount":343},{"eventType":{"id":"8","name":"Motor Sport"},"marketCount":3},{"eventType":{"id":"7524","name":"Ice Hockey"},"marketCount":884},{"eventType":{"id":"10","name":"Special Bets"},"marketCount":60},{"eventType":{"id":"26420387","name":"Mixed Martial Arts"},"marketCount":57},{"eventType":{"id":"451485","name":"Winter Sports"},"marketCount":7},{"eventType":{"id":"11","name":"Cycling"},"marketCount":1},{"eventType":{"id":"3503","name":"Darts"},"marketCount":239},{"eventType":{"id":"136332","name":"Chess"},"marketCount":14},{"eventType":{"id":"7522","name":"Basketball"},"marketCount":426},{"eventType":{"id":"1477","name":"Rugby League"},"marketCount":3},{"eventType":{"id":"2152880","name":"Gaelic Games"},"marketCount":4},{"eventType":{"id":"6422","name":"Snooker"},"marketCount":23},{"eventType":{"id":"6423","name":"American Football"},"marketCount":411},{"eventType":{"id":"27388198","name":"Current Affairs"},"marketCount":1},{"eventType":{"id":"7511","name":"Baseball"},"marketCount":1},{"eventType":{"id":"4339","name":"Greyhound Racing"},"marketCount":142}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"eventType":{"id":"468328","name":"Handball"},"marketCount":56},{"eventType":{"id":"1","name":"Soccer"},"marketCount":7619},{"eventType":{"id":"2","name":"Tennis"},"marketCount":23},{"eventType":{"id":"2378961","name":"Politics"},"marketCount":33},{"eventType":{"id":"6231","name":"Financial Bets"},"marketCount":3},{"eventType":{"id":"3","name":"Golf"},"marketCount":12},{"eventType":{"id":"998917","name":"Volleyball"},"marketCount":46},{"eventType":{"id":"4","name":"Cricket"},"marketCount":83},{"eventType":{"id":"5","name":"Rugby Union"},"marketCount":72},{"eventType":{"id":"6","name":"Boxing"},"marketCount":13},{"eventType":{"id":"7","name":"Horse Racing"},"marketCount":343},{"eventType":{"id":"8","name":"Motor Sport"},"marketCount":3},{"eventType":{"id":"7524","name":"Ice Hockey"},"marketCount":884},{"eventType":{"id":"10","name":"Special Bets"},"marketCount":60},{"eventType":{"id":"26420387","name":"Mixed Martial Arts"},"marketCount":57},{"eventType":{"id":"451485","name":"Winter Sports"},"marketCount":7},{"eventType":{"id":"11","name":"Cycling"},"marketCount":1},{"eventType":{"id":"3503","name":"Darts"},"marketCount":239},{"eventType":{"id":"136332","name":"Chess"},"marketCount":14},{"eventType":{"id":"7522","name":"Basketball"},"marketCount":426},{"eventType":{"id":"1477","name":"Rugby League"},"marketCount":3},{"eventType":{"id":"2152880","name":"Gaelic Games"},"marketCount":4},{"eventType":{"id":"6422","name":"Snooker"},"marketCount":23},{"eventType":{"id":"6423","name":"American Football"},"marketCount":411},{"eventType":{"id":"27388198","name":"Current Affairs"},"marketCount":1},{"eventType":{"id":"7511","name":"Baseball"},"marketCount":1},{"eventType":{"id":"4339","name":"Greyhound Racing"},"marketCount":142}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"eventType":{"id":"468328","name":"Handball"},"marketCount":56},{"eventType":{"id":"1","name":"Soccer"},"marketCount":7618},{"eventType":{"id":"2","name":"Tennis"},"marketCount":23},{"eventType":{"id":"2378961","name":"Politics"},"marketCount":33},{"eventType":{"id":"6231","name":"Financial Bets"},"marketCount":3},{"eventType":{"id":"3","name":"Golf"},"marketCount":12},{"eventType":{"id":"998917","name":"Volleyball"},"marketCount":46},{"eventType":{"id":"4","name":"Cricket"},"marketCount":83},{"eventType":{"id":"5","name":"Rugby Union"},"marketCount":72},{"eventType":{"id":"6","name":"Boxing"},"marketCount":13},{"eventType":{"id":"7","name":"Horse Racing"},"marketCount":343},{"eventType":{"id":"8","name":"Motor Sport"},"marketCount":3},{"eventType":{"id":"7524","name":"Ice Hockey"},"marketCount":884},{"eventType":{"id":"10","name":"Special Bets"},"marketCount":60},{"eventType":{"id":"26420387","name":"Mixed Martial Arts"},"marketCount":57},{"eventType":{"id":"451485","name":"Winter Sports"},"marketCount":7},{"eventType":{"id":"11","name":"Cycling"},"marketCount":1},{"eventType":{"id":"3503","name":"Darts"},"marketCount":239},{"eventType":{"id":"136332","name":"Chess"},"marketCount":14},{"eventType":{"id":"7522","name":"Basketball"},"marketCount":426},{"eventType":{"id":"1477","name":"Rugby League"},"marketCount":3},{"eventType":{"id":"2152880","name":"Gaelic Games"},"marketCount":4},{"eventType":{"id":"6422","name":"Snooker"},"marketCount":23},{"eventType":{"id":"6423","name":"American Football"},"marketCount":411},{"eventType":{"id":"27388198","name":"Current Affairs"},"marketCount":1},{"eventType":{"id":"7511","name":"Baseball"},"marketCount":1},{"eventType":{"id":"4339","name":"Greyhound Racing"},"marketCount":143}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"eventType":{"id":"468328","name":"Handball"},"marketCount":56},{"eventType":{"id":"1","name":"Soccer"},"marketCount":7611},{"eventType":{"id":"2","name":"Tennis"},"marketCount":23},{"eventType":{"id":"2378961","name":"Politics"},"marketCount":33},{"eventType":{"id":"6231","name":"Financial Bets"},"marketCount":3},{"eventType":{"id":"3","name":"Golf"},"marketCount":12},{"eventType":{"id":"998917","name":"Volleyball"},"marketCount":46},{"eventType":{"id":"4","name":"Cricket"},"marketCount":83},{"eventType":{"id":"5","name":"Rugby Union"},"marketCount":72},{"eventType":{"id":"6","name":"Boxing"},"marketCount":13},{"eventType":{"id":"7","name":"Horse Racing"},"marketCount":343},{"eventType":{"id":"8","name":"Motor Sport"},"marketCount":3},{"eventType":{"id":"7524","name":"Ice Hockey"},"marketCount":884},{"eventType":{"id":"10","name":"Special Bets"},"marketCount":60},{"eventType":{"id":"26420387","name":"Mixed Martial Arts"},"marketCount":57},{"eventType":{"id":"451485","name":"Winter Sports"},"marketCount":7},{"eventType":{"id":"11","name":"Cycling"},"marketCount":1},{"eventType":{"id":"3503","name":"Darts"},"marketCount":235},{"eventType":{"id":"136332","name":"Chess"},"marketCount":14},{"eventType":{"id":"7522","name":"Basketball"},"marketCount":426},{"eventType":{"id":"1477","name":"Rugby League"},"marketCount":3},{"eventType":{"id":"2152880","name":"Gaelic Games"},"marketCount":4},{"eventType":{"id":"6422","name":"Snooker"},"marketCount":23},{"eventType":{"id":"6423","name":"American Football"},"marketCount":411},{"eventType":{"id":"27388198","name":"Current Affairs"},"marketCount":1},{"eventType":{"id":"7511","name":"Baseball"},"marketCount":1},{"eventType":{"id":"4339","name":"Greyhound Racing"},"marketCount":143}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"eventType":{"id":"468328","name":"Handball"},"marketCount":56},{"eventType":{"id":"1","name":"Soccer"},"marketCount":7610},{"eventType":{"id":"2","name":"Tennis"},"marketCount":23},{"eventType":{"id":"2378961","name":"Politics"},"marketCount":33},{"eventType":{"id":"6231","name":"Financial Bets"},"marketCount":3},{"eventType":{"id":"3","name":"Golf"},"marketCount":12},{"eventType":{"id":"998917","name":"Volleyball"},"marketCount":46},{"eventType":{"id":"4","name":"Cricket"},"marketCount":83},{"eventType":{"id":"5","name":"Rugby Union"},"marketCount":72},{"eventType":{"id":"6","name":"Boxing"},"marketCount":13},{"eventType":{"id":"7","name":"Horse Racing"},"marketCount":343},{"eventType":{"id":"8","name":"Motor Sport"},"marketCount":3},{"eventType":{"id":"7524","name":"Ice Hockey"},"marketCount":884},{"eventType":{"id":"10","name":"Special Bets"},"marketCount":60},{"eventType":{"id":"26420387","name":"Mixed Martial Arts"},"marketCount":57},{"eventType":{"id":"451485","name":"Winter Sports"},"marketCount":7},{"eventType":{"id":"11","name":"Cycling"},"marketCount":1},{"eventType":{"id":"3503","name":"Darts"},"marketCount":235},{"eventType":{"id":"136332","name":"Chess"},"marketCount":14},{"eventType":{"id":"7522","name":"Basketball"},"marketCount":426},{"eventType":{"id":"1477","name":"Rugby League"},"marketCount":3},{"eventType":{"id":"2152880","name":"Gaelic Games"},"marketCount":4},{"eventType":{"id":"6422","name":"Snooker"},"marketCount":23},{"eventType":{"id":"6423","name":"American Football"},"marketCount":411},{"eventType":{"id":"27388198","name":"Current Affairs"},"marketCount":1},{"eventType":{"id":"7511","name":"Baseball"},"marketCount":1},{"eventType":{"id":"4339","name":"Greyhound Racing"},"marketCount":143}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"eventType":{"id":"468328","name":"Handball"},"marketCount":56},{"eventType":{"id":"1","name":"Soccer"},"marketCount":7608},{"eventType":{"id":"2","name":"Tennis"},"marketCount":23},{"eventType":{"id":"2378961","name":"Politics"},"marketCount":33},{"eventType":{"id":"6231","name":"Financial Bets"},"marketCount":3},{"eventType":{"id":"3","name":"Golf"},"marketCount":12},{"eventType":{"id":"998917","name":"Volleyball"},"marketCount":46},{"eventType":{"id":"4","name":"Cricket"},"marketCount":83},{"eventType":{"id":"5","name":"Rugby Union"},"marketCount":72},{"eventType":{"id":"6","name":"Boxing"},"marketCount":13},{"eventType":{"id":"7","name":"Horse Racing"},"marketCount":343},{"eventType":{"id":"8","name":"Motor Sport"},"marketCount":3},{"eventType":{"id":"7524","name":"Ice Hockey"},"marketCount":884},{"eventType":{"id":"10","name":"Special Bets"},"marketCount":60},{"eventType":{"id":"26420387","name":"Mixed Martial Arts"},"marketCount":57},{"eventType":{"id":"451485","name":"Winter Sports"},"marketCount":7},{"eventType":{"id":"11","name":"Cycling"},"marketCount":1},{"eventType":{"id":"3503","name":"Darts"},"marketCount":235},{"eventType":{"id":"136332","name":"Chess"},"marketCount":14},{"eventType":{"id":"7522","name":"Basketball"},"marketCount":426},{"eventType":{"id":"1477","name":"Rugby League"},"marketCount":3},{"eventType":{"id":"2152880","name":"Gaelic Games"},"marketCount":4},{"eventType":{"id":"6422","name":"Snooker"},"marketCount":23},{"eventType":{"id":"6423","name":"American Football"},"marketCount":411},{"eventType":{"id":"27388198","name":"Current Affairs"},"marketCount":1},{"eventType":{"id":"7511","name":"Baseball"},"marketCount":1},{"eventType":{"id":"4339","name":"Greyhound Racing"},"marketCount":141}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"eventType":{"id":"468328","name":"Handball"},"marketCount":56},{"eventType":{"id":"1","name":"Soccer"},"marketCount":7608},{"eventType":{"id":"2","name":"Tennis"},"marketCount":23},{"eventType":{"id":"2378961","name":"Politics"},"marketCount":33},{"eventType":{"id":"6231","name":"Financial Bets"},"marketCount":3},{"eventType":{"id":"3","name":"Golf"},"marketCount":12},{"eventType":{"id":"998917","name":"Volleyball"},"marketCount":46},{"eventType":{"id":"4","name":"Cricket"},"marketCount":83},{"eventType":{"id":"5","name":"Rugby Union"},"marketCount":72},{"eventType":{"id":"6","name":"Boxing"},"marketCount":13},{"eventType":{"id":"7","name":"Horse Racing"},"marketCount":343},{"eventType":{"id":"8","name":"Motor Sport"},"marketCount":3},{"eventType":{"id":"7524","name":"Ice Hockey"},"marketCount":884},{"eventType":{"id":"10","name":"Special Bets"},"marketCount":60},{"eventType":{"id":"26420387","name":"Mixed Martial Arts"},"marketCount":57},{"eventType":{"id":"451485","name":"Winter Sports"},"marketCount":7},{"eventType":{"id":"11","name":"Cycling"},"marketCount":1},{"eventType":{"id":"3503","name":"Darts"},"marketCount":235},{"eventType":{"id":"136332","name":"Chess"},"marketCount":14},{"eventType":{"id":"7522","name":"Basketball"},"marketCount":426},{"eventType":{"id":"1477","name":"Rugby League"},"marketCount":3},{"eventType":{"id":"2152880","name":"Gaelic Games"},"marketCount":4},{"eventType":{"id":"6422","name":"Snooker"},"marketCount":23},{"eventType":{"id":"6423","name":"American Football"},"marketCount":411},{"eventType":{"id":"27388198","name":"Current Affairs"},"marketCount":1},{"eventType":{"id":"7511","name":"Baseball"},"marketCount":1},{"eventType":{"id":"4339","name":"Greyhound Racing"},"marketCount":141}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"eventType":{"id":"468328","name":"Handball"},"marketCount":56},{"eventType":{"id":"1","name":"Soccer"},"marketCount":7582},{"eventType":{"id":"2","name":"Tennis"},"marketCount":23},{"eventType":{"id":"2378961","name":"Politics"},"marketCount":33},{"eventType":{"id":"6231","name":"Financial Bets"},"marketCount":3},{"eventType":{"id":"3","name":"Golf"},"marketCount":12},{"eventType":{"id":"998917","name":"Volleyball"},"marketCount":46},{"eventType":{"id":"4","name":"Cricket"},"marketCount":83},{"eventType":{"id":"5","name":"Rugby Union"},"marketCount":72},{"eventType":{"id":"6","name":"Boxing"},"marketCount":13},{"eventType":{"id":"7","name":"Horse Racing"},"marketCount":343},{"eventType":{"id":"8","name":"Motor Sport"},"marketCount":3},{"eventType":{"id":"7524","name":"Ice Hockey"},"marketCount":884},{"eventType":{"id":"10","name":"Special Bets"},"marketCount":60},{"eventType":{"id":"26420387","name":"Mixed Martial Arts"},"marketCount":57},{"eventType":{"id":"451485","name":"Winter Sports"},"marketCount":7},{"eventType":{"id":"11","name":"Cycling"},"marketCount":1},{"eventType":{"id":"3503","name":"Darts"},"marketCount":235},{"eventType":{"id":"136332","name":"Chess"},"marketCount":14},{"eventType":{"id":"7522","name":"Basketball"},"marketCount":426},{"eventType":{"id":"1477","name":"Rugby League"},"marketCount":3},{"eventType":{"id":"2152880","name":"Gaelic Games"},"marketCount":4},{"eventType":{"id":"6422","name":"Snooker"},"marketCount":23},{"eventType":{"id":"6423","name":"American Football"},"marketCount":411},{"eventType":{"id":"27388198","name":"Current Affairs"},"marketCount":1},{"eventType":{"id":"7511","name":"Baseball"},"marketCount":1},{"eventType":{"id":"4339","name":"Greyhound Racing"},"marketCount":140}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketCatalogue", "params" :{"filter":{"eventTypeIds":["7"],
+              "marketCountries":["GB"],
+              "marketTypeCodes":["WIN"],
+              "marketStartTime":{"from":"2015-12-20T17:21:07+00:00"}},
+              "sort":"FIRST_TO_START",
+              "maxResults":"1",
+              "marketProjection":["RUNNER_DESCRIPTION"]}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122355239","marketName":"2m3f Nov Hrd","totalMatched":237.7,"runners":[{"selectionId":8475345,"runnerName":"Danvinnie","handicap":0,"sortPriority":1},{"selectionId":10544013,"runnerName":"Whos Micky Brown","handicap":0,"sortPriority":2},{"selectionId":9055964,"runnerName":"Tippmanboy","handicap":0,"sortPriority":3},{"selectionId":9934052,"runnerName":"Westren Warrior","handicap":0,"sortPriority":4},{"selectionId":7073989,"runnerName":"Kent Ragstone","handicap":0,"sortPriority":5},{"selectionId":9181464,"runnerName":"Saucysioux","handicap":0,"sortPriority":6},{"selectionId":8773184,"runnerName":"Inch Wing","handicap":0,"sortPriority":7},{"selectionId":9229508,"runnerName":"Get Ready Freddy","handicap":0,"sortPriority":8}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"eventType":{"id":"468328","name":"Handball"},"marketCount":56},{"eventType":{"id":"1","name":"Soccer"},"marketCount":7573},{"eventType":{"id":"2","name":"Tennis"},"marketCount":23},{"eventType":{"id":"2378961","name":"Politics"},"marketCount":33},{"eventType":{"id":"6231","name":"Financial Bets"},"marketCount":3},{"eventType":{"id":"3","name":"Golf"},"marketCount":12},{"eventType":{"id":"998917","name":"Volleyball"},"marketCount":46},{"eventType":{"id":"4","name":"Cricket"},"marketCount":83},{"eventType":{"id":"5","name":"Rugby Union"},"marketCount":72},{"eventType":{"id":"6","name":"Boxing"},"marketCount":13},{"eventType":{"id":"7","name":"Horse Racing"},"marketCount":343},{"eventType":{"id":"8","name":"Motor Sport"},"marketCount":3},{"eventType":{"id":"7524","name":"Ice Hockey"},"marketCount":884},{"eventType":{"id":"10","name":"Special Bets"},"marketCount":60},{"eventType":{"id":"26420387","name":"Mixed Martial Arts"},"marketCount":57},{"eventType":{"id":"451485","name":"Winter Sports"},"marketCount":7},{"eventType":{"id":"11","name":"Cycling"},"marketCount":1},{"eventType":{"id":"3503","name":"Darts"},"marketCount":235},{"eventType":{"id":"136332","name":"Chess"},"marketCount":14},{"eventType":{"id":"7522","name":"Basketball"},"marketCount":426},{"eventType":{"id":"1477","name":"Rugby League"},"marketCount":3},{"eventType":{"id":"2152880","name":"Gaelic Games"},"marketCount":4},{"eventType":{"id":"6422","name":"Snooker"},"marketCount":23},{"eventType":{"id":"6423","name":"American Football"},"marketCount":411},{"eventType":{"id":"27388198","name":"Current Affairs"},"marketCount":1},{"eventType":{"id":"7511","name":"Baseball"},"marketCount":1},{"eventType":{"id":"4339","name":"Greyhound Racing"},"marketCount":140}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketCatalogue", "params" :{"filter":{"eventTypeIds":["7"],
+              "marketCountries":["GB"],
+              "marketTypeCodes":["WIN"],
+              "marketStartTime":{"from":"2015-12-20T17:21:52+00:00"}},
+              "sort":"FIRST_TO_START",
+              "maxResults":"1",
+              "marketProjection":["RUNNER_DESCRIPTION"]}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122355239","marketName":"2m3f Nov Hrd","totalMatched":237.7,"runners":[{"selectionId":8475345,"runnerName":"Danvinnie","handicap":0,"sortPriority":1},{"selectionId":10544013,"runnerName":"Whos Micky Brown","handicap":0,"sortPriority":2},{"selectionId":9055964,"runnerName":"Tippmanboy","handicap":0,"sortPriority":3},{"selectionId":9934052,"runnerName":"Westren Warrior","handicap":0,"sortPriority":4},{"selectionId":7073989,"runnerName":"Kent Ragstone","handicap":0,"sortPriority":5},{"selectionId":9181464,"runnerName":"Saucysioux","handicap":0,"sortPriority":6},{"selectionId":8773184,"runnerName":"Inch Wing","handicap":0,"sortPriority":7},{"selectionId":9229508,"runnerName":"Get Ready Freddy","handicap":0,"sortPriority":8}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"eventType":{"id":"468328","name":"Handball"},"marketCount":56},{"eventType":{"id":"1","name":"Soccer"},"marketCount":7550},{"eventType":{"id":"2","name":"Tennis"},"marketCount":23},{"eventType":{"id":"2378961","name":"Politics"},"marketCount":33},{"eventType":{"id":"6231","name":"Financial Bets"},"marketCount":3},{"eventType":{"id":"3","name":"Golf"},"marketCount":12},{"eventType":{"id":"998917","name":"Volleyball"},"marketCount":46},{"eventType":{"id":"4","name":"Cricket"},"marketCount":83},{"eventType":{"id":"5","name":"Rugby Union"},"marketCount":72},{"eventType":{"id":"6","name":"Boxing"},"marketCount":13},{"eventType":{"id":"7","name":"Horse Racing"},"marketCount":343},{"eventType":{"id":"8","name":"Motor Sport"},"marketCount":3},{"eventType":{"id":"7524","name":"Ice Hockey"},"marketCount":884},{"eventType":{"id":"10","name":"Special Bets"},"marketCount":60},{"eventType":{"id":"26420387","name":"Mixed Martial Arts"},"marketCount":57},{"eventType":{"id":"451485","name":"Winter Sports"},"marketCount":7},{"eventType":{"id":"11","name":"Cycling"},"marketCount":1},{"eventType":{"id":"3503","name":"Darts"},"marketCount":235},{"eventType":{"id":"136332","name":"Chess"},"marketCount":14},{"eventType":{"id":"7522","name":"Basketball"},"marketCount":426},{"eventType":{"id":"1477","name":"Rugby League"},"marketCount":3},{"eventType":{"id":"2152880","name":"Gaelic Games"},"marketCount":4},{"eventType":{"id":"6422","name":"Snooker"},"marketCount":23},{"eventType":{"id":"6423","name":"American Football"},"marketCount":411},{"eventType":{"id":"27388198","name":"Current Affairs"},"marketCount":1},{"eventType":{"id":"7511","name":"Baseball"},"marketCount":1},{"eventType":{"id":"4339","name":"Greyhound Racing"},"marketCount":140}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketCatalogue", "params" :{"filter":{"eventTypeIds":["7"],
+              "marketCountries":["GB"],
+              "marketTypeCodes":["WIN"],
+              "marketStartTime":{"from":"2015-12-20T17:22:58+00:00"}},
+              "sort":"FIRST_TO_START",
+              "maxResults":"1",
+              "marketProjection":["RUNNER_DESCRIPTION"]}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122355239","marketName":"2m3f Nov Hrd","totalMatched":237.7,"runners":[{"selectionId":8475345,"runnerName":"Danvinnie","handicap":0,"sortPriority":1},{"selectionId":10544013,"runnerName":"Whos Micky Brown","handicap":0,"sortPriority":2},{"selectionId":9055964,"runnerName":"Tippmanboy","handicap":0,"sortPriority":3},{"selectionId":9934052,"runnerName":"Westren Warrior","handicap":0,"sortPriority":4},{"selectionId":7073989,"runnerName":"Kent Ragstone","handicap":0,"sortPriority":5},{"selectionId":9181464,"runnerName":"Saucysioux","handicap":0,"sortPriority":6},{"selectionId":8773184,"runnerName":"Inch Wing","handicap":0,"sortPriority":7},{"selectionId":9229508,"runnerName":"Get Ready Freddy","handicap":0,"sortPriority":8}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"eventType":{"id":"468328","name":"Handball"},"marketCount":56},{"eventType":{"id":"1","name":"Soccer"},"marketCount":7563},{"eventType":{"id":"2","name":"Tennis"},"marketCount":23},{"eventType":{"id":"2378961","name":"Politics"},"marketCount":33},{"eventType":{"id":"6231","name":"Financial Bets"},"marketCount":3},{"eventType":{"id":"3","name":"Golf"},"marketCount":12},{"eventType":{"id":"998917","name":"Volleyball"},"marketCount":46},{"eventType":{"id":"4","name":"Cricket"},"marketCount":83},{"eventType":{"id":"5","name":"Rugby Union"},"marketCount":72},{"eventType":{"id":"6","name":"Boxing"},"marketCount":13},{"eventType":{"id":"7","name":"Horse Racing"},"marketCount":343},{"eventType":{"id":"8","name":"Motor Sport"},"marketCount":3},{"eventType":{"id":"7524","name":"Ice Hockey"},"marketCount":884},{"eventType":{"id":"10","name":"Special Bets"},"marketCount":60},{"eventType":{"id":"26420387","name":"Mixed Martial Arts"},"marketCount":57},{"eventType":{"id":"451485","name":"Winter Sports"},"marketCount":7},{"eventType":{"id":"11","name":"Cycling"},"marketCount":1},{"eventType":{"id":"3503","name":"Darts"},"marketCount":235},{"eventType":{"id":"136332","name":"Chess"},"marketCount":14},{"eventType":{"id":"7522","name":"Basketball"},"marketCount":426},{"eventType":{"id":"1477","name":"Rugby League"},"marketCount":3},{"eventType":{"id":"2152880","name":"Gaelic Games"},"marketCount":4},{"eventType":{"id":"6422","name":"Snooker"},"marketCount":23},{"eventType":{"id":"6423","name":"American Football"},"marketCount":411},{"eventType":{"id":"27388198","name":"Current Affairs"},"marketCount":1},{"eventType":{"id":"7511","name":"Baseball"},"marketCount":1},{"eventType":{"id":"4339","name":"Greyhound Racing"},"marketCount":140}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketCatalogue", "params" :{"filter":{"eventTypeIds":["7"],
+              "marketCountries":["GB"],
+              "marketTypeCodes":["WIN"],
+              "marketStartTime":{"from":"2015-12-20T17:23:06+00:00"}},
+              "sort":"FIRST_TO_START",
+              "maxResults":"1",
+              "marketProjection":["RUNNER_DESCRIPTION"]}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122355239","marketName":"2m3f Nov Hrd","totalMatched":237.7,"runners":[{"selectionId":8475345,"runnerName":"Danvinnie","handicap":0,"sortPriority":1},{"selectionId":10544013,"runnerName":"Whos Micky Brown","handicap":0,"sortPriority":2},{"selectionId":9055964,"runnerName":"Tippmanboy","handicap":0,"sortPriority":3},{"selectionId":9934052,"runnerName":"Westren Warrior","handicap":0,"sortPriority":4},{"selectionId":7073989,"runnerName":"Kent Ragstone","handicap":0,"sortPriority":5},{"selectionId":9181464,"runnerName":"Saucysioux","handicap":0,"sortPriority":6},{"selectionId":8773184,"runnerName":"Inch Wing","handicap":0,"sortPriority":7},{"selectionId":9229508,"runnerName":"Get Ready Freddy","handicap":0,"sortPriority":8}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :{"marketIds":["1.122355239"], "priceProjection":{"priceData":["EX_BEST_OFFERS"]}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122355239","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":8,"numberOfActiveRunners":8,"lastMatchTime":"2015-12-20T17:23:42.426Z","totalMatched":243.7,"totalAvailable":74836.84,"crossMatching":false,"runnersVoidable":false,"version":1198771633,"runners":[{"selectionId":8475345,"handicap":0,"status":"ACTIVE","adjustmentFactor":26.346,"totalMatched":0,"ex":{"availableToBack":[{"price":3.9,"size":73.93},{"price":3.8,"size":77.42},{"price":3.25,"size":20.05}],"availableToLay":[{"price":880,"size":22.89}],"tradedVolume":[]}},{"selectionId":10544013,"handicap":0,"status":"ACTIVE","adjustmentFactor":24.655,"lastPriceTraded":4.3,"totalMatched":0,"ex":{"availableToBack":[{"price":4.1,"size":72.5},{"price":3.95,"size":73.79},{"price":3.75,"size":15}],"availableToLay":[{"price":4.7,"size":46},{"price":4.8,"size":38.65},{"price":8.2,"size":22.89}],"tradedVolume":[]}},{"selectionId":9055964,"handicap":0,"status":"ACTIVE","adjustmentFactor":24.655,"totalMatched":0,"ex":{"availableToBack":[{"price":2.8,"size":27.93},{"price":2.7,"size":119.42},{"price":2.66,"size":120.48}],"availableToLay":[{"price":980,"size":22.64}],"tradedVolume":[]}},{"selectionId":9934052,"handicap":0,"status":"ACTIVE","adjustmentFactor":19.57,"totalMatched":0,"ex":{"availableToBack":[{"price":3.75,"size":23.63},{"price":3.65,"size":75.47},{"price":3.55,"size":78.43}],"availableToLay":[{"price":950,"size":22.64}],"tradedVolume":[]}},{"selectionId":7073989,"handicap":0,"status":"ACTIVE","adjustmentFactor":2.151,"lastPriceTraded":34,"totalMatched":0,"ex":{"availableToBack":[{"price":28,"size":16.97},{"price":14,"size":16},{"price":5.2,"size":10}],"availableToLay":[{"price":980,"size":21.18}],"tradedVolume":[]}},{"selectionId":9181464,"handicap":0,"status":"ACTIVE","adjustmentFactor":2.151,"totalMatched":0,"ex":{"availableToBack":[{"price":14,"size":20.83},{"price":13,"size":16.66},{"price":10,"size":10.45}],"availableToLay":[{"price":980,"size":22.64}],"tradedVolume":[]}},{"selectionId":8773184,"handicap":0,"status":"ACTIVE","adjustmentFactor":0.444,"totalMatched":0,"ex":{"availableToBack":[{"price":30,"size":14.78},{"price":26,"size":10.4},{"price":14,"size":15.45}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":9229508,"handicap":0,"status":"ACTIVE","adjustmentFactor":0.026,"totalMatched":0,"ex":{"availableToBack":[{"price":55,"size":10.81},{"price":50,"size":22},{"price":25,"size":10.25}],"availableToLay":[],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"eventType":{"id":"468328","name":"Handball"},"marketCount":56},{"eventType":{"id":"1","name":"Soccer"},"marketCount":7529},{"eventType":{"id":"2","name":"Tennis"},"marketCount":28},{"eventType":{"id":"2378961","name":"Politics"},"marketCount":33},{"eventType":{"id":"6231","name":"Financial Bets"},"marketCount":3},{"eventType":{"id":"3","name":"Golf"},"marketCount":12},{"eventType":{"id":"998917","name":"Volleyball"},"marketCount":46},{"eventType":{"id":"4","name":"Cricket"},"marketCount":83},{"eventType":{"id":"5","name":"Rugby Union"},"marketCount":72},{"eventType":{"id":"6","name":"Boxing"},"marketCount":13},{"eventType":{"id":"7","name":"Horse Racing"},"marketCount":343},{"eventType":{"id":"8","name":"Motor Sport"},"marketCount":3},{"eventType":{"id":"7524","name":"Ice Hockey"},"marketCount":884},{"eventType":{"id":"10","name":"Special Bets"},"marketCount":60},{"eventType":{"id":"26420387","name":"Mixed Martial Arts"},"marketCount":57},{"eventType":{"id":"451485","name":"Winter Sports"},"marketCount":7},{"eventType":{"id":"11","name":"Cycling"},"marketCount":1},{"eventType":{"id":"3503","name":"Darts"},"marketCount":235},{"eventType":{"id":"136332","name":"Chess"},"marketCount":14},{"eventType":{"id":"7522","name":"Basketball"},"marketCount":426},{"eventType":{"id":"1477","name":"Rugby League"},"marketCount":3},{"eventType":{"id":"2152880","name":"Gaelic Games"},"marketCount":4},{"eventType":{"id":"6422","name":"Snooker"},"marketCount":23},{"eventType":{"id":"6423","name":"American Football"},"marketCount":411},{"eventType":{"id":"27388198","name":"Current Affairs"},"marketCount":1},{"eventType":{"id":"7511","name":"Baseball"},"marketCount":1},{"eventType":{"id":"4339","name":"Greyhound Racing"},"marketCount":140}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketCatalogue", "params" :{"filter":{"eventTypeIds":["7"],
+              "marketCountries":["GB"],
+              "marketTypeCodes":["WIN"],
+              "marketStartTime":{"from":"2015-12-20T17:23:51+00:00"}},
+              "sort":"FIRST_TO_START",
+              "maxResults":"1",
+              "marketProjection":["RUNNER_DESCRIPTION"]}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122355239","marketName":"2m3f Nov Hrd","totalMatched":237.7,"runners":[{"selectionId":8475345,"runnerName":"Danvinnie","handicap":0,"sortPriority":1},{"selectionId":10544013,"runnerName":"Whos Micky Brown","handicap":0,"sortPriority":2},{"selectionId":9055964,"runnerName":"Tippmanboy","handicap":0,"sortPriority":3},{"selectionId":9934052,"runnerName":"Westren Warrior","handicap":0,"sortPriority":4},{"selectionId":7073989,"runnerName":"Kent Ragstone","handicap":0,"sortPriority":5},{"selectionId":9181464,"runnerName":"Saucysioux","handicap":0,"sortPriority":6},{"selectionId":8773184,"runnerName":"Inch Wing","handicap":0,"sortPriority":7},{"selectionId":9229508,"runnerName":"Get Ready Freddy","handicap":0,"sortPriority":8}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :{"marketIds":["1.122355239"], "priceProjection":{"priceData":["EX_BEST_OFFERS"]}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122355239","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":8,"numberOfActiveRunners":8,"lastMatchTime":"2015-12-20T17:23:42.426Z","totalMatched":243.7,"totalAvailable":74836.84,"crossMatching":false,"runnersVoidable":false,"version":1198771633,"runners":[{"selectionId":8475345,"handicap":0,"status":"ACTIVE","adjustmentFactor":26.346,"totalMatched":0,"ex":{"availableToBack":[{"price":3.9,"size":73.93},{"price":3.8,"size":77.42},{"price":3.25,"size":20.05}],"availableToLay":[{"price":880,"size":22.89}],"tradedVolume":[]}},{"selectionId":10544013,"handicap":0,"status":"ACTIVE","adjustmentFactor":24.655,"lastPriceTraded":4.3,"totalMatched":0,"ex":{"availableToBack":[{"price":4.1,"size":72.5},{"price":3.95,"size":73.79},{"price":3.75,"size":15}],"availableToLay":[{"price":4.7,"size":46},{"price":4.8,"size":38.65},{"price":8.2,"size":22.89}],"tradedVolume":[]}},{"selectionId":9055964,"handicap":0,"status":"ACTIVE","adjustmentFactor":24.655,"totalMatched":0,"ex":{"availableToBack":[{"price":2.8,"size":27.93},{"price":2.7,"size":119.42},{"price":2.66,"size":120.48}],"availableToLay":[{"price":980,"size":22.64}],"tradedVolume":[]}},{"selectionId":9934052,"handicap":0,"status":"ACTIVE","adjustmentFactor":19.57,"totalMatched":0,"ex":{"availableToBack":[{"price":3.75,"size":23.63},{"price":3.65,"size":75.47},{"price":3.55,"size":78.43}],"availableToLay":[{"price":950,"size":22.64}],"tradedVolume":[]}},{"selectionId":7073989,"handicap":0,"status":"ACTIVE","adjustmentFactor":2.151,"lastPriceTraded":34,"totalMatched":0,"ex":{"availableToBack":[{"price":28,"size":16.97},{"price":14,"size":16},{"price":5.2,"size":10}],"availableToLay":[{"price":980,"size":21.18}],"tradedVolume":[]}},{"selectionId":9181464,"handicap":0,"status":"ACTIVE","adjustmentFactor":2.151,"totalMatched":0,"ex":{"availableToBack":[{"price":14,"size":20.83},{"price":13,"size":16.66},{"price":10,"size":10.45}],"availableToLay":[{"price":980,"size":22.64}],"tradedVolume":[]}},{"selectionId":8773184,"handicap":0,"status":"ACTIVE","adjustmentFactor":0.444,"totalMatched":0,"ex":{"availableToBack":[{"price":30,"size":14.78},{"price":26,"size":10.4},{"price":14,"size":15.45}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":9229508,"handicap":0,"status":"ACTIVE","adjustmentFactor":0.026,"totalMatched":0,"ex":{"availableToBack":[{"price":55,"size":10.81},{"price":50,"size":22},{"price":25,"size":10.25}],"availableToLay":[],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"eventType":{"id":"468328","name":"Handball"},"marketCount":56},{"eventType":{"id":"1","name":"Soccer"},"marketCount":7477},{"eventType":{"id":"2","name":"Tennis"},"marketCount":28},{"eventType":{"id":"2378961","name":"Politics"},"marketCount":33},{"eventType":{"id":"6231","name":"Financial Bets"},"marketCount":3},{"eventType":{"id":"3","name":"Golf"},"marketCount":12},{"eventType":{"id":"998917","name":"Volleyball"},"marketCount":46},{"eventType":{"id":"4","name":"Cricket"},"marketCount":83},{"eventType":{"id":"5","name":"Rugby Union"},"marketCount":72},{"eventType":{"id":"6","name":"Boxing"},"marketCount":13},{"eventType":{"id":"7","name":"Horse Racing"},"marketCount":343},{"eventType":{"id":"8","name":"Motor Sport"},"marketCount":3},{"eventType":{"id":"7524","name":"Ice Hockey"},"marketCount":884},{"eventType":{"id":"10","name":"Special Bets"},"marketCount":60},{"eventType":{"id":"26420387","name":"Mixed Martial Arts"},"marketCount":57},{"eventType":{"id":"451485","name":"Winter Sports"},"marketCount":7},{"eventType":{"id":"11","name":"Cycling"},"marketCount":1},{"eventType":{"id":"3503","name":"Darts"},"marketCount":235},{"eventType":{"id":"136332","name":"Chess"},"marketCount":14},{"eventType":{"id":"7522","name":"Basketball"},"marketCount":426},{"eventType":{"id":"1477","name":"Rugby League"},"marketCount":3},{"eventType":{"id":"2152880","name":"Gaelic Games"},"marketCount":4},{"eventType":{"id":"6422","name":"Snooker"},"marketCount":23},{"eventType":{"id":"6423","name":"American Football"},"marketCount":411},{"eventType":{"id":"27388198","name":"Current Affairs"},"marketCount":1},{"eventType":{"id":"7511","name":"Baseball"},"marketCount":1},{"eventType":{"id":"4339","name":"Greyhound Racing"},"marketCount":140}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketCatalogue", "params" :{"filter":{"eventTypeIds":["7"],
+              "marketCountries":["GB"],
+              "marketTypeCodes":["WIN"],
+              "marketStartTime":{"from":"2015-12-20T17:25:26+00:00"}},
+              "sort":"FIRST_TO_START",
+              "maxResults":"1",
+              "marketProjection":["RUNNER_DESCRIPTION"]}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122355239","marketName":"2m3f Nov Hrd","totalMatched":237.7,"runners":[{"selectionId":8475345,"runnerName":"Danvinnie","handicap":0,"sortPriority":1},{"selectionId":10544013,"runnerName":"Whos Micky Brown","handicap":0,"sortPriority":2},{"selectionId":9055964,"runnerName":"Tippmanboy","handicap":0,"sortPriority":3},{"selectionId":9934052,"runnerName":"Westren Warrior","handicap":0,"sortPriority":4},{"selectionId":7073989,"runnerName":"Kent Ragstone","handicap":0,"sortPriority":5},{"selectionId":9181464,"runnerName":"Saucysioux","handicap":0,"sortPriority":6},{"selectionId":8773184,"runnerName":"Inch Wing","handicap":0,"sortPriority":7},{"selectionId":9229508,"runnerName":"Get Ready Freddy","handicap":0,"sortPriority":8}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :{"marketIds":["1.122355239"], "priceProjection":{"priceData":["EX_BEST_OFFERS"]}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122355239","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":8,"numberOfActiveRunners":8,"lastMatchTime":"2015-12-20T17:23:42.426Z","totalMatched":243.7,"totalAvailable":74836.84,"crossMatching":false,"runnersVoidable":false,"version":1198771633,"runners":[{"selectionId":8475345,"handicap":0,"status":"ACTIVE","adjustmentFactor":26.346,"totalMatched":0,"ex":{"availableToBack":[{"price":3.9,"size":73.93},{"price":3.8,"size":77.42},{"price":3.25,"size":20.05}],"availableToLay":[{"price":880,"size":22.89}],"tradedVolume":[]}},{"selectionId":10544013,"handicap":0,"status":"ACTIVE","adjustmentFactor":24.655,"lastPriceTraded":4.3,"totalMatched":0,"ex":{"availableToBack":[{"price":4.1,"size":72.5},{"price":3.95,"size":73.79},{"price":3.75,"size":15}],"availableToLay":[{"price":4.7,"size":46},{"price":4.8,"size":38.65},{"price":8.2,"size":22.89}],"tradedVolume":[]}},{"selectionId":9055964,"handicap":0,"status":"ACTIVE","adjustmentFactor":24.655,"totalMatched":0,"ex":{"availableToBack":[{"price":2.8,"size":27.93},{"price":2.7,"size":119.42},{"price":2.66,"size":120.48}],"availableToLay":[{"price":980,"size":22.64}],"tradedVolume":[]}},{"selectionId":9934052,"handicap":0,"status":"ACTIVE","adjustmentFactor":19.57,"totalMatched":0,"ex":{"availableToBack":[{"price":3.75,"size":23.63},{"price":3.65,"size":75.47},{"price":3.55,"size":78.43}],"availableToLay":[{"price":950,"size":22.64}],"tradedVolume":[]}},{"selectionId":7073989,"handicap":0,"status":"ACTIVE","adjustmentFactor":2.151,"lastPriceTraded":34,"totalMatched":0,"ex":{"availableToBack":[{"price":28,"size":16.97},{"price":14,"size":16},{"price":5.2,"size":10}],"availableToLay":[{"price":980,"size":21.18}],"tradedVolume":[]}},{"selectionId":9181464,"handicap":0,"status":"ACTIVE","adjustmentFactor":2.151,"totalMatched":0,"ex":{"availableToBack":[{"price":14,"size":20.83},{"price":13,"size":16.66},{"price":10,"size":10.45}],"availableToLay":[{"price":980,"size":22.64}],"tradedVolume":[]}},{"selectionId":8773184,"handicap":0,"status":"ACTIVE","adjustmentFactor":0.444,"totalMatched":0,"ex":{"availableToBack":[{"price":30,"size":14.78},{"price":26,"size":10.4},{"price":14,"size":15.45}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":9229508,"handicap":0,"status":"ACTIVE","adjustmentFactor":0.026,"totalMatched":0,"ex":{"availableToBack":[{"price":55,"size":10.81},{"price":50,"size":22},{"price":25,"size":10.25}],"availableToLay":[],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"eventType":{"id":"468328","name":"Handball"},"marketCount":56},{"eventType":{"id":"1","name":"Soccer"},"marketCount":7297},{"eventType":{"id":"2","name":"Tennis"},"marketCount":28},{"eventType":{"id":"2378961","name":"Politics"},"marketCount":33},{"eventType":{"id":"6231","name":"Financial Bets"},"marketCount":3},{"eventType":{"id":"3","name":"Golf"},"marketCount":12},{"eventType":{"id":"998917","name":"Volleyball"},"marketCount":45},{"eventType":{"id":"4","name":"Cricket"},"marketCount":83},{"eventType":{"id":"5","name":"Rugby Union"},"marketCount":71},{"eventType":{"id":"6","name":"Boxing"},"marketCount":13},{"eventType":{"id":"7","name":"Horse Racing"},"marketCount":333},{"eventType":{"id":"8","name":"Motor Sport"},"marketCount":3},{"eventType":{"id":"7524","name":"Ice Hockey"},"marketCount":884},{"eventType":{"id":"10","name":"Special Bets"},"marketCount":60},{"eventType":{"id":"26420387","name":"Mixed Martial Arts"},"marketCount":57},{"eventType":{"id":"451485","name":"Winter Sports"},"marketCount":7},{"eventType":{"id":"11","name":"Cycling"},"marketCount":1},{"eventType":{"id":"3503","name":"Darts"},"marketCount":235},{"eventType":{"id":"136332","name":"Chess"},"marketCount":14},{"eventType":{"id":"7522","name":"Basketball"},"marketCount":414},{"eventType":{"id":"1477","name":"Rugby League"},"marketCount":3},{"eventType":{"id":"2152880","name":"Gaelic Games"},"marketCount":4},{"eventType":{"id":"6422","name":"Snooker"},"marketCount":23},{"eventType":{"id":"6423","name":"American Football"},"marketCount":411},{"eventType":{"id":"27388198","name":"Current Affairs"},"marketCount":1},{"eventType":{"id":"7511","name":"Baseball"},"marketCount":1},{"eventType":{"id":"4339","name":"Greyhound Racing"},"marketCount":135}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"eventType":{"id":"468328","name":"Handball"},"marketCount":56},{"eventType":{"id":"1","name":"Soccer"},"marketCount":7211},{"eventType":{"id":"2","name":"Tennis"},"marketCount":28},{"eventType":{"id":"2378961","name":"Politics"},"marketCount":33},{"eventType":{"id":"6231","name":"Financial Bets"},"marketCount":3},{"eventType":{"id":"3","name":"Golf"},"marketCount":12},{"eventType":{"id":"998917","name":"Volleyball"},"marketCount":45},{"eventType":{"id":"4","name":"Cricket"},"marketCount":83},{"eventType":{"id":"5","name":"Rugby Union"},"marketCount":71},{"eventType":{"id":"6","name":"Boxing"},"marketCount":13},{"eventType":{"id":"7","name":"Horse Racing"},"marketCount":333},{"eventType":{"id":"8","name":"Motor Sport"},"marketCount":3},{"eventType":{"id":"7524","name":"Ice Hockey"},"marketCount":884},{"eventType":{"id":"10","name":"Special Bets"},"marketCount":60},{"eventType":{"id":"26420387","name":"Mixed Martial Arts"},"marketCount":57},{"eventType":{"id":"451485","name":"Winter Sports"},"marketCount":7},{"eventType":{"id":"11","name":"Cycling"},"marketCount":1},{"eventType":{"id":"3503","name":"Darts"},"marketCount":235},{"eventType":{"id":"136332","name":"Chess"},"marketCount":14},{"eventType":{"id":"7522","name":"Basketball"},"marketCount":411},{"eventType":{"id":"1477","name":"Rugby League"},"marketCount":3},{"eventType":{"id":"2152880","name":"Gaelic Games"},"marketCount":4},{"eventType":{"id":"6422","name":"Snooker"},"marketCount":23},{"eventType":{"id":"6423","name":"American Football"},"marketCount":411},{"eventType":{"id":"27388198","name":"Current Affairs"},"marketCount":1},{"eventType":{"id":"7511","name":"Baseball"},"marketCount":1},{"eventType":{"id":"4339","name":"Greyhound Racing"},"marketCount":135}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketCatalogue", "params" :{"filter":{"eventTypeIds":["7"],
+              "marketCountries":["GB"],
+              "marketTypeCodes":["WIN"],
+              "marketStartTime":{"from":"2015-12-20T17:51:06+00:00"}},
+              "sort":"FIRST_TO_START",
+              "maxResults":"1",
+              "marketProjection":["RUNNER_DESCRIPTION"]}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122355239","marketName":"2m3f Nov Hrd","totalMatched":287.68,"runners":[{"selectionId":8475345,"runnerName":"Danvinnie","handicap":0,"sortPriority":1},{"selectionId":10544013,"runnerName":"Whos Micky Brown","handicap":0,"sortPriority":2},{"selectionId":9055964,"runnerName":"Tippmanboy","handicap":0,"sortPriority":3},{"selectionId":9934052,"runnerName":"Westren Warrior","handicap":0,"sortPriority":4},{"selectionId":7073989,"runnerName":"Kent Ragstone","handicap":0,"sortPriority":5},{"selectionId":9181464,"runnerName":"Saucysioux","handicap":0,"sortPriority":6},{"selectionId":8773184,"runnerName":"Inch Wing","handicap":0,"sortPriority":7},{"selectionId":9229508,"runnerName":"Get Ready Freddy","handicap":0,"sortPriority":8}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :{"marketIds":["1.122355239"], "priceProjection":{"priceData":["EX_BEST_OFFERS"]}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122355239","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":8,"numberOfActiveRunners":8,"lastMatchTime":"2015-12-20T17:46:51.306Z","totalMatched":297.68,"totalAvailable":74904.21,"crossMatching":false,"runnersVoidable":false,"version":1198771633,"runners":[{"selectionId":8475345,"handicap":0,"status":"ACTIVE","adjustmentFactor":26.346,"totalMatched":0,"ex":{"availableToBack":[{"price":3.9,"size":75.91},{"price":3.8,"size":77.42},{"price":3.25,"size":20.05}],"availableToLay":[{"price":310,"size":22.89}],"tradedVolume":[]}},{"selectionId":10544013,"handicap":0,"status":"ACTIVE","adjustmentFactor":24.655,"lastPriceTraded":4.6,"totalMatched":0,"ex":{"availableToBack":[{"price":4.6,"size":23.78},{"price":4.1,"size":70.51},{"price":3.95,"size":73.79}],"availableToLay":[{"price":4.7,"size":40},{"price":4.8,"size":38.65},{"price":8.2,"size":21}],"tradedVolume":[]}},{"selectionId":9055964,"handicap":0,"status":"ACTIVE","adjustmentFactor":24.655,"totalMatched":0,"ex":{"availableToBack":[{"price":2.8,"size":26.93},{"price":2.7,"size":119.42},{"price":2.66,"size":120.48}],"availableToLay":[{"price":4.9,"size":31.45},{"price":8.2,"size":21}],"tradedVolume":[]}},{"selectionId":9934052,"handicap":0,"status":"ACTIVE","adjustmentFactor":19.57,"totalMatched":0,"ex":{"availableToBack":[{"price":3.75,"size":21.98},{"price":3.65,"size":77.71},{"price":3.55,"size":78.43}],"availableToLay":[{"price":11,"size":25}],"tradedVolume":[]}},{"selectionId":7073989,"handicap":0,"status":"ACTIVE","adjustmentFactor":2.151,"lastPriceTraded":34,"totalMatched":0,"ex":{"availableToBack":[{"price":30,"size":13.18},{"price":21,"size":10.4},{"price":14,"size":13}],"availableToLay":[{"price":310,"size":21.18}],"tradedVolume":[]}},{"selectionId":9181464,"handicap":0,"status":"ACTIVE","adjustmentFactor":2.151,"totalMatched":0,"ex":{"availableToBack":[{"price":21,"size":11.15},{"price":14,"size":16.68},{"price":13,"size":16.66}],"availableToLay":[{"price":310,"size":22.64}],"tradedVolume":[]}},{"selectionId":8773184,"handicap":0,"status":"ACTIVE","adjustmentFactor":0.444,"totalMatched":0,"ex":{"availableToBack":[{"price":46,"size":10.69},{"price":28,"size":17.48},{"price":14,"size":17.45}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":9229508,"handicap":0,"status":"ACTIVE","adjustmentFactor":0.026,"lastPriceTraded":100,"totalMatched":0,"ex":{"availableToBack":[{"price":50,"size":31.62},{"price":25,"size":10.25},{"price":16,"size":10.83}],"availableToLay":[{"price":500,"size":2.3}],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"eventType":{"id":"468328","name":"Handball"},"marketCount":56},{"eventType":{"id":"1","name":"Soccer"},"marketCount":6527},{"eventType":{"id":"2","name":"Tennis"},"marketCount":28},{"eventType":{"id":"2378961","name":"Politics"},"marketCount":33},{"eventType":{"id":"6231","name":"Financial Bets"},"marketCount":3},{"eventType":{"id":"3","name":"Golf"},"marketCount":12},{"eventType":{"id":"998917","name":"Volleyball"},"marketCount":44},{"eventType":{"id":"4","name":"Cricket"},"marketCount":83},{"eventType":{"id":"5","name":"Rugby Union"},"marketCount":70},{"eventType":{"id":"6","name":"Boxing"},"marketCount":13},{"eventType":{"id":"7","name":"Horse Racing"},"marketCount":323},{"eventType":{"id":"8","name":"Motor Sport"},"marketCount":3},{"eventType":{"id":"7524","name":"Ice Hockey"},"marketCount":872},{"eventType":{"id":"10","name":"Special Bets"},"marketCount":60},{"eventType":{"id":"26420387","name":"Mixed Martial Arts"},"marketCount":57},{"eventType":{"id":"451485","name":"Winter Sports"},"marketCount":7},{"eventType":{"id":"11","name":"Cycling"},"marketCount":1},{"eventType":{"id":"3503","name":"Darts"},"marketCount":227},{"eventType":{"id":"136332","name":"Chess"},"marketCount":14},{"eventType":{"id":"7522","name":"Basketball"},"marketCount":399},{"eventType":{"id":"1477","name":"Rugby League"},"marketCount":3},{"eventType":{"id":"2152880","name":"Gaelic Games"},"marketCount":4},{"eventType":{"id":"6422","name":"Snooker"},"marketCount":21},{"eventType":{"id":"6423","name":"American Football"},"marketCount":411},{"eventType":{"id":"27388198","name":"Current Affairs"},"marketCount":1},{"eventType":{"id":"7511","name":"Baseball"},"marketCount":1},{"eventType":{"id":"4339","name":"Greyhound Racing"},"marketCount":122}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketCatalogue", "params" :{"filter":{"eventTypeIds":["7"],
+              "marketCountries":["GB"],
+              "marketTypeCodes":["WIN"],
+              "marketStartTime":{"from":"2015-12-20T18:35:36+00:00"}},
+              "sort":"FIRST_TO_START",
+              "maxResults":"1",
+              "marketProjection":["RUNNER_DESCRIPTION"]}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","error":{"code":-32099,"message":"ANGX-0003","data":{"exceptionname":"APINGException","APINGException":{"errorDetails":"","errorCode":"INVALID_SESSION_INFORMATION","requestUUID":"prdang044-11240513-009796b690"}}},"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketCatalogue", "params" :{"filter":{"eventTypeIds":["7"],
+              "marketCountries":["GB"],
+              "marketTypeCodes":["WIN"],
+              "marketStartTime":{"from":"2015-12-20T18:35:58+00:00"}},
+              "sort":"FIRST_TO_START",
+              "maxResults":"1",
+              "marketProjection":["RUNNER_DESCRIPTION"]}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122355239","marketName":"2m3f Nov Hrd","totalMatched":542.46,"runners":[{"selectionId":8475345,"runnerName":"Danvinnie","handicap":0,"sortPriority":1},{"selectionId":10544013,"runnerName":"Whos Micky Brown","handicap":0,"sortPriority":2},{"selectionId":9055964,"runnerName":"Tippmanboy","handicap":0,"sortPriority":3},{"selectionId":9934052,"runnerName":"Westren Warrior","handicap":0,"sortPriority":4},{"selectionId":7073989,"runnerName":"Kent Ragstone","handicap":0,"sortPriority":5},{"selectionId":9181464,"runnerName":"Saucysioux","handicap":0,"sortPriority":6},{"selectionId":8773184,"runnerName":"Inch Wing","handicap":0,"sortPriority":7},{"selectionId":9229508,"runnerName":"Get Ready Freddy","handicap":0,"sortPriority":8}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketCatalogue", "params" :{"filter":{"eventTypeIds":["7"],
+              "marketCountries":["GB"],
+              "marketTypeCodes":["WIN"],
+              "marketStartTime":{"from":"2015-12-20T18:36:25+00:00"}},
+              "sort":"FIRST_TO_START",
+              "maxResults":"1",
+              "marketProjection":["RUNNER_DESCRIPTION"]}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122355239","marketName":"2m3f Nov Hrd","totalMatched":542.46,"runners":[{"selectionId":8475345,"runnerName":"Danvinnie","handicap":0,"sortPriority":1},{"selectionId":10544013,"runnerName":"Whos Micky Brown","handicap":0,"sortPriority":2},{"selectionId":9934052,"runnerName":"Westren Warrior","handicap":0,"sortPriority":3},{"selectionId":7073989,"runnerName":"Kent Ragstone","handicap":0,"sortPriority":4},{"selectionId":9181464,"runnerName":"Saucysioux","handicap":0,"sortPriority":5},{"selectionId":8773184,"runnerName":"Inch Wing","handicap":0,"sortPriority":6},{"selectionId":9229508,"runnerName":"Get Ready Freddy","handicap":0,"sortPriority":7},{"selectionId":9055964,"runnerName":"Tippmanboy","handicap":0,"sortPriority":8}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketCatalogue", "params" :{"filter":{"eventTypeIds":["1"],
+              "marketCountries":["GB"],
+              "marketTypeCodes":["WIN"],
+              "marketStartTime":{"from":"2015-12-20T18:36:40+00:00"}},
+              "sort":"FIRST_TO_START",
+              "maxResults":"1",
+              "marketProjection":["RUNNER_DESCRIPTION"]}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketCatalogue", "params" :{"filter":{"eventTypeIds":["1"],
+              "marketCountries":["GB"],
+              "marketTypeCodes":["WIN"],
+              "marketStartTime":{"from":"2015-12-20T18:43:50+00:00"}},
+              "sort":"FIRST_TO_START",
+              "maxResults":"1",
+              "marketProjection":["RUNNER_DESCRIPTION"]}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketCatalogue", "params" :{"filter":{"eventTypeIds":["1"],
+              "marketCountries":["GB"],
+              "marketTypeCodes":["WIN"],
+              "marketStartTime":{"from":"2015-12-20T18:45:02+00:00"}},
+              "sort":"FIRST_TO_START",
+              "maxResults":"1",
+              "marketProjection":["RUNNER_DESCRIPTION"]}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketCatalogue", "params" :{"filter":{"eventTypeIds":["1"],
+              "marketCountries":["GB"],
+              "marketTypeCodes":["WIN"],
+              "marketStartTime":{"from":"2015-12-20T18:45:12+00:00"}},
+              "sort":"FIRST_TO_START",
+              "maxResults":"1",
+              "marketProjection":["RUNNER_DESCRIPTION"]}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketCatalogue", "params" :{"filter":{"eventTypeIds":["1"],
+              "marketCountries":["GB"],
+              "marketTypeCodes":["WIN"],
+              "marketStartTime":{"from":"2015-12-20T18:45:26+00:00"}},
+              "sort":"FIRST_TO_START",
+              "maxResults":"1",
+              "marketProjection":["RUNNER_DESCRIPTION"]}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketCatalogue", "params" :{"filter":{"eventTypeIds":["1"],
+              "marketCountries":["GB"],
+              "marketTypeCodes":["WIN"],
+              "marketStartTime":{"from":"2015-12-20T18:45:49+00:00"}},
+              "sort":"FIRST_TO_START",
+              "maxResults":"1",
+              "marketProjection":["RUNNER_DESCRIPTION"]}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketCatalogue", "params" :{"filter":{"eventTypeIds":["1"],
+              "marketCountries":["GB"],
+              "marketTypeCodes":["WIN"],
+              "marketStartTime":{"from":"2015-12-20T18:46:04+00:00"}},
+              "sort":"FIRST_TO_START",
+              "maxResults":"1",
+              "marketProjection":["RUNNER_DESCRIPTION"]}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketCatalogue", "params" :{"filter":{"eventTypeIds":["1"],
+              "marketCountries":["GB"],
+              "marketTypeCodes":["WIN"],
+              "marketStartTime":{"from":"2015-12-20T18:46:56+00:00"}},
+              "sort":"FIRST_TO_START",
+              "maxResults":"1"]}, "id": 1}]
+
+Response: {"jsonrpc":"2.0","error":{"code":-32700,"message":"DSC-0008"}}
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketCatalogue", "params" :{"filter":{"eventTypeIds":["1"],
+              "marketCountries":["GB"],
+              "marketTypeCodes":["WIN"],
+              "marketStartTime":{"from":"2015-12-20T18:47:06+00:00"}},
+              "sort":"FIRST_TO_START",
+              "maxResults":"1"]}, "id": 1}]
+
+Response: {"jsonrpc":"2.0","error":{"code":-32700,"message":"DSC-0008"}}
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketCatalogue", "params" :{"filter":{"eventTypeIds":["1"],
+              "marketCountries":["GB"],
+              "marketTypeCodes":["WIN"],
+              "marketStartTime":{"from":"2015-12-20T18:47:13+00:00"}},
+              "sort":"FIRST_TO_START",
+              "maxResults":"1"]}, "id": 1}]
+
+Response: {"jsonrpc":"2.0","error":{"code":-32700,"message":"DSC-0008"}}
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketCatalogue", "params" :{"filter":{"eventTypeIds":["1"],
+              "marketCountries":["GB"],
+              "marketTypeCodes":["WIN"],
+              "marketStartTime":{"from":"2015-12-20T18:47:31+00:00"}},
+              "sort":"FIRST_TO_START",
+              "maxResults":"1"}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketCatalogue", "params" :{"filter":{"eventTypeIds":["1"],
+              "marketCountries":["GB"],
+              "marketTypeCodes":["WIN"],
+              "marketStartTime":{"from":"2015-12-20T18:47:42+00:00"}},
+              "sort":"FIRST_TO_START",
+              "maxResults":"1"}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketCatalogue", "params" :{"filter":{"eventTypeIds":["1"],
+              "marketCountries":["GB"],
+              "marketStartTime":{"from":"2015-12-20T18:48:09+00:00"}},
+              "sort":"FIRST_TO_START",
+              "maxResults":"1"}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122254013","marketName":"Over\/Under 2.5 Goals","totalMatched":324.01}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketCatalogue", "params" :{"filter":{"eventTypeIds":["1"],
+              "marketCountries":["GB"],
+              "marketStartTime":{"from":"2015-12-20T18:48:19+00:00"}},
+              "sort":"FIRST_TO_START",
+              "maxResults":"1"}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122254013","marketName":"Over\/Under 2.5 Goals","totalMatched":324.01}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketCatalogue", "params" :{"filter":{"eventTypeIds":["1"],
+              "marketCountries":["GB"],
+              "marketStartTime":{"from":"2015-12-22T20:05:45+00:00"}},
+              "sort":"FIRST_TO_START",
+              "maxResults":"1"}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","error":{"code":-32099,"message":"ANGX-0003","data":{"exceptionname":"APINGException","APINGException":{"errorDetails":"","errorCode":"INVALID_SESSION_INFORMATION","requestUUID":"prdang044-11240513-009ef2a947"}}},"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketCatalogue", "params" :{"filter":{"eventTypeIds":["1"],
+              "marketCountries":["GB"],
+              "marketStartTime":{"from":"2015-12-22T20:06:26+00:00"}},
+              "sort":"FIRST_TO_START",
+              "maxResults":"1"}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","error":{"code":-32099,"message":"ANGX-0003","data":{"exceptionname":"APINGException","APINGException":{"errorDetails":"","errorCode":"INVALID_SESSION_INFORMATION","requestUUID":"prdang035-11240513-007f5b47a5"}}},"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketCatalogue", "params" :{"filter":{"eventTypeIds":["1"],
+              "marketCountries":["GB"],
+              "marketStartTime":{"from":"2015-12-22T20:06:40+00:00"}},
+              "sort":"FIRST_TO_START",
+              "maxResults":"1"}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122344297","marketName":"Over\/Under 2.5 Goals","totalMatched":0}],"id":1}]
+
