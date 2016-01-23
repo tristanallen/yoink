@@ -425,3 +425,11 @@ Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketCatalogue"
 
 Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122344297","marketName":"Over\/Under 2.5 Goals","totalMatched":0}],"id":1}]
 
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketCatalogue", "params" :{"filter":{"eventTypeIds":["1"],
+              "marketCountries":["GB"],
+              "marketStartTime":{"from":"2015-12-22T23:06:32+00:00"}},
+              "sort":"FIRST_TO_START",
+              "maxResults":"1"}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122344297","marketName":"Over\/Under 2.5 Goals","totalMatched":0}],"id":1}]
+
