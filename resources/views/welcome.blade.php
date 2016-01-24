@@ -8,10 +8,18 @@
      	<div class="row">
  	 @endIf		
 	    <div class="col-lg-6 ">		  
-		    	<div class="panel tracker">
-		    		<div class="panel-heading">
-			    		<h4>{{ $next_market['event']->name }} <small>({{  date( 'd-m-Y H:i:s' , strToTime($next_market['event']->openDate) )}})</small></h4>
-			    		<h5>{{$next_market['marketName']}} <small>(market id: {{$next_market['marketId']}})</small></h5>
+		    	<div class="panel">
+		    		<div class="panel-heading row">
+
+		    			<div class="col-lg-10">
+		    				<h4>{{ $next_market['event']->name }} <small>({{  date( 'd-m-Y H:i:s' , strToTime($next_market['event']->openDate) )}})</small></h4>
+			    			<h5>{{$next_market['marketName']}} <small>(market id: {{$next_market['marketId']}})</small></h5>	
+		    			</div>
+		    			<div class="col-lg-2">
+		    				<button class="btn small btn-block tracker" >track</button>
+		    			</div>
+			    		
+			    		
 			    	</div>
 			    	<div class="panel-body">
 				    
@@ -21,6 +29,7 @@
 				    			<th>name</th>
 				    			<th>size</th>
 				    			<th>price</th>
+				    			<th>status</th>
 				    		</tr>	
 				    		@forEach($next_market['bets'] as $k => $odds)
 				    			@if(!empty($odds))
@@ -38,6 +47,7 @@
 				    						{{ $odds['availableToLay']->price }}
 				    					@endIf
 				    				</td>
+				    				<td>{{$odds['status']}}</td>
 				   				</tr>
 				    		
 				    			@endIf

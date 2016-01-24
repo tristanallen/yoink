@@ -52,13 +52,11 @@ class DonkeyController extends Controller
             
             foreach ($oNext->runners as $k => $bet) {
                 if($bet->selectionId == $oBook[0]->runners[$k]->selectionId && $bet->runnerName == 'The Draw'){
-    
                     $aRunnerBets = [];
                     $aRunnerBets['id'] = $oBook[0]->runners[$k]->selectionId;
                     $aRunnerBets['name'] = $bet->runnerName;
                     $aRunnerBets['availableToLay'] = !empty($oBook[0]->runners[$k]->ex->availableToLay[0]) ? $oBook[0]->runners[$k]->ex->availableToLay[0] : null;
-
-
+                    $aRunnerBets['status'] = $oBook[0]->runners[$k]->status;
                     $aResult[$key]['bets'][] = $aRunnerBets;
     
                 }
