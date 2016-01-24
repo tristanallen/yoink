@@ -31,12 +31,20 @@ class BetFairApi {
     public function getNextMarket($appKey, $sessionToken, $eventTypeId)
     {
 
-        $params = '{"filter":{"eventTypeIds":["' . $eventTypeId . '"],
-              "marketCountries":["GB"],
-              "marketStartTime":{"from":"' . date('c') . '"}},
-              "sort":"FIRST_TO_START",
-              "maxResults":"15",
-              "marketProjection":["EVENT"]}';
+        $params = '
+            {
+                "filter":
+                    {
+                        "eventTypeIds":["' . $eventTypeId . '"],
+                        "marketCountries":["GB"],
+                        "marketStartTime":{"from":"' . date('c') . '"}
+                    },
+                    "sort":"FIRST_TO_START",
+                    "maxResults":"15",
+                    "marketProjection":["EVENT", "RUNNER_METADATA"],
+                    "marketTypeCodes" : ["MATCH_ODDS"]
+
+            }';
 
         $jsonResponse = $this->sportsApingRequest($appKey, $sessionToken, 'listMarketCatalogue', $params);
         
@@ -56,6 +64,8 @@ class BetFairApi {
         $params = '
             {
                 "marketIds":["' . $marketId . '"],
+                "currencyCode": "GBP",
+                "locale" : "en",
                 "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
             }';
         $jsonResponse = $this->sportsApingRequest($appKey, $sessionToken, 'listMarketBook', $params);

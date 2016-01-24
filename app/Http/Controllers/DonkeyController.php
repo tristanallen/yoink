@@ -30,17 +30,9 @@ class DonkeyController extends Controller
         $oNext_market = $bf->getNextMarket($this->APP_KEY, $SESSION_TOKEN, $iFootballTypeId);
 
         foreach ($oNext_market->result as $key => &$oNext) {
-            if($oNext->totalMatched > 0){
-                $oBook =  $bf->getMarketBook($this->APP_KEY, $SESSION_TOKEN, $oNext->marketId);
-                $oEvent = $bf->getEventDetails($this->APP_KEY, $SESSION_TOKEN, $oNext->marketId);
-                $oNext->event =$oEvent->result;
-                $oNext->book = $oBook->result;
-            }
-            else{
-                unset($oNext_market->result[$key]);
-            }
+            $oBook =  $bf->getMarketBook($this->APP_KEY, $SESSION_TOKEN, $oNext->marketId);
+            $oNext->book = $oBook->result;
         }
-
 
         $aOutput = [];
         $aOutput['event_types'] = $aAllEventTypes;
