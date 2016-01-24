@@ -40,7 +40,7 @@ class BetFairApi {
                         "marketStartTime":{"from":"' . date('c') . '"},
                         "marketTypeCodes" : ["MATCH_ODDS"]
                     },
-
+                    "sort":"FIRST_TO_START",
                     "maxResults":"10",
                     "marketProjection":["EVENT", "RUNNER_METADATA"]
                     
