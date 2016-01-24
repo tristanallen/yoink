@@ -8,6 +8,12 @@ $.fn.exists = function(callback) {
     return this;
 };
 
+$.ajaxSetup({
+    headers: {
+        'X-CSRF-Token': TOKEN
+    }
+});
+
 
 $(function(){
 

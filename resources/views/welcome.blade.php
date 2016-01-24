@@ -16,7 +16,7 @@
 			    			<h5>{{$next_market['marketName']}} <small>(market id: {{$next_market['marketId']}})</small></h5>	
 		    			</div>
 		    			<div class="col-lg-2">
-		    				<button class="btn small btn-block tracker" >track</button>
+		    				<button class="btn small btn-block tracker" data-market="{{ json_encode($next_market)}}">track</button>
 		    			</div>
 			    		
 			    		
@@ -31,7 +31,7 @@
 				    			<th>price</th>
 				    			<th>status</th>
 				    		</tr>	
-				    		@forEach($next_market['bets'] as $k => $odds)
+				    		@forEach($next_market['runner'] as $k => $odds)
 				    			@if(!empty($odds))
 				    			<tr>
 				    				<td>{{ $odds['id']}}</td>

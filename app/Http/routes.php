@@ -12,4 +12,9 @@
 */
 
 Route::resource('/', 'DonkeyController');
+Route::resource('/new-markets', 'DonkeyController');
+
 Route::get('/login/{user_id}', 'DonkeyController@login');
+
+Route::post('/store-market', 'DonkeyController@storeMarket');
+

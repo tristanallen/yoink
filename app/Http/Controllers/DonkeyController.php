@@ -11,6 +11,11 @@ class DonkeyController extends Controller
 {
     private $APP_KEY = "oxnRnsZGGOjOwj3L";
     private $football_id = 1;
+    protected $request;
+
+    public function __construct(Request $request) {
+        $this->request = $request;
+    }
 
     public function index()
     {
@@ -48,7 +53,7 @@ class DonkeyController extends Controller
             $aResult[$key]['marketId'] = $oNext->marketId; 
             $aResult[$key]['marketName'] = $oNext->marketName;
             $aResult[$key]['event'] = $oNext->event;
-            $aResult[$key]['bets'] = [];
+            $aResult[$key]['runner'] = [];
             
             foreach ($oNext->runners as $k => $bet) {
                 if($bet->selectionId == $oBook[0]->runners[$k]->selectionId && $bet->runnerName == 'The Draw'){
@@ -57,7 +62,7 @@ class DonkeyController extends Controller
                     $aRunnerBets['name'] = $bet->runnerName;
                     $aRunnerBets['availableToLay'] = !empty($oBook[0]->runners[$k]->ex->availableToLay[0]) ? $oBook[0]->runners[$k]->ex->availableToLay[0] : null;
                     $aRunnerBets['status'] = $oBook[0]->runners[$k]->status;
-                    $aResult[$key]['bets'][] = $aRunnerBets;
+                    $aResult[$key]['runner'][] = $aRunnerBets;
     
                 }
                 
@@ -65,6 +70,12 @@ class DonkeyController extends Controller
         }
 
         return $aResult;
+    }
+
+    public function storeMarket(){
+        $market = $this->request->input('market');
+        dump($market);
+        exit;
     }
 
     public function login($userId){
