@@ -7,7 +7,6 @@
      @if($key%2)
      	<div class="row">
  	 @endIf		
-     	
 	    <div class="col-lg-6 ">		  
 		    	<div class="panel">
 		    		<div class="panel-heading">
