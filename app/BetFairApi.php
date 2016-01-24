@@ -30,20 +30,53 @@ class BetFairApi {
     }
     public function getNextMarket($appKey, $sessionToken, $eventTypeId)
     {
+
         $params = '{"filter":{"eventTypeIds":["' . $eventTypeId . '"],
               "marketCountries":["GB"],
               "marketStartTime":{"from":"' . date('c') . '"}},
               "sort":"FIRST_TO_START",
-              "maxResults":"1"}';
-        $jsonResponse = $this->sportsApingRequest($appKey, $sessionToken, 'listMarketCatalogue', $params);
+              "maxResults":"15",
+              "marketProjection":["EVENT"]}';
 
+        $jsonResponse = $this->sportsApingRequest($appKey, $sessionToken, 'listMarketCatalogue', $params);
+        
         if (!array_key_exists(0,  $jsonResponse[0]->result))
             return 'No results!';
         else
-            return $jsonResponse[0]->result[0];
+            return $jsonResponse[0];
     }
+
+
+    /**
+    * return pricing details for a given market
+    **/
+
+    public function getMarketBook($appKey, $sessionToken, $marketId)
+    {
+        $params = '
+            {
+                "marketIds":["' . $marketId . '"],
+                "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
+            }';
+        $jsonResponse = $this->sportsApingRequest($appKey, $sessionToken, 'listMarketBook', $params);
+        return $jsonResponse[0];
+    }
+
+    public function getEventDetails($appKey, $sessionToken, $marketId)
+    {
+        $params = '
+            {
+                "filter": {
+                    "marketIds":["' . $marketId . '"] 
+                }
+            }';
+        $jsonResponse = $this->sportsApingRequest($appKey, $sessionToken, 'listEvents', $params);
+        return $jsonResponse[0];
+    }
+
     public function sportsApingRequest($appKey, $sessionToken, $operation, $params)
     {
+
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, "https://api.betfair.com/exchange/betting/json-rpc/v1");
         curl_setopt($ch, CURLOPT_POST, 1);
@@ -59,12 +92,14 @@ class BetFairApi {
             '[{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/' . $operation . '", "params" :' . $params . ', "id": 1}]';
         curl_setopt($ch, CURLOPT_POSTFIELDS, $postData);
         $this->debug('Post Data: ' . $postData);
+
         $response = json_decode(curl_exec($ch));
         $this->debug('Response: ' . json_encode($response));
         curl_close($ch);
         if (isset($response[0]->error)) {
             $this->log( 'Call to api-ng failed: ' . "\n" );
             $this->log(  'Response: ' . json_encode($response));
+            return $response;
             exit(-1);
         } else {
             return $response;

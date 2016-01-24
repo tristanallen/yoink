@@ -14,16 +14,40 @@ class DonkeyController extends Controller
 
     public function index()
     {
+    
         $bf = new BetFairApi();
         $output = '';
 
         $user = BetFairUser::find(1);
+
         $SESSION_TOKEN = $user->betfair_session;
 
-        $output = $bf->getNextMarket($this->APP_KEY, $SESSION_TOKEN, $this->football_id);
-
         //$output = $this->testExample();
-        return view('welcome')->with('output', var_dump($output));
+        $aAllEventTypes = $bf->getAllEventTypes($this->APP_KEY, $SESSION_TOKEN);
+
+        $iFootballTypeId = $bf->extractFootballEventTypeId($aAllEventTypes);
+
+        $oNext_market = $bf->getNextMarket($this->APP_KEY, $SESSION_TOKEN, $iFootballTypeId);
+
+        foreach ($oNext_market->result as $key => &$oNext) {
+            if($oNext->totalMatched > 0){
+                $oBook =  $bf->getMarketBook($this->APP_KEY, $SESSION_TOKEN, $oNext->marketId);
+                $oEvent = $bf->getEventDetails($this->APP_KEY, $SESSION_TOKEN, $oNext->marketId);
+                $oNext->event =$oEvent->result;
+                $oNext->book = $oBook->result;
+            }
+            else{
+                unset($oNext_market->result[$key]);
+            }
+        }
+
+
+        $aOutput = [];
+        $aOutput['event_types'] = $aAllEventTypes;
+        $aOutput['football_id'] = $iFootballTypeId;
+        $aOutput['next_market'] = $oNext_market->result;
+
+        return view('welcome')->with('output', $aOutput);
     }
     public function testExample()
     {
