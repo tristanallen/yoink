@@ -29,13 +29,13 @@
 				    				<td>{{ $odds['name']}}</td>
 
 				    				<td>
-				    					@if(!empty($odds['availableToLay'][$k]))
-				    						{{ $odds['availableToLay'][$k]->size }}
+				    					@if(!empty($odds['availableToLay']))
+				    						{{ $odds['availableToLay']->size }}
 				    					@endIf
 				    				</td>
 				    				<td>
-				    					@if(!empty($odds['availableToLay'][$k]))
-				    						{{ $odds['availableToLay'][$k]->price }}
+				    					@if(!empty($odds['availableToLay']))
+				    						{{ $odds['availableToLay']->price }}
 				    					@endIf
 				    				</td>
 				   				</tr>
