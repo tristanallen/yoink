@@ -15,14 +15,25 @@ class DonkeyController extends Controller
     public function index()
     {
     
-        $bf = new BetFairApi();
-        $output = '';
-
         $user = BetFairUser::find(1);
 
         $SESSION_TOKEN = $user->betfair_session;
+       
+        $aOutput = [];
+        $aOutput['next_market'] = $this->getNextMarketStats($SESSION_TOKEN);
 
-        //$output = $this->testExample();
+        return view('welcome')->with('output', $aOutput);
+    }
+
+    /**
+    * returns next availaable market with its event deatils and runners
+    **/
+    public function getNextMarketStats($psSESSION_TOKEN){
+
+        $bf = new BetFairApi();
+
+        $SESSION_TOKEN = $psSESSION_TOKEN;
+
         $aAllEventTypes = $bf->getAllEventTypes($this->APP_KEY, $SESSION_TOKEN);
 
         $iFootballTypeId = $bf->extractFootballEventTypeId($aAllEventTypes);
@@ -34,53 +45,9 @@ class DonkeyController extends Controller
             $oNext->book = $oBook->result;
         }
 
-        $aOutput = [];
-        $aOutput['event_types'] = $aAllEventTypes;
-        $aOutput['football_id'] = $iFootballTypeId;
-        $aOutput['next_market'] = $oNext_market->result;
 
-        return view('welcome')->with('output', $aOutput);
-    }
-    public function testExample()
-    {
-        $bf = new BetFairApiExample();
-        $output = '';
+        return $oNext_market->result;
 
-        $user = BetFairUser::find(1);
-        $SESSION_TOKEN = $user->betfair_session;
-        //$SESSION_TOKEN = "Nq63RqWQTa7MfYjDrdPXlIej6cwtejeH63lue2QIFCs=";
-        //$SESSION_TOKEN = $this->login($APP_KEY);
-
-        //$output .= "Session Token: ".$SESSION_TOKEN."\n";
-        $output .= "1. Get all Event Types....<br>";
-        $allEventTypes = $bf->getAllEventTypes($this->APP_KEY, $SESSION_TOKEN);
-        foreach ($allEventTypes as $eType)
-        {
-            $output .= $eType->eventType->id." -> ".$eType->eventType->name."<br>";
-        }
-
-        $output .= "2. Extract Event Type Id for Horse Racing....<br>";
-
-        $horseRacingEventTypeId = $bf->extractHorseRacingEventTypeId($allEventTypes);
-        $output .= "3. EventTypeId for Horse Racing is: $horseRacingEventTypeId <br>";
-        $output .= "4. Get next horse racing market in the UK....<br>";
-
-        $nextHorseRacingMarket = $bf->getNextUkHorseRacingMarket($this->$APP_KEY, $SESSION_TOKEN, $horseRacingEventTypeId);
-        echo "5. Print static marketId, name and runners....<br>";
-        $bf->printMarketIdAndRunners($nextHorseRacingMarket);
-
-        echo "\n6. Get volatile info for Market including best 3 exchange prices available...\n";
-        $marketBook = $bf->getMarketBook($APP_KEY, $SESSION_TOKEN, $nextHorseRacingMarket->marketId);
-        echo "\n7. Print volatile price data along with static runner info....\n";
-        $bf->printMarketIdRunnersAndPrices($nextHorseRacingMarket, $marketBook);
-
-
-        /*echo "\n\n8. Place a bet below minimum stake to prevent the bet actually being placed....\n";
-        $betResult = placeBet($APP_KEY, $SESSION_TOKEN, $nextHorseRacingMarket->marketId, $nextHorseRacingMarket->runners[0]->selectionId);
-        echo "\n9. Print result of bet....\n\n";*/
-        //printBetResult($betResult);
-
-        return $output;
     }
 
     public function login($userId){

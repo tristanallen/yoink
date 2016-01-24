@@ -31,8 +31,7 @@
 							        				@if(is_object($runner))
 							        					<ul>
 							        					@forEach($runner as $r => $run)
-							        			
-
+							        		
 							        						<li><strong>{{$r}}:</strong>
 							        							<ul>
 							        								@forEach($run as $j => $ru)
@@ -65,12 +64,7 @@
 					
 				</ul>	
 		    @endforeach
-		    <div class="row">
-		    	<h1>event types</h1>
-		    	<p>{{var_dump( $output['event_types'])}}</p>
-		    	<h1>football id</h1>
-		    	<p>{{var_dump( $output['football_id'])}}</p>
-		    </div>
+		 
 		</div>
 	</div>
 @endsection

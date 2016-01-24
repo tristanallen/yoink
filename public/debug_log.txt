@@ -10669,3 +10669,345 @@ Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "pa
 
 Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639105","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":2,"numberOfActiveRunners":2,"totalMatched":0,"totalAvailable":191.92,"crossMatching":true,"runnersVoidable":false,"version":1217895457,"runners":[{"selectionId":47972,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.02,"size":139.4},{"price":1.01,"size":41.39}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":47973,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.01,"size":7.67}],"availableToLay":[{"price":110,"size":2.96}],"tradedVolume":[]}}]}],"id":1}]
 
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"eventType":{"id":"468328","name":"Handball"},"marketCount":16},{"eventType":{"id":"1","name":"Soccer"},"marketCount":8202},{"eventType":{"id":"2","name":"Tennis"},"marketCount":181},{"eventType":{"id":"6231","name":"Financial Bets"},"marketCount":4},{"eventType":{"id":"2378961","name":"Politics"},"marketCount":37},{"eventType":{"id":"3","name":"Golf"},"marketCount":46},{"eventType":{"id":"998917","name":"Volleyball"},"marketCount":73},{"eventType":{"id":"4","name":"Cricket"},"marketCount":246},{"eventType":{"id":"5","name":"Rugby Union"},"marketCount":59},{"eventType":{"id":"6","name":"Boxing"},"marketCount":35},{"eventType":{"id":"7","name":"Horse Racing"},"marketCount":258},{"eventType":{"id":"8","name":"Motor Sport"},"marketCount":4},{"eventType":{"id":"7524","name":"Ice Hockey"},"marketCount":414},{"eventType":{"id":"27589895","name":"Olympics 2016"},"marketCount":1},{"eventType":{"id":"10","name":"Special Bets"},"marketCount":75},{"eventType":{"id":"11","name":"Cycling"},"marketCount":7},{"eventType":{"id":"451485","name":"Winter Sports"},"marketCount":7},{"eventType":{"id":"26420387","name":"Mixed Martial Arts"},"marketCount":105},{"eventType":{"id":"3503","name":"Darts"},"marketCount":63},{"eventType":{"id":"136332","name":"Chess"},"marketCount":14},{"eventType":{"id":"7522","name":"Basketball"},"marketCount":301},{"eventType":{"id":"1477","name":"Rugby League"},"marketCount":49},{"eventType":{"id":"2152880","name":"Gaelic Games"},"marketCount":4},{"eventType":{"id":"6422","name":"Snooker"},"marketCount":115},{"eventType":{"id":"6423","name":"American Football"},"marketCount":106},{"eventType":{"id":"27388198","name":"Current Affairs"},"marketCount":1},{"eventType":{"id":"7511","name":"Baseball"},"marketCount":1},{"eventType":{"id":"4339","name":"Greyhound Racing"},"marketCount":90}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketCatalogue", "params" :
+            {
+                "filter":
+                    {
+                        "eventTypeIds":["1"],
+                        "marketCountries":["GB"],
+                        "marketStartTime":{"from":"2016-01-24T19:12:06+00:00"}
+                    },
+                    "sort":"FIRST_TO_START",
+                    "maxResults":"15",
+                    "marketProjection":["EVENT", "RUNNER_METADATA"],
+                    "marketTypeCodes" : ["MATCH_ODDS"]
+
+            }, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639059","marketName":"Match Odds","totalMatched":0,"runners":[{"selectionId":6843888,"runnerName":"Leicester U21","handicap":0,"sortPriority":1,"metadata":{"runnerId":"6843888"}},{"selectionId":6601837,"runnerName":"Middlesbrough U21","handicap":0,"sortPriority":2,"metadata":{"runnerId":"6601837"}},{"selectionId":58805,"runnerName":"The Draw","handicap":0,"sortPriority":3,"metadata":{"runnerId":"58805"}}],"event":{"id":"27658188","name":"Leicester U21 v Middlesbrough U21","countryCode":"GB","timezone":"Europe\/London","openDate":"2016-01-25T12:00:00.000Z"}},{"marketId":"1.122639060","marketName":"Over\/Under 2.5 Goals","totalMatched":0,"runners":[{"selectionId":47972,"runnerName":"Under 2.5 Goals","handicap":0,"sortPriority":1,"metadata":{"runnerId":"47972"}},{"selectionId":47973,"runnerName":"Over 2.5 Goals","handicap":0,"sortPriority":2,"metadata":{"runnerId":"47973"}}],"event":{"id":"27658188","name":"Leicester U21 v Middlesbrough U21","countryCode":"GB","timezone":"Europe\/London","openDate":"2016-01-25T12:00:00.000Z"}},{"marketId":"1.122639064","marketName":"Over\/Under 2.5 Goals","totalMatched":233.42,"runners":[{"selectionId":47972,"runnerName":"Under 2.5 Goals","handicap":0,"sortPriority":1,"metadata":{"runnerId":"47972"}},{"selectionId":47973,"runnerName":"Over 2.5 Goals","handicap":0,"sortPriority":2,"metadata":{"runnerId":"47973"}}],"event":{"id":"27658190","name":"Leeds U21 v Barnsley U21","countryCode":"GB","timezone":"Europe\/London","openDate":"2016-01-25T13:00:00.000Z"}},{"marketId":"1.122639063","marketName":"Match Odds","totalMatched":0,"runners":[{"selectionId":6867657,"runnerName":"Leeds U21","handicap":0,"sortPriority":1,"metadata":{"runnerId":"6867657"}},{"selectionId":6667038,"runnerName":"Barnsley U21","handicap":0,"sortPriority":2,"metadata":{"runnerId":"6667038"}},{"selectionId":58805,"runnerName":"The Draw","handicap":0,"sortPriority":3,"metadata":{"runnerId":"58805"}}],"event":{"id":"27658190","name":"Leeds U21 v Barnsley U21","countryCode":"GB","timezone":"Europe\/London","openDate":"2016-01-25T13:00:00.000Z"}},{"marketId":"1.122639062","marketName":"Over\/Under 2.5 Goals","totalMatched":233.42,"runners":[{"selectionId":47972,"runnerName":"Under 2.5 Goals","handicap":0,"sortPriority":1,"metadata":{"runnerId":"47972"}},{"selectionId":47973,"runnerName":"Over 2.5 Goals","handicap":0,"sortPriority":2,"metadata":{"runnerId":"47973"}}],"event":{"id":"27658189","name":"Crewe U21 v Nottm Forest U21","countryCode":"GB","timezone":"Europe\/London","openDate":"2016-01-25T13:00:00.000Z"}},{"marketId":"1.122639061","marketName":"Match Odds","totalMatched":0,"runners":[{"selectionId":6628863,"runnerName":"Crewe U21","handicap":0,"sortPriority":1,"metadata":{"runnerId":"6628863"}},{"selectionId":6815552,"runnerName":"Nottm Forest U21","handicap":0,"sortPriority":2,"metadata":{"runnerId":"6815552"}},{"selectionId":58805,"runnerName":"The Draw","handicap":0,"sortPriority":3,"metadata":{"runnerId":"58805"}}],"event":{"id":"27658189","name":"Crewe U21 v Nottm Forest U21","countryCode":"GB","timezone":"Europe\/London","openDate":"2016-01-25T13:00:00.000Z"}},{"marketId":"1.122639072","marketName":"Over\/Under 2.5 Goals","totalMatched":233.42,"runners":[{"selectionId":47972,"runnerName":"Under 2.5 Goals","handicap":0,"sortPriority":1,"metadata":{"runnerId":"47972"}},{"selectionId":47973,"runnerName":"Over 2.5 Goals","handicap":0,"sortPriority":2,"metadata":{"runnerId":"47973"}}],"event":{"id":"27658191","name":"C Palace U21 v Millwall U21","countryCode":"GB","timezone":"Europe\/London","openDate":"2016-01-25T14:00:00.000Z"}},{"marketId":"1.122639071","marketName":"Match Odds","totalMatched":0,"runners":[{"selectionId":6614440,"runnerName":"C Palace U21","handicap":0,"sortPriority":1,"metadata":{"runnerId":"6614440"}},{"selectionId":6751920,"runnerName":"Millwall U21","handicap":0,"sortPriority":2,"metadata":{"runnerId":"6751920"}},{"selectionId":58805,"runnerName":"The Draw","handicap":0,"sortPriority":3,"metadata":{"runnerId":"58805"}}],"event":{"id":"27658191","name":"C Palace U21 v Millwall U21","countryCode":"GB","timezone":"Europe\/London","openDate":"2016-01-25T14:00:00.000Z"}},{"marketId":"1.122639074","marketName":"Over\/Under 2.5 Goals","totalMatched":275.86,"runners":[{"selectionId":47972,"runnerName":"Under 2.5 Goals","handicap":0,"sortPriority":1,"metadata":{"runnerId":"47972"}},{"selectionId":47973,"runnerName":"Over 2.5 Goals","handicap":0,"sortPriority":2,"metadata":{"runnerId":"47973"}}],"event":{"id":"27658192","name":"Cardiff U21 v QPR U21","countryCode":"GB","timezone":"Europe\/London","openDate":"2016-01-25T19:00:00.000Z"}},{"marketId":"1.122639073","marketName":"Match Odds","totalMatched":0,"runners":[{"selectionId":6820449,"runnerName":"Cardiff U21","handicap":0,"sortPriority":1,"metadata":{"runnerId":"6820449"}},{"selectionId":6808103,"runnerName":"QPR U21","handicap":0,"sortPriority":2,"metadata":{"runnerId":"6808103"}},{"selectionId":58805,"runnerName":"The Draw","handicap":0,"sortPriority":3,"metadata":{"runnerId":"58805"}}],"event":{"id":"27658192","name":"Cardiff U21 v QPR U21","countryCode":"GB","timezone":"Europe\/London","openDate":"2016-01-25T19:00:00.000Z"}},{"marketId":"1.122639109","marketName":"Over\/Under 2.5 Goals","totalMatched":0,"runners":[{"selectionId":47972,"runnerName":"Under 2.5 Goals","handicap":0,"sortPriority":1,"metadata":{"runnerId":"47972"}},{"selectionId":47973,"runnerName":"Over 2.5 Goals","handicap":0,"sortPriority":2,"metadata":{"runnerId":"47973"}}],"event":{"id":"27658199","name":"Man Utd U21 v Sunderland U21","countryCode":"GB","timezone":"Europe\/London","openDate":"2016-01-25T19:00:00.000Z"}},{"marketId":"1.122639108","marketName":"Match Odds","totalMatched":0,"runners":[{"selectionId":6615321,"runnerName":"Man Utd U21","handicap":0,"sortPriority":1,"metadata":{"runnerId":"6615321"}},{"selectionId":6669730,"runnerName":"Sunderland U21","handicap":0,"sortPriority":2,"metadata":{"runnerId":"6669730"}},{"selectionId":58805,"runnerName":"The Draw","handicap":0,"sortPriority":3,"metadata":{"runnerId":"58805"}}],"event":{"id":"27658199","name":"Man Utd U21 v Sunderland U21","countryCode":"GB","timezone":"Europe\/London","openDate":"2016-01-25T19:00:00.000Z"}},{"marketId":"1.122639107","marketName":"Over\/Under 2.5 Goals","totalMatched":0,"runners":[{"selectionId":47972,"runnerName":"Under 2.5 Goals","handicap":0,"sortPriority":1,"metadata":{"runnerId":"47972"}},{"selectionId":47973,"runnerName":"Over 2.5 Goals","handicap":0,"sortPriority":2,"metadata":{"runnerId":"47973"}}],"event":{"id":"27658198","name":"Everton U21 v Southampton U21","countryCode":"GB","timezone":"Europe\/London","openDate":"2016-01-25T19:00:00.000Z"}},{"marketId":"1.122639106","marketName":"Match Odds","totalMatched":0,"runners":[{"selectionId":6689709,"runnerName":"Everton U21","handicap":0,"sortPriority":1,"metadata":{"runnerId":"6689709"}},{"selectionId":6728422,"runnerName":"Southampton U21","handicap":0,"sortPriority":2,"metadata":{"runnerId":"6728422"}},{"selectionId":58805,"runnerName":"The Draw","handicap":0,"sortPriority":3,"metadata":{"runnerId":"58805"}}],"event":{"id":"27658198","name":"Everton U21 v Southampton U21","countryCode":"GB","timezone":"Europe\/London","openDate":"2016-01-25T19:00:00.000Z"}},{"marketId":"1.122639105","marketName":"Over\/Under 2.5 Goals","totalMatched":0,"runners":[{"selectionId":47972,"runnerName":"Under 2.5 Goals","handicap":0,"sortPriority":1,"metadata":{"runnerId":"47972"}},{"selectionId":47973,"runnerName":"Over 2.5 Goals","handicap":0,"sortPriority":2,"metadata":{"runnerId":"47973"}}],"event":{"id":"27658197","name":"Newcastle U21 v Derby U21","countryCode":"GB","timezone":"Europe\/London","openDate":"2016-01-25T19:00:00.000Z"}}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :
+            {
+                "marketIds":["1.122639059"],
+                "currencyCode": "GBP",
+                "locale" : "en",
+                "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
+            }, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639059","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":3,"numberOfActiveRunners":3,"totalMatched":0,"totalAvailable":1221.18,"crossMatching":true,"runnersVoidable":false,"version":1217895425,"runners":[{"selectionId":6843888,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":10.51},{"price":1.02,"size":97.29},{"price":1.01,"size":349.04}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":6601837,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":10.51},{"price":1.02,"size":97.29},{"price":1.01,"size":349.04}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":58805,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.02,"size":10.2},{"price":1.01,"size":289.02}],"availableToLay":[{"price":950,"size":5.22}],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :
+            {
+                "marketIds":["1.122639060"],
+                "currencyCode": "GBP",
+                "locale" : "en",
+                "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
+            }, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639060","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":2,"numberOfActiveRunners":2,"totalMatched":0,"totalAvailable":431.6,"crossMatching":true,"runnersVoidable":false,"version":1217895421,"runners":[{"selectionId":47972,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.33,"size":18.73},{"price":1.06,"size":33.33},{"price":1.02,"size":28.03}],"availableToLay":[{"price":110,"size":9.67}],"tradedVolume":[]}},{"selectionId":47973,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":189.42},{"price":1.02,"size":100},{"price":1.01,"size":2}],"availableToLay":[{"price":110,"size":8.99}],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :
+            {
+                "marketIds":["1.122639064"],
+                "currencyCode": "GBP",
+                "locale" : "en",
+                "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
+            }, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639064","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":2,"numberOfActiveRunners":2,"lastMatchTime":"2016-01-23T20:44:37.212Z","totalMatched":233.42,"totalAvailable":1095.5,"crossMatching":true,"runnersVoidable":false,"version":1217895435,"runners":[{"selectionId":47972,"handicap":0,"status":"ACTIVE","lastPriceTraded":1.5,"totalMatched":0,"ex":{"availableToBack":[{"price":1.33,"size":18.73},{"price":1.14,"size":44.16},{"price":1.13,"size":44.16}],"availableToLay":[{"price":110,"size":9.67}],"tradedVolume":[]}},{"selectionId":47973,"handicap":0,"status":"ACTIVE","lastPriceTraded":3,"totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":189.42},{"price":1.02,"size":100},{"price":1.01,"size":2}],"availableToLay":[{"price":8.2,"size":12.27},{"price":9.4,"size":10.93},{"price":12.5,"size":12.93}],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :
+            {
+                "marketIds":["1.122639063"],
+                "currencyCode": "GBP",
+                "locale" : "en",
+                "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
+            }, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639063","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":3,"numberOfActiveRunners":3,"totalMatched":0,"totalAvailable":1251.47,"crossMatching":true,"runnersVoidable":false,"version":1217895423,"runners":[{"selectionId":6867657,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":10.51},{"price":1.02,"size":97.29},{"price":1.01,"size":349.04}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":6667038,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":10.51},{"price":1.02,"size":97.29},{"price":1.01,"size":349.04}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":58805,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.26,"size":30.29},{"price":1.02,"size":10.2},{"price":1.01,"size":289.02}],"availableToLay":[{"price":950,"size":5.22}],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :
+            {
+                "marketIds":["1.122639062"],
+                "currencyCode": "GBP",
+                "locale" : "en",
+                "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
+            }, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639062","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":2,"numberOfActiveRunners":2,"lastMatchTime":"2016-01-23T20:45:08.597Z","totalMatched":233.42,"totalAvailable":465.55,"crossMatching":true,"runnersVoidable":false,"version":1217895429,"runners":[{"selectionId":47972,"handicap":0,"status":"ACTIVE","lastPriceTraded":1.5,"totalMatched":0,"ex":{"availableToBack":[{"price":1.33,"size":18.73},{"price":1.06,"size":33.33},{"price":1.02,"size":28.03}],"availableToLay":[{"price":110,"size":9.67}],"tradedVolume":[]}},{"selectionId":47973,"handicap":0,"status":"ACTIVE","lastPriceTraded":3,"totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":189.42},{"price":1.02,"size":100},{"price":1.01,"size":2}],"availableToLay":[{"price":110,"size":9.3}],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :
+            {
+                "marketIds":["1.122639061"],
+                "currencyCode": "GBP",
+                "locale" : "en",
+                "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
+            }, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639061","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":3,"numberOfActiveRunners":3,"totalMatched":0,"totalAvailable":1251.47,"crossMatching":true,"runnersVoidable":false,"version":1217895422,"runners":[{"selectionId":6628863,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":10.51},{"price":1.02,"size":97.29},{"price":1.01,"size":349.04}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":6815552,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":10.51},{"price":1.02,"size":97.29},{"price":1.01,"size":349.04}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":58805,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.26,"size":30.29},{"price":1.02,"size":10.2},{"price":1.01,"size":289.02}],"availableToLay":[{"price":950,"size":5.22}],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :
+            {
+                "marketIds":["1.122639072"],
+                "currencyCode": "GBP",
+                "locale" : "en",
+                "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
+            }, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639072","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":2,"numberOfActiveRunners":2,"lastMatchTime":"2016-01-23T20:45:25.009Z","totalMatched":233.42,"totalAvailable":516.49,"crossMatching":true,"runnersVoidable":false,"version":1217895431,"runners":[{"selectionId":47972,"handicap":0,"status":"ACTIVE","lastPriceTraded":1.5,"totalMatched":0,"ex":{"availableToBack":[{"price":1.33,"size":18.73},{"price":1.06,"size":33.33},{"price":1.02,"size":28.03}],"availableToLay":[{"price":110,"size":9.67}],"tradedVolume":[]}},{"selectionId":47973,"handicap":0,"status":"ACTIVE","lastPriceTraded":3,"totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":189.42},{"price":1.02,"size":100},{"price":1.01,"size":2}],"availableToLay":[{"price":110,"size":9.76}],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :
+            {
+                "marketIds":["1.122639071"],
+                "currencyCode": "GBP",
+                "locale" : "en",
+                "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
+            }, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639071","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":3,"numberOfActiveRunners":3,"totalMatched":0,"totalAvailable":1251.47,"crossMatching":true,"runnersVoidable":false,"version":1217895433,"runners":[{"selectionId":6614440,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":10.51},{"price":1.02,"size":97.29},{"price":1.01,"size":349.04}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":6751920,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":10.51},{"price":1.02,"size":97.29},{"price":1.01,"size":349.04}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":58805,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.26,"size":30.29},{"price":1.02,"size":10.2},{"price":1.01,"size":289.02}],"availableToLay":[{"price":950,"size":5.22}],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :
+            {
+                "marketIds":["1.122639074"],
+                "currencyCode": "GBP",
+                "locale" : "en",
+                "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
+            }, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639074","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":2,"numberOfActiveRunners":2,"lastMatchTime":"2016-01-24T17:45:32.517Z","totalMatched":275.86,"totalAvailable":2890.72,"crossMatching":true,"runnersVoidable":false,"version":1217895442,"runners":[{"selectionId":47972,"handicap":0,"status":"ACTIVE","lastPriceTraded":4.2,"totalMatched":0,"ex":{"availableToBack":[{"price":1.33,"size":174.35},{"price":1.32,"size":155.61},{"price":1.14,"size":316.81}],"availableToLay":[{"price":7.8,"size":34.41},{"price":8.2,"size":32.45},{"price":110,"size":8.3}],"tradedVolume":[]}},{"selectionId":47973,"handicap":0,"status":"ACTIVE","lastPriceTraded":2.64,"totalMatched":0,"ex":{"availableToBack":[{"price":1.15,"size":233.42},{"price":1.14,"size":233.42},{"price":1.02,"size":100}],"availableToLay":[{"price":4.1,"size":56.61},{"price":4.2,"size":48.9},{"price":8,"size":38.55}],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :
+            {
+                "marketIds":["1.122639073"],
+                "currencyCode": "GBP",
+                "locale" : "en",
+                "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
+            }, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639073","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":3,"numberOfActiveRunners":3,"totalMatched":0,"totalAvailable":1251.47,"crossMatching":true,"runnersVoidable":false,"version":1217895428,"runners":[{"selectionId":6820449,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":10.51},{"price":1.02,"size":97.29},{"price":1.01,"size":349.04}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":6808103,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":10.51},{"price":1.02,"size":97.29},{"price":1.01,"size":349.04}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":58805,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.26,"size":30.29},{"price":1.02,"size":10.2},{"price":1.01,"size":289.02}],"availableToLay":[{"price":950,"size":5.22}],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :
+            {
+                "marketIds":["1.122639109"],
+                "currencyCode": "GBP",
+                "locale" : "en",
+                "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
+            }, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639109","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":2,"numberOfActiveRunners":2,"totalMatched":0,"totalAvailable":240.5,"crossMatching":true,"runnersVoidable":false,"version":1217895469,"runners":[{"selectionId":47972,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.33,"size":18.73},{"price":1.06,"size":33.33},{"price":1.02,"size":28.03}],"availableToLay":[{"price":110,"size":2.32}],"tradedVolume":[]}},{"selectionId":47973,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.02,"size":105.67},{"price":1.01,"size":2}],"availableToLay":[{"price":110,"size":8.99}],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :
+            {
+                "marketIds":["1.122639108"],
+                "currencyCode": "GBP",
+                "locale" : "en",
+                "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
+            }, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639108","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":3,"numberOfActiveRunners":3,"totalMatched":0,"totalAvailable":1251.47,"crossMatching":true,"runnersVoidable":false,"version":1217895461,"runners":[{"selectionId":6615321,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":10.51},{"price":1.02,"size":97.29},{"price":1.01,"size":349.04}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":6669730,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":10.51},{"price":1.02,"size":97.29},{"price":1.01,"size":349.04}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":58805,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.26,"size":30.29},{"price":1.02,"size":10.2},{"price":1.01,"size":289.02}],"availableToLay":[{"price":950,"size":5.22}],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :
+            {
+                "marketIds":["1.122639107"],
+                "currencyCode": "GBP",
+                "locale" : "en",
+                "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
+            }, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639107","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":2,"numberOfActiveRunners":2,"totalMatched":0,"totalAvailable":240.5,"crossMatching":true,"runnersVoidable":false,"version":1217895463,"runners":[{"selectionId":47972,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.33,"size":18.73},{"price":1.06,"size":33.33},{"price":1.02,"size":28.03}],"availableToLay":[{"price":110,"size":2.32}],"tradedVolume":[]}},{"selectionId":47973,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.02,"size":105.67},{"price":1.01,"size":2}],"availableToLay":[{"price":110,"size":8.99}],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :
+            {
+                "marketIds":["1.122639106"],
+                "currencyCode": "GBP",
+                "locale" : "en",
+                "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
+            }, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639106","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":3,"numberOfActiveRunners":3,"totalMatched":0,"totalAvailable":1251.47,"crossMatching":true,"runnersVoidable":false,"version":1217895455,"runners":[{"selectionId":6689709,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":10.51},{"price":1.02,"size":97.29},{"price":1.01,"size":349.04}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":6728422,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":10.51},{"price":1.02,"size":97.29},{"price":1.01,"size":349.04}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":58805,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.26,"size":30.29},{"price":1.02,"size":10.2},{"price":1.01,"size":289.02}],"availableToLay":[{"price":950,"size":5.22}],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :
+            {
+                "marketIds":["1.122639105"],
+                "currencyCode": "GBP",
+                "locale" : "en",
+                "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
+            }, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639105","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":2,"numberOfActiveRunners":2,"totalMatched":0,"totalAvailable":240.5,"crossMatching":true,"runnersVoidable":false,"version":1217895457,"runners":[{"selectionId":47972,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.33,"size":18.73},{"price":1.06,"size":33.33},{"price":1.02,"size":28.03}],"availableToLay":[{"price":110,"size":2.32}],"tradedVolume":[]}},{"selectionId":47973,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.02,"size":105.67},{"price":1.01,"size":2}],"availableToLay":[{"price":110,"size":8.99}],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listEventTypes", "params" :{"filter":{}}, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"eventType":{"id":"468328","name":"Handball"},"marketCount":16},{"eventType":{"id":"1","name":"Soccer"},"marketCount":8204},{"eventType":{"id":"2","name":"Tennis"},"marketCount":178},{"eventType":{"id":"6231","name":"Financial Bets"},"marketCount":4},{"eventType":{"id":"2378961","name":"Politics"},"marketCount":37},{"eventType":{"id":"3","name":"Golf"},"marketCount":46},{"eventType":{"id":"998917","name":"Volleyball"},"marketCount":73},{"eventType":{"id":"4","name":"Cricket"},"marketCount":246},{"eventType":{"id":"5","name":"Rugby Union"},"marketCount":59},{"eventType":{"id":"6","name":"Boxing"},"marketCount":35},{"eventType":{"id":"7","name":"Horse Racing"},"marketCount":258},{"eventType":{"id":"8","name":"Motor Sport"},"marketCount":4},{"eventType":{"id":"7524","name":"Ice Hockey"},"marketCount":414},{"eventType":{"id":"27589895","name":"Olympics 2016"},"marketCount":1},{"eventType":{"id":"10","name":"Special Bets"},"marketCount":75},{"eventType":{"id":"11","name":"Cycling"},"marketCount":7},{"eventType":{"id":"451485","name":"Winter Sports"},"marketCount":7},{"eventType":{"id":"26420387","name":"Mixed Martial Arts"},"marketCount":105},{"eventType":{"id":"3503","name":"Darts"},"marketCount":63},{"eventType":{"id":"136332","name":"Chess"},"marketCount":14},{"eventType":{"id":"7522","name":"Basketball"},"marketCount":301},{"eventType":{"id":"1477","name":"Rugby League"},"marketCount":49},{"eventType":{"id":"2152880","name":"Gaelic Games"},"marketCount":4},{"eventType":{"id":"6422","name":"Snooker"},"marketCount":115},{"eventType":{"id":"6423","name":"American Football"},"marketCount":106},{"eventType":{"id":"27388198","name":"Current Affairs"},"marketCount":1},{"eventType":{"id":"7511","name":"Baseball"},"marketCount":1},{"eventType":{"id":"4339","name":"Greyhound Racing"},"marketCount":90}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketCatalogue", "params" :
+            {
+                "filter":
+                    {
+                        "eventTypeIds":["1"],
+                        "marketCountries":["GB"],
+                        "marketStartTime":{"from":"2016-01-24T19:12:44+00:00"}
+                    },
+                    "sort":"FIRST_TO_START",
+                    "maxResults":"15",
+                    "marketProjection":["EVENT", "RUNNER_METADATA"],
+                    "marketTypeCodes" : ["MATCH_ODDS"]
+
+            }, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639059","marketName":"Match Odds","totalMatched":0,"runners":[{"selectionId":6843888,"runnerName":"Leicester U21","handicap":0,"sortPriority":1,"metadata":{"runnerId":"6843888"}},{"selectionId":6601837,"runnerName":"Middlesbrough U21","handicap":0,"sortPriority":2,"metadata":{"runnerId":"6601837"}},{"selectionId":58805,"runnerName":"The Draw","handicap":0,"sortPriority":3,"metadata":{"runnerId":"58805"}}],"event":{"id":"27658188","name":"Leicester U21 v Middlesbrough U21","countryCode":"GB","timezone":"Europe\/London","openDate":"2016-01-25T12:00:00.000Z"}},{"marketId":"1.122639060","marketName":"Over\/Under 2.5 Goals","totalMatched":0,"runners":[{"selectionId":47972,"runnerName":"Under 2.5 Goals","handicap":0,"sortPriority":1,"metadata":{"runnerId":"47972"}},{"selectionId":47973,"runnerName":"Over 2.5 Goals","handicap":0,"sortPriority":2,"metadata":{"runnerId":"47973"}}],"event":{"id":"27658188","name":"Leicester U21 v Middlesbrough U21","countryCode":"GB","timezone":"Europe\/London","openDate":"2016-01-25T12:00:00.000Z"}},{"marketId":"1.122639064","marketName":"Over\/Under 2.5 Goals","totalMatched":233.42,"runners":[{"selectionId":47972,"runnerName":"Under 2.5 Goals","handicap":0,"sortPriority":1,"metadata":{"runnerId":"47972"}},{"selectionId":47973,"runnerName":"Over 2.5 Goals","handicap":0,"sortPriority":2,"metadata":{"runnerId":"47973"}}],"event":{"id":"27658190","name":"Leeds U21 v Barnsley U21","countryCode":"GB","timezone":"Europe\/London","openDate":"2016-01-25T13:00:00.000Z"}},{"marketId":"1.122639063","marketName":"Match Odds","totalMatched":0,"runners":[{"selectionId":6867657,"runnerName":"Leeds U21","handicap":0,"sortPriority":1,"metadata":{"runnerId":"6867657"}},{"selectionId":6667038,"runnerName":"Barnsley U21","handicap":0,"sortPriority":2,"metadata":{"runnerId":"6667038"}},{"selectionId":58805,"runnerName":"The Draw","handicap":0,"sortPriority":3,"metadata":{"runnerId":"58805"}}],"event":{"id":"27658190","name":"Leeds U21 v Barnsley U21","countryCode":"GB","timezone":"Europe\/London","openDate":"2016-01-25T13:00:00.000Z"}},{"marketId":"1.122639062","marketName":"Over\/Under 2.5 Goals","totalMatched":233.42,"runners":[{"selectionId":47972,"runnerName":"Under 2.5 Goals","handicap":0,"sortPriority":1,"metadata":{"runnerId":"47972"}},{"selectionId":47973,"runnerName":"Over 2.5 Goals","handicap":0,"sortPriority":2,"metadata":{"runnerId":"47973"}}],"event":{"id":"27658189","name":"Crewe U21 v Nottm Forest U21","countryCode":"GB","timezone":"Europe\/London","openDate":"2016-01-25T13:00:00.000Z"}},{"marketId":"1.122639061","marketName":"Match Odds","totalMatched":0,"runners":[{"selectionId":6628863,"runnerName":"Crewe U21","handicap":0,"sortPriority":1,"metadata":{"runnerId":"6628863"}},{"selectionId":6815552,"runnerName":"Nottm Forest U21","handicap":0,"sortPriority":2,"metadata":{"runnerId":"6815552"}},{"selectionId":58805,"runnerName":"The Draw","handicap":0,"sortPriority":3,"metadata":{"runnerId":"58805"}}],"event":{"id":"27658189","name":"Crewe U21 v Nottm Forest U21","countryCode":"GB","timezone":"Europe\/London","openDate":"2016-01-25T13:00:00.000Z"}},{"marketId":"1.122639072","marketName":"Over\/Under 2.5 Goals","totalMatched":233.42,"runners":[{"selectionId":47972,"runnerName":"Under 2.5 Goals","handicap":0,"sortPriority":1,"metadata":{"runnerId":"47972"}},{"selectionId":47973,"runnerName":"Over 2.5 Goals","handicap":0,"sortPriority":2,"metadata":{"runnerId":"47973"}}],"event":{"id":"27658191","name":"C Palace U21 v Millwall U21","countryCode":"GB","timezone":"Europe\/London","openDate":"2016-01-25T14:00:00.000Z"}},{"marketId":"1.122639071","marketName":"Match Odds","totalMatched":0,"runners":[{"selectionId":6614440,"runnerName":"C Palace U21","handicap":0,"sortPriority":1,"metadata":{"runnerId":"6614440"}},{"selectionId":6751920,"runnerName":"Millwall U21","handicap":0,"sortPriority":2,"metadata":{"runnerId":"6751920"}},{"selectionId":58805,"runnerName":"The Draw","handicap":0,"sortPriority":3,"metadata":{"runnerId":"58805"}}],"event":{"id":"27658191","name":"C Palace U21 v Millwall U21","countryCode":"GB","timezone":"Europe\/London","openDate":"2016-01-25T14:00:00.000Z"}},{"marketId":"1.122639074","marketName":"Over\/Under 2.5 Goals","totalMatched":275.86,"runners":[{"selectionId":47972,"runnerName":"Under 2.5 Goals","handicap":0,"sortPriority":1,"metadata":{"runnerId":"47972"}},{"selectionId":47973,"runnerName":"Over 2.5 Goals","handicap":0,"sortPriority":2,"metadata":{"runnerId":"47973"}}],"event":{"id":"27658192","name":"Cardiff U21 v QPR U21","countryCode":"GB","timezone":"Europe\/London","openDate":"2016-01-25T19:00:00.000Z"}},{"marketId":"1.122639073","marketName":"Match Odds","totalMatched":0,"runners":[{"selectionId":6820449,"runnerName":"Cardiff U21","handicap":0,"sortPriority":1,"metadata":{"runnerId":"6820449"}},{"selectionId":6808103,"runnerName":"QPR U21","handicap":0,"sortPriority":2,"metadata":{"runnerId":"6808103"}},{"selectionId":58805,"runnerName":"The Draw","handicap":0,"sortPriority":3,"metadata":{"runnerId":"58805"}}],"event":{"id":"27658192","name":"Cardiff U21 v QPR U21","countryCode":"GB","timezone":"Europe\/London","openDate":"2016-01-25T19:00:00.000Z"}},{"marketId":"1.122639109","marketName":"Over\/Under 2.5 Goals","totalMatched":0,"runners":[{"selectionId":47972,"runnerName":"Under 2.5 Goals","handicap":0,"sortPriority":1,"metadata":{"runnerId":"47972"}},{"selectionId":47973,"runnerName":"Over 2.5 Goals","handicap":0,"sortPriority":2,"metadata":{"runnerId":"47973"}}],"event":{"id":"27658199","name":"Man Utd U21 v Sunderland U21","countryCode":"GB","timezone":"Europe\/London","openDate":"2016-01-25T19:00:00.000Z"}},{"marketId":"1.122639108","marketName":"Match Odds","totalMatched":0,"runners":[{"selectionId":6615321,"runnerName":"Man Utd U21","handicap":0,"sortPriority":1,"metadata":{"runnerId":"6615321"}},{"selectionId":6669730,"runnerName":"Sunderland U21","handicap":0,"sortPriority":2,"metadata":{"runnerId":"6669730"}},{"selectionId":58805,"runnerName":"The Draw","handicap":0,"sortPriority":3,"metadata":{"runnerId":"58805"}}],"event":{"id":"27658199","name":"Man Utd U21 v Sunderland U21","countryCode":"GB","timezone":"Europe\/London","openDate":"2016-01-25T19:00:00.000Z"}},{"marketId":"1.122639107","marketName":"Over\/Under 2.5 Goals","totalMatched":0,"runners":[{"selectionId":47972,"runnerName":"Under 2.5 Goals","handicap":0,"sortPriority":1,"metadata":{"runnerId":"47972"}},{"selectionId":47973,"runnerName":"Over 2.5 Goals","handicap":0,"sortPriority":2,"metadata":{"runnerId":"47973"}}],"event":{"id":"27658198","name":"Everton U21 v Southampton U21","countryCode":"GB","timezone":"Europe\/London","openDate":"2016-01-25T19:00:00.000Z"}},{"marketId":"1.122639106","marketName":"Match Odds","totalMatched":0,"runners":[{"selectionId":6689709,"runnerName":"Everton U21","handicap":0,"sortPriority":1,"metadata":{"runnerId":"6689709"}},{"selectionId":6728422,"runnerName":"Southampton U21","handicap":0,"sortPriority":2,"metadata":{"runnerId":"6728422"}},{"selectionId":58805,"runnerName":"The Draw","handicap":0,"sortPriority":3,"metadata":{"runnerId":"58805"}}],"event":{"id":"27658198","name":"Everton U21 v Southampton U21","countryCode":"GB","timezone":"Europe\/London","openDate":"2016-01-25T19:00:00.000Z"}},{"marketId":"1.122639105","marketName":"Over\/Under 2.5 Goals","totalMatched":0,"runners":[{"selectionId":47972,"runnerName":"Under 2.5 Goals","handicap":0,"sortPriority":1,"metadata":{"runnerId":"47972"}},{"selectionId":47973,"runnerName":"Over 2.5 Goals","handicap":0,"sortPriority":2,"metadata":{"runnerId":"47973"}}],"event":{"id":"27658197","name":"Newcastle U21 v Derby U21","countryCode":"GB","timezone":"Europe\/London","openDate":"2016-01-25T19:00:00.000Z"}}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :
+            {
+                "marketIds":["1.122639059"],
+                "currencyCode": "GBP",
+                "locale" : "en",
+                "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
+            }, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639059","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":3,"numberOfActiveRunners":3,"totalMatched":0,"totalAvailable":1221.18,"crossMatching":true,"runnersVoidable":false,"version":1217895425,"runners":[{"selectionId":6843888,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":10.51},{"price":1.02,"size":97.29},{"price":1.01,"size":349.04}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":6601837,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":10.51},{"price":1.02,"size":97.29},{"price":1.01,"size":349.04}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":58805,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.02,"size":10.2},{"price":1.01,"size":289.02}],"availableToLay":[{"price":950,"size":5.22}],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :
+            {
+                "marketIds":["1.122639060"],
+                "currencyCode": "GBP",
+                "locale" : "en",
+                "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
+            }, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639060","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":2,"numberOfActiveRunners":2,"totalMatched":0,"totalAvailable":431.6,"crossMatching":true,"runnersVoidable":false,"version":1217895421,"runners":[{"selectionId":47972,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.33,"size":18.73},{"price":1.06,"size":33.33},{"price":1.02,"size":28.03}],"availableToLay":[{"price":110,"size":9.67}],"tradedVolume":[]}},{"selectionId":47973,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":189.42},{"price":1.02,"size":100},{"price":1.01,"size":2}],"availableToLay":[{"price":110,"size":8.99}],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :
+            {
+                "marketIds":["1.122639064"],
+                "currencyCode": "GBP",
+                "locale" : "en",
+                "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
+            }, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639064","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":2,"numberOfActiveRunners":2,"lastMatchTime":"2016-01-23T20:44:37.212Z","totalMatched":233.42,"totalAvailable":1095.5,"crossMatching":true,"runnersVoidable":false,"version":1217895435,"runners":[{"selectionId":47972,"handicap":0,"status":"ACTIVE","lastPriceTraded":1.5,"totalMatched":0,"ex":{"availableToBack":[{"price":1.33,"size":18.73},{"price":1.14,"size":44.16},{"price":1.13,"size":44.16}],"availableToLay":[{"price":110,"size":9.67}],"tradedVolume":[]}},{"selectionId":47973,"handicap":0,"status":"ACTIVE","lastPriceTraded":3,"totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":189.42},{"price":1.02,"size":100},{"price":1.01,"size":2}],"availableToLay":[{"price":8.2,"size":12.27},{"price":9.4,"size":10.93},{"price":12.5,"size":12.93}],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :
+            {
+                "marketIds":["1.122639063"],
+                "currencyCode": "GBP",
+                "locale" : "en",
+                "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
+            }, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639063","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":3,"numberOfActiveRunners":3,"totalMatched":0,"totalAvailable":1251.47,"crossMatching":true,"runnersVoidable":false,"version":1217895423,"runners":[{"selectionId":6867657,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":10.51},{"price":1.02,"size":97.29},{"price":1.01,"size":349.04}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":6667038,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":10.51},{"price":1.02,"size":97.29},{"price":1.01,"size":349.04}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":58805,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.26,"size":30.29},{"price":1.02,"size":10.2},{"price":1.01,"size":289.02}],"availableToLay":[{"price":950,"size":5.22}],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :
+            {
+                "marketIds":["1.122639062"],
+                "currencyCode": "GBP",
+                "locale" : "en",
+                "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
+            }, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639062","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":2,"numberOfActiveRunners":2,"lastMatchTime":"2016-01-23T20:45:08.597Z","totalMatched":233.42,"totalAvailable":465.55,"crossMatching":true,"runnersVoidable":false,"version":1217895429,"runners":[{"selectionId":47972,"handicap":0,"status":"ACTIVE","lastPriceTraded":1.5,"totalMatched":0,"ex":{"availableToBack":[{"price":1.33,"size":18.73},{"price":1.06,"size":33.33},{"price":1.02,"size":28.03}],"availableToLay":[{"price":110,"size":9.67}],"tradedVolume":[]}},{"selectionId":47973,"handicap":0,"status":"ACTIVE","lastPriceTraded":3,"totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":189.42},{"price":1.02,"size":100},{"price":1.01,"size":2}],"availableToLay":[{"price":110,"size":9.3}],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :
+            {
+                "marketIds":["1.122639061"],
+                "currencyCode": "GBP",
+                "locale" : "en",
+                "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
+            }, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639061","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":3,"numberOfActiveRunners":3,"totalMatched":0,"totalAvailable":1251.47,"crossMatching":true,"runnersVoidable":false,"version":1217895422,"runners":[{"selectionId":6628863,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":10.51},{"price":1.02,"size":97.29},{"price":1.01,"size":349.04}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":6815552,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":10.51},{"price":1.02,"size":97.29},{"price":1.01,"size":349.04}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":58805,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.26,"size":30.29},{"price":1.02,"size":10.2},{"price":1.01,"size":289.02}],"availableToLay":[{"price":950,"size":5.22}],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :
+            {
+                "marketIds":["1.122639072"],
+                "currencyCode": "GBP",
+                "locale" : "en",
+                "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
+            }, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639072","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":2,"numberOfActiveRunners":2,"lastMatchTime":"2016-01-23T20:45:25.009Z","totalMatched":233.42,"totalAvailable":516.49,"crossMatching":true,"runnersVoidable":false,"version":1217895431,"runners":[{"selectionId":47972,"handicap":0,"status":"ACTIVE","lastPriceTraded":1.5,"totalMatched":0,"ex":{"availableToBack":[{"price":1.33,"size":18.73},{"price":1.06,"size":33.33},{"price":1.02,"size":28.03}],"availableToLay":[{"price":110,"size":9.67}],"tradedVolume":[]}},{"selectionId":47973,"handicap":0,"status":"ACTIVE","lastPriceTraded":3,"totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":189.42},{"price":1.02,"size":100},{"price":1.01,"size":2}],"availableToLay":[{"price":110,"size":9.76}],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :
+            {
+                "marketIds":["1.122639071"],
+                "currencyCode": "GBP",
+                "locale" : "en",
+                "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
+            }, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639071","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":3,"numberOfActiveRunners":3,"totalMatched":0,"totalAvailable":1251.47,"crossMatching":true,"runnersVoidable":false,"version":1217895433,"runners":[{"selectionId":6614440,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":10.51},{"price":1.02,"size":97.29},{"price":1.01,"size":349.04}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":6751920,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":10.51},{"price":1.02,"size":97.29},{"price":1.01,"size":349.04}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":58805,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.26,"size":30.29},{"price":1.02,"size":10.2},{"price":1.01,"size":289.02}],"availableToLay":[{"price":950,"size":5.22}],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :
+            {
+                "marketIds":["1.122639074"],
+                "currencyCode": "GBP",
+                "locale" : "en",
+                "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
+            }, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639074","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":2,"numberOfActiveRunners":2,"lastMatchTime":"2016-01-24T17:45:32.517Z","totalMatched":275.86,"totalAvailable":2890.72,"crossMatching":true,"runnersVoidable":false,"version":1217895442,"runners":[{"selectionId":47972,"handicap":0,"status":"ACTIVE","lastPriceTraded":4.2,"totalMatched":0,"ex":{"availableToBack":[{"price":1.33,"size":174.35},{"price":1.32,"size":155.61},{"price":1.14,"size":316.81}],"availableToLay":[{"price":7.8,"size":34.41},{"price":8.2,"size":32.45},{"price":110,"size":8.3}],"tradedVolume":[]}},{"selectionId":47973,"handicap":0,"status":"ACTIVE","lastPriceTraded":2.64,"totalMatched":0,"ex":{"availableToBack":[{"price":1.15,"size":233.42},{"price":1.14,"size":233.42},{"price":1.02,"size":100}],"availableToLay":[{"price":4.1,"size":56.61},{"price":4.2,"size":48.9},{"price":8,"size":38.55}],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :
+            {
+                "marketIds":["1.122639073"],
+                "currencyCode": "GBP",
+                "locale" : "en",
+                "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
+            }, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639073","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":3,"numberOfActiveRunners":3,"totalMatched":0,"totalAvailable":1251.47,"crossMatching":true,"runnersVoidable":false,"version":1217895428,"runners":[{"selectionId":6820449,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":10.51},{"price":1.02,"size":97.29},{"price":1.01,"size":349.04}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":6808103,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":10.51},{"price":1.02,"size":97.29},{"price":1.01,"size":349.04}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":58805,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.26,"size":30.29},{"price":1.02,"size":10.2},{"price":1.01,"size":289.02}],"availableToLay":[{"price":950,"size":5.22}],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :
+            {
+                "marketIds":["1.122639109"],
+                "currencyCode": "GBP",
+                "locale" : "en",
+                "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
+            }, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639109","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":2,"numberOfActiveRunners":2,"totalMatched":0,"totalAvailable":240.5,"crossMatching":true,"runnersVoidable":false,"version":1217895469,"runners":[{"selectionId":47972,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.33,"size":18.73},{"price":1.06,"size":33.33},{"price":1.02,"size":28.03}],"availableToLay":[{"price":110,"size":2.32}],"tradedVolume":[]}},{"selectionId":47973,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.02,"size":105.67},{"price":1.01,"size":2}],"availableToLay":[{"price":110,"size":8.99}],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :
+            {
+                "marketIds":["1.122639108"],
+                "currencyCode": "GBP",
+                "locale" : "en",
+                "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
+            }, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639108","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":3,"numberOfActiveRunners":3,"totalMatched":0,"totalAvailable":1251.47,"crossMatching":true,"runnersVoidable":false,"version":1217895461,"runners":[{"selectionId":6615321,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":10.51},{"price":1.02,"size":97.29},{"price":1.01,"size":349.04}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":6669730,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":10.51},{"price":1.02,"size":97.29},{"price":1.01,"size":349.04}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":58805,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.26,"size":30.29},{"price":1.02,"size":10.2},{"price":1.01,"size":289.02}],"availableToLay":[{"price":950,"size":5.22}],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :
+            {
+                "marketIds":["1.122639107"],
+                "currencyCode": "GBP",
+                "locale" : "en",
+                "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
+            }, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639107","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":2,"numberOfActiveRunners":2,"totalMatched":0,"totalAvailable":240.5,"crossMatching":true,"runnersVoidable":false,"version":1217895463,"runners":[{"selectionId":47972,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.33,"size":18.73},{"price":1.06,"size":33.33},{"price":1.02,"size":28.03}],"availableToLay":[{"price":110,"size":2.32}],"tradedVolume":[]}},{"selectionId":47973,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.02,"size":105.67},{"price":1.01,"size":2}],"availableToLay":[{"price":110,"size":8.99}],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :
+            {
+                "marketIds":["1.122639106"],
+                "currencyCode": "GBP",
+                "locale" : "en",
+                "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
+            }, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639106","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":3,"numberOfActiveRunners":3,"totalMatched":0,"totalAvailable":1251.47,"crossMatching":true,"runnersVoidable":false,"version":1217895455,"runners":[{"selectionId":6689709,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":10.51},{"price":1.02,"size":97.29},{"price":1.01,"size":349.04}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":6728422,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.04,"size":10.51},{"price":1.02,"size":97.29},{"price":1.01,"size":349.04}],"availableToLay":[],"tradedVolume":[]}},{"selectionId":58805,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.26,"size":30.29},{"price":1.02,"size":10.2},{"price":1.01,"size":289.02}],"availableToLay":[{"price":950,"size":5.22}],"tradedVolume":[]}}]}],"id":1}]
+
+Post Data: [{ "jsonrpc": "2.0", "method": "SportsAPING/v1.0/listMarketBook", "params" :
+            {
+                "marketIds":["1.122639105"],
+                "currencyCode": "GBP",
+                "locale" : "en",
+                "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
+            }, "id": 1}]
+
+Response: [{"jsonrpc":"2.0","result":[{"marketId":"1.122639105","isMarketDataDelayed":true,"status":"OPEN","betDelay":0,"bspReconciled":false,"complete":true,"inplay":false,"numberOfWinners":1,"numberOfRunners":2,"numberOfActiveRunners":2,"totalMatched":0,"totalAvailable":240.5,"crossMatching":true,"runnersVoidable":false,"version":1217895457,"runners":[{"selectionId":47972,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.33,"size":18.73},{"price":1.06,"size":33.33},{"price":1.02,"size":28.03}],"availableToLay":[{"price":110,"size":2.32}],"tradedVolume":[]}},{"selectionId":47973,"handicap":0,"status":"ACTIVE","totalMatched":0,"ex":{"availableToBack":[{"price":1.02,"size":105.67},{"price":1.01,"size":2}],"availableToLay":[{"price":110,"size":8.99}],"tradedVolume":[]}}]}],"id":1}]
+
