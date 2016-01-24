@@ -37,12 +37,13 @@ class BetFairApi {
                     {
                         "eventTypeIds":["' . $eventTypeId . '"],
                         "marketCountries":["GB"],
-                        "marketStartTime":{"from":"' . date('c') . '"}
+                        "marketStartTime":{"from":"' . date('c') . '"},
+                        "marketTypeCodes" : ["MATCH_ODDS"]
                     },
-                    "sort":"FIRST_TO_START",
-                    "maxResults":"15",
-                    "marketProjection":["EVENT", "RUNNER_METADATA"],
-                    "marketTypeCodes" : ["MATCH_ODDS"]
+
+                    "maxResults":"10",
+                    "marketProjection":["EVENT", "RUNNER_METADATA"]
+                    
 
             }';
 
@@ -58,7 +59,6 @@ class BetFairApi {
     /**
     * return pricing details for a given market
     **/
-
     public function getMarketBook($appKey, $sessionToken, $marketId)
     {
         $params = '

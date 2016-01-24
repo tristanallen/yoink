@@ -51,7 +51,7 @@ class DonkeyController extends Controller
             $aResult[$key]['bets'] = [];
             
             foreach ($oNext->runners as $k => $bet) {
-                if($bet->selectionId == $oBook[0]->runners[$k]->selectionId){
+                if($bet->selectionId == $oBook[0]->runners[$k]->selectionId && $bet->runnerName == 'The Draw'){
     
                     $aResult[$key]['bets'][$k]['id'] = $oBook[0]->runners[$k]->selectionId;
                     $aResult[$key]['bets'][$k]['name'] = $bet->runnerName;

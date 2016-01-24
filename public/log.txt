@@ -679,3 +679,35 @@ Getting event types:
 Getting event types: 
 Getting event types: 
 Getting event types: 
+Getting event types: 
+Getting event types: 
+Call to api-ng failed: 
+Response: [{"jsonrpc":"2.0","error":{"code":-32099,"message":"ANGX-0001","data":{"exceptionname":"APINGException","APINGException":{"errorDetails":"","errorCode":"TOO_MUCH_DATA","requestUUID":"prdang028-11240513-00cb104ac5"}}},"id":1}]Getting event types: 
+Getting event types: 
+Getting event types: 
+Getting event types: 
+Getting event types: 
+Getting event types: 
+Getting event types: 
+Getting event types: 
+Getting event types: 
+Call to api-ng failed: 
+Response: [{"jsonrpc":"2.0","error":{"code":-32099,"message":"ANGX-0003","data":{"exceptionname":"APINGException","APINGException":{"errorDetails":"","errorCode":"INVALID_SESSION_INFORMATION","requestUUID":"prdang008-11240513-00fc2cc773"}}},"id":1}]Getting event types: 
+Getting event types: 
+Getting event types: 
+Getting event types: 
+Getting event types: 
+Getting event types: 
+Getting event types: 
+Getting event types: 
+Getting event types: 
+Getting event types: 
+Getting event types: 
+Getting event types: 
+Getting event types: 
+Getting event types: 
+Getting event types: 
+Getting event types: 
+Getting event types: 
+Getting event types: 
+Getting event types: 

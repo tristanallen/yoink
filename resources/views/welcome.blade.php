@@ -8,9 +8,9 @@
      	<div class="row">
  	 @endIf		
 	    <div class="col-lg-6 ">		  
-		    	<div class="panel">
+		    	<div class="panel tracker">
 		    		<div class="panel-heading">
-			    		<h4>{{ $next_market['event']->name }} <small>({{  date( 'd-m-Y h:i:s' , strToTime($next_market['event']->openDate) )}})</small></h4>
+			    		<h4>{{ $next_market['event']->name }} <small>({{  date( 'd-m-Y H:i:s' , strToTime($next_market['event']->openDate) )}})</small></h4>
 			    		<h5>{{$next_market['marketName']}} <small>(market id: {{$next_market['marketId']}})</small></h5>
 			    	</div>
 			    	<div class="panel-body">
