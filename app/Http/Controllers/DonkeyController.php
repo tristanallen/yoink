@@ -6,6 +6,8 @@ use \Illuminate\Http\Request;
 use App\BetFairApi;
 use App\BetFairApiExample;
 use App\BetFairUser;
+use App\Models\Event;
+use App\Models\Market;
 
 class DonkeyController extends Controller
 {
@@ -73,8 +75,20 @@ class DonkeyController extends Controller
     }
 
     public function storeMarket(){
-        $market = $this->request->input('market');
-        dump($market);
+        $aMarket = $this->request->input('market');
+
+        $mMarket = Market::where('market_id', $aMarket['marketId'])->first();
+        dump($mMarket);
+
+        if( $mMarket == null )
+        {
+            Market::create([
+                'market_id' => $aMarket['marketId'],
+                'name' => $aMarket['marketName']
+            ]);
+        }
+
+        dump($aMarket);
         exit;
     }
 

@@ -1,6 +1,8 @@
-<?php
+<?php namespace App\Models;
 
-class Event extends Eloquent
+use Illuminate\Database\Eloquent\Model;
+
+class Event extends Model
 {
 
     protected $fillable = array(

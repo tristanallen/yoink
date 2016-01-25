@@ -1,6 +1,8 @@
-<?php
+<?php namespace App\Models;
 
-class Runner extends Eloquent
+use Illuminate\Database\Eloquent\Model;
+
+class Runner extends Model
 {
 
     protected $fillable = array(

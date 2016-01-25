@@ -1,10 +1,13 @@
-<?php
+<?php namespace App\Models;
 
-class Market extends Eloquent
+use Illuminate\Database\Eloquent\Model;
+
+class Market extends Model
 {
 
     protected $fillable = array(
         'id',
+        'market_id',
         'name',
     );
 
