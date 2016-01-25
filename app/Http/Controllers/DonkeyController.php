@@ -99,8 +99,6 @@ class DonkeyController extends Controller
         $aMarket = $this->request->input('market');
 
         $mMarket = Market::where('market_id', $aMarket['marketId'])->first();
-        dump($mMarket);
-
         if( $mMarket == null )
         {
             Market::create([
@@ -109,8 +107,7 @@ class DonkeyController extends Controller
             ]);
         }
 
-        dump($aMarket);
-        exit;
+        return response()->json(['market' => $mMarket]);
     }
 
     public function login($userId){
