@@ -19,25 +19,32 @@ class DonkeyController extends Controller
 
     public function index()
     {
-    
+
+        $SESSION_TOKEN = $this->getSessionToken();
+       
+        $aOutput = [];
+        $aOutput['next_market'] = $this->getNextMarketStats();
+
+        return view('welcome')->with('output', $aOutput);
+    }
+
+    public function getSessionToken(){
+
         $user = BetFairUser::find(1);
 
         $SESSION_TOKEN = $user->betfair_session;
-       
-        $aOutput = [];
-        $aOutput['next_market'] = $this->getNextMarketStats($SESSION_TOKEN);
 
-        return view('welcome')->with('output', $aOutput);
+        return $SESSION_TOKEN;
     }
 
     /**
     * returns next availaable market with its event deatils and runners
     **/
-    public function getNextMarketStats($psSESSION_TOKEN){
+    public function getNextMarketStats(){
 
         $bf = new BetFairApi();
 
-        $SESSION_TOKEN = $psSESSION_TOKEN;
+        $SESSION_TOKEN = $this->getSessionToken();;
 
         $aAllEventTypes = $bf->getAllEventTypes($this->APP_KEY, $SESSION_TOKEN);
 
@@ -48,13 +55,15 @@ class DonkeyController extends Controller
         $aResult = [];
 
         foreach ($oNext_market->result as $key => $oNext) {
-            $oBook =  $bf->getMarketBook($this->APP_KEY, $SESSION_TOKEN, $oNext->marketId);
-            $oBook = $oBook->result;
+        
             $aResult[$key]['marketId'] = $oNext->marketId; 
             $aResult[$key]['marketName'] = $oNext->marketName;
             $aResult[$key]['event'] = $oNext->event;
             $aResult[$key]['runner'] = [];
             
+            //$oBook =  $bf->getMarketBook($this->APP_KEY, $SESSION_TOKEN, $oNext->marketId);
+            $oBook = $this->getMarketBook($oNext->marketId);
+
             foreach ($oNext->runners as $k => $bet) {
                 if($bet->selectionId == $oBook[0]->runners[$k]->selectionId && $bet->runnerName == 'The Draw'){
                     $aRunnerBets = [];
@@ -70,6 +79,18 @@ class DonkeyController extends Controller
         }
 
         return $aResult;
+    }
+
+    public function getMarketBook($piMarketId){
+
+        $bf = new BetFairApi();
+
+        $SESSION_TOKEN = $this->getSessionToken();
+
+        $oBook =  $bf->getMarketBook($this->APP_KEY, $SESSION_TOKEN, $piMarketId);
+        $oBook = $oBook->result;
+        
+        return $oBook;
     }
 
     public function storeMarket(){
