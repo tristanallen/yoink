@@ -83,15 +83,19 @@ class DonkeyController extends Controller
         return $aResult;
     }
 
-    public function getMarketBook($piMarketId){
+
+    public function getMarketBook($piMarketId = null){
 
         $bf = new BetFairApi();
 
         $SESSION_TOKEN = $this->getSessionToken();
 
-        $oBook =  $bf->getMarketBook($this->APP_KEY, $SESSION_TOKEN, $piMarketId);
+        $iMarketId = isset($piMarketId) ? $piMarketId : (double)$this->request->input('marketId');
+
+        $oBook =  $bf->getMarketBook($this->APP_KEY, $SESSION_TOKEN, $iMarketId);
+
         $oBook = $oBook->result;
-        
+
         return $oBook;
     }
 
@@ -108,6 +112,20 @@ class DonkeyController extends Controller
         }
 
         return response()->json(['market' => $mMarket]);
+    }
+
+    public function getStoredMartkets(){
+
+        $mMarket = Market::all();
+
+        return view('stored-markets')->with('markets', $mMarket->toArray());
+    }
+
+    public function getStoredMarket($id){
+
+        $mMarket = Market::where('id', $id)->first();
+
+        return view('market')->with('market', $mMarket->toArray());
     }
 
     public function login($userId){
