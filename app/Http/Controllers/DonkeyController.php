@@ -8,6 +8,7 @@ use App\BetFairApiExample;
 use App\BetFairUser;
 use App\Models\Event;
 use App\Models\Market;
+use App\Models\Runner;
 
 class DonkeyController extends Controller
 {
@@ -101,11 +102,37 @@ class DonkeyController extends Controller
         $mMarket = Market::where('market_id', $aMarket['marketId'])->first();
         if( $mMarket == null )
         {
-            Market::create([
+            $mMarket = Market::create([
                 'market_id' => $aMarket['marketId'],
                 'name' => $aMarket['marketName']
             ]);
         }
+
+        $mEvent = Event::where('market_id', $mMarket->id)->where('date', $aMarket['event']['openDate'])->first();
+        if( $mEvent == null )
+        {
+            Event::create([
+                'id' => $aMarket['event']['id'],
+                'market_id' => $mMarket->id,
+                'name' => $aMarket['event']['name'],
+                'date' => $aMarket['event']['openDate']
+            ]);
+        }
+
+        $mRunner = Runner::where('market_id', $mMarket->id)->where('size', $aMarket['runner'][0]['availableToLay']['size'])->first();
+        if( $mRunner == null )
+        {
+            Runner::create([
+                'id' => $aMarket['runner'][0]['id'],
+                'market_id' => $mMarket->id,
+                'name' => $aMarket['runner'][0]['name'],
+                'size' => $aMarket['runner'][0]['availableToLay']['size'],
+                'price' => $aMarket['runner'][0]['availableToLay']['price']
+            ]);
+        }
+
+        dump($aMarket);
+        exit;
 
         return response()->json(['market' => $mMarket]);
     }

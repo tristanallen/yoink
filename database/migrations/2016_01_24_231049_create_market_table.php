@@ -13,12 +13,12 @@ class CreateMarketTable extends Migration
     public function up()
     {
         Schema::create('bf_markets', function (Blueprint $table) {
-        $table->increments('id');
-        $table->string('market_id');
-        $table->string('name');
-        $table->timestamps();
-    });
-        }
+            $table->increments('id');
+            $table->string('market_id');
+            $table->string('name');
+            $table->timestamps();
+        });
+    }
 
     /**
      * Reverse the migrations.
