@@ -11,6 +11,7 @@
                 </a>
                 <a href="saved-markets">
                    <i class="fa fa-thumb-tack"></i></i> <span>saved markets</span>
+               </a>
                 <!--
                 <ul class="treeview-menu">
                     <li class="active"><a href="/"><i class="fa fa-circle-o"></i> New markets</a></li>
