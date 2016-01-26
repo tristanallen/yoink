@@ -12,9 +12,16 @@
 */
 
 Route::resource('/', 'DonkeyController');
+
 Route::resource('/new-markets', 'DonkeyController');
+
+Route::resource('saved-markets', 'DonkeyController@getStoredMartkets');
+
+Route::get('market/{id}', 'DonkeyController@getStoredMarket');
 
 Route::get('/login/{user_id}', 'DonkeyController@login');
 
 Route::post('/store-market', 'DonkeyController@storeMarket');
+
+Route::post('get-bets', 'DonkeyController@getMarketBook');
 

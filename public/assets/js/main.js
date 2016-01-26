@@ -17,8 +17,12 @@ $.ajaxSetup({
 
 $(function(){
 
-    // initialise nav bar is nav bar exists
+   
     $('.tracker').exists(function() {
         new Tracker( this );
+    })
+
+     $('.get-bets').exists(function() {
+        new getBets( this );
     })
 })
