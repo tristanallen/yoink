@@ -18,6 +18,15 @@
 			    	</div>
 			    	<div class="panel-body">
 				    	latests odds
+				    	<table class="table table-striped table-bordered table-responsive">
+				    		<tr>
+				    			<th>selection id</th>
+				    			<th>size</th>
+				    			<th>price</th>
+				    			<th>status</th>
+				    		</tr>
+
+				    	</table>
 			    	</div>
 		    	</div>
 			</div>
