@@ -6,10 +6,10 @@
         <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
             <li class="active treeview">
-                <a href="new-markets">
+                <a href="/new-markets">
                     <i class="fa fa-dashboard"></i> <span>New markets</span> 
                 </a>
-                <a href="saved-markets">
+                <a href="/saved-markets">
                    <i class="fa fa-thumb-tack"></i></i> <span>saved markets</span>
                </a>
                 <!--

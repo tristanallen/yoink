@@ -32,16 +32,36 @@ getBets.prototype = {
 
             success: function (data) {
                 var table = self.btn.closest('.panel').find('.panel-body').find('table');
-                for(var i = 0; i < data[0].runners.length; ++i){
+                if(data[0].runners){
+                    for(var i = 0; i < data[0].runners.length; ++i){
 
-                    var availableToLay = data[0].runners[i].ex.availableToLay;
-                   console.log( data[0].runners[i]);
-                    for(var a = 0; a < availableToLay.length; ++a){
+                        var availableToLay = data[0].runners[i].ex.availableToLay;
+                        
+                        if(availableToLay.length){
+                            for(var a = 0; a < availableToLay.length; ++a){
 
-                        table.append('<tr><td>'+ data[0].runners[i].selectionId+'</td><td>'+availableToLay[a].size+'</td><td>'+availableToLay[a].price+'</td><td>'+ data[0].runners[i].status+'</td></tr>');
-                    };
+                                var html = '<tr><td>'+ data[0].runners[i].selectionId+'</td>';
+                                html = html+'<td>'+availableToLay[a].size+'</td>';
+                                html = html+'<td>'+availableToLay[a].price+'</td>';
+                                html = html+'<td>'+ data[0].runners[i].status+'</td></tr>';
+                                table.append(html);
+                            };
+                        }else{
+                             var html = '<tr><td>'+ data[0].runners[i].selectionId+'</td>';
+                                html = html+'<td>'+'</td>';
+                                html = html+'<td>'+'</td>';
+                                html = html+'<td>'+ data[0].runners[i].status+'</td></tr>';
+                                table.append(html);
+                
+                
+                        };
+                    }
+                
                     
+                    
+                
                 }
+                
                 self.pressedBtn.prop('disabled', true);
             },
 
