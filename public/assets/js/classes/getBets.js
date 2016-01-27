@@ -20,7 +20,7 @@ getBets.prototype = {
     },
     store: function(){
         var self = this;
-        $.ajax('/get-bets', {
+        $.ajax('/update-books', {
             type: "post",
             data: {
                 marketId : self.marketId

@@ -104,6 +104,7 @@ class DonkeyController extends Controller
         $aMarket = $this->request->input('market');
 
         $mMarket = Market::where('market_id', $aMarket['marketId'])->first();
+
         if( $mMarket == null )
         {
             $mMarket = Market::create([
@@ -169,6 +170,64 @@ class DonkeyController extends Controller
         $mMarket = Market::where('id', $id)->first();
 
         return view('market')->with('market', $mMarket->toArray());
+    }
+
+    /**
+    * stores odds for given market
+    **/
+    public function updateMarketBook( $poBook = null){
+
+        $dMarketId = (double)$this->request->input('marketId');
+
+        $mMarket = Market::where('market_id', $dMarketId)->first();
+
+        $oBook = $this->getMarketBook($dMarketId);
+
+        foreach ($oBook[0]->runners as $key => $value) {
+
+            $mExistingBook = Runner::where('market_id', $mMarket->id )->where('id' , $value->selectionId)->first();
+
+            if($mExistingBook){
+                foreach($value->ex->availableToLay as $lay ){
+                    //if( $lay->size != $mExistingBook->size && $lay->price != $mExistingBook->price && $value->status != $mExistingBook->status ){
+                        $runner = [
+                            'id' => $value->selectionId,
+                            'market_id' => $mExistingBook->market_id,
+                            'name' =>$mExistingBook->name,
+                            'status' => $value->status,
+                            'size' => $lay->size,
+                            'price' => $lay->price
+                        ];
+ 
+                        Runner::create([
+                           'id' => $runner['id'],
+                           'market_id' => $runner['market_id'],
+                           'name' => $runner['name'],
+                           'status' => $runner['status'],
+                           'size' => $runner['size'],
+                           'price' => $runner['price']
+                        ]);
+                    //}
+                    
+                };
+
+            }
+            
+            
+        }
+
+
+        /*
+        Runner::create([
+               'id' => $aMarket['runner'][0]['id'],
+               'market_id' => $mMarket->id,
+               'name' => $aMarket['runner'][0]['name'],
+               'status' => $aMarket['runner'][0]['status'],
+               'size' => $aMarket['runner'][0]['availableToLay']['size'],
+               'price' => $aMarket['runner'][0]['availableToLay']['price']
+            ]);
+        */    
+        exit;
     }
 
     public function login($userId){

@@ -25,3 +25,4 @@ Route::post('/store-market', 'DonkeyController@storeMarket');
 
 Route::post('get-bets', 'DonkeyController@getMarketBook');
 
+Route::post('update-books', 'DonkeyController@updateMarketBook');
