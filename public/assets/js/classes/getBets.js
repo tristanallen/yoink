@@ -32,6 +32,8 @@ getBets.prototype = {
             },
 
             success: function (data) {
+                console.log(data);
+                /*
                 var table = self.btn.closest('.panel').find('.panel-body').find('table');
                 if(data[0].runners){
                     for(var i = 0; i < data[0].runners.length; ++i){
@@ -62,10 +64,9 @@ getBets.prototype = {
                        
                     }
                 
-                    
-                    
                 
                 }
+                */
                 
                 self.pressedBtn.prop('disabled', true);
             },
@@ -76,7 +77,7 @@ getBets.prototype = {
 
             complete: function () {
                 // on success
-                self.pressedBtn.prop('disabled', false);
+                //self.pressedBtn.prop('disabled', false);
             }
         });
     },

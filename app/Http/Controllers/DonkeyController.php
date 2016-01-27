@@ -189,7 +189,7 @@ class DonkeyController extends Controller
 
             if($mExistingBook){
                 foreach($value->ex->availableToLay as $lay ){
-                    //if( $lay->size != $mExistingBook->size && $lay->price != $mExistingBook->price && $value->status != $mExistingBook->status ){
+                    if( $lay->size != $mExistingBook->size && $lay->price != $mExistingBook->price && $value->status != $mExistingBook->status ){
                         $runner = [
                             'id' => $value->selectionId,
                             'market_id' => $mExistingBook->market_id,
@@ -207,7 +207,7 @@ class DonkeyController extends Controller
                            'size' => $runner['size'],
                            'price' => $runner['price']
                         ]);
-                    //}
+                    }
                     
                 };
 
