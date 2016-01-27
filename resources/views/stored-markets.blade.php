@@ -29,6 +29,7 @@
 				    			<th>size</th>
 				    			<th>price</th>
 				   				<th>status</th>
+				   				<th>date stored</th>
 				    		</tr>	
 				    		@forEach($market['runner'] as $k => $odds)
 				    			@if(!empty($odds))
@@ -39,6 +40,7 @@
 				    				<td>{{$odds['size']}}</td>
 				    				<td>{{$odds['price']}}</td>
 									<td>{{$odds['status']}}</td>
+									<td>{{ date('d-m-Y h:i:s', strToTime($odds['created_at'])) }}</td>
 				   				</tr>
 				    		
 				    			@endIf
