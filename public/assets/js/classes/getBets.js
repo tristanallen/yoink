@@ -14,6 +14,7 @@ getBets.prototype = {
     getBets : function(e){
         this.pressedBtn = $(e.target);
         var market = this.pressedBtn.data('market'); 
+        this.runnerId = market.runner[0].id;
         this.marketId = market.market_id;
         this.store();
     },
@@ -36,25 +37,29 @@ getBets.prototype = {
                     for(var i = 0; i < data[0].runners.length; ++i){
 
                         var availableToLay = data[0].runners[i].ex.availableToLay;
-                        
-                        if(availableToLay.length){
-                            for(var a = 0; a < availableToLay.length; ++a){
+                        if(data[0].runners[i].selectionId == self.runnerId){
+                            if(availableToLay.length){
+                                for(var a = 0; a < availableToLay.length; ++a){
 
-                                var html = '<tr><td>'+ data[0].runners[i].selectionId+'</td>';
-                                html = html+'<td>'+availableToLay[a].size+'</td>';
-                                html = html+'<td>'+availableToLay[a].price+'</td>';
-                                html = html+'<td>'+ data[0].runners[i].status+'</td></tr>';
-                                table.append(html);
-                            };
-                        }else{
-                             var html = '<tr><td>'+ data[0].runners[i].selectionId+'</td>';
-                                html = html+'<td>'+'</td>';
-                                html = html+'<td>'+'</td>';
-                                html = html+'<td>'+ data[0].runners[i].status+'</td></tr>';
-                                table.append(html);
-                
-                
-                        };
+                                    var html = '<tr><td>'+ data[0].runners[i].selectionId+'</td>';
+                                    html = html+'<td></td>';
+                                    html = html+'<td>'+availableToLay[a].size+'</td>';
+                                    html = html+'<td>'+availableToLay[a].price+'</td>';
+                                    html = html+'<td>'+ data[0].runners[i].status+'</td></tr>';
+                                    table.append(html);
+                                };
+                            }else{
+                                 var html = '<tr><td>'+ data[0].runners[i].selectionId+'</td>';
+                                    html = html+'<td>'+'</td>';
+                                    html = html+'<td>'+'</td>';
+                                    html = html+'<td>'+'</td>';
+                                    html = html+'<td>'+ data[0].runners[i].status+'</td></tr>';
+                                    table.append(html);
+                    
+                    
+                            };    
+                        }
+                       
                     }
                 
                     

@@ -130,22 +130,38 @@ class DonkeyController extends Controller
                 'id' => $aMarket['runner'][0]['id'],
                 'market_id' => $mMarket->id,
                 'name' => $aMarket['runner'][0]['name'],
+                'status' => $aMarket['runner'][0]['status'],
                 'size' => $aMarket['runner'][0]['availableToLay']['size'],
                 'price' => $aMarket['runner'][0]['availableToLay']['price']
             ]);
         }
-
+        /*
         dump($aMarket);
         exit;
+        */
 
         return response()->json(['market' => $mMarket]);
     }
+
 
     public function getStoredMartkets(){
 
         $mMarket = Market::all();
 
-        return view('stored-markets')->with('markets', $mMarket->toArray());
+        $aMarket = $mMarket->toArray();
+        // todo : talk to tris about models as market_id in event and runners is the market pk but market has a market_id so is confusing
+        foreach ($aMarket as $key => &$market) {
+            $mEvent = Event::where('market_id', $market['id'])->first();
+            if( !empty($mEvent)){
+                $market['event'] = $mEvent->toArray();
+            }
+            $amRunner = Runner::where('market_id', $market['id'])->get();
+             if( !empty($amRunner)){
+                $market['runner'] = $amRunner->toArray();
+            }
+        }
+
+        return view('stored-markets')->with('markets', $aMarket);
     }
 
     public function getStoredMarket($id){
