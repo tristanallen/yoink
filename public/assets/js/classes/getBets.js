@@ -33,6 +33,7 @@ getBets.prototype = {
 
             success: function (data) {
                 console.log(data);
+                self.pressedBtn.prop('disabled', true);
                 /*
                 var table = self.btn.closest('.panel').find('.panel-body').find('table');
                 if(data[0].runners){
@@ -68,7 +69,7 @@ getBets.prototype = {
                 }
                 */
                 
-                self.pressedBtn.prop('disabled', true);
+                
             },
 
             error: function (XMLHttpRequest, textStatus, errorThrown) {
