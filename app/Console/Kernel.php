@@ -14,6 +14,8 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         \App\Console\Commands\Inspire::class,
+        \App\Console\Commands\NewMarkets::class,
+        \App\Console\Commands\NewBfSession::class,
     ];
 
     /**
@@ -26,5 +28,7 @@ class Kernel extends ConsoleKernel
     {
         $schedule->command('inspire')
                  ->hourly();
+        $schedule->command('get:newMarket')->everyMinute();
+        $schedule->command('bf:newSession')->twiceDaily(1, 13);
     }
 }

@@ -4,8 +4,7 @@ namespace App\Http\Controllers;
 
 use \Illuminate\Http\Request;
 use App\BetFairApi;
-use App\BetFairApiExample;
-use App\BetFairUser;
+use App\Models\BetFairUser;
 use App\Models\Event;
 use App\Models\Market;
 use App\Models\Runner;
@@ -55,33 +54,13 @@ class DonkeyController extends Controller
 
         $oNext_market = $bf->getNextMarket($this->APP_KEY, $SESSION_TOKEN, $iFootballTypeId);
 
-        $aResult = [];
+        foreach ($oNext_market as $key => &$oNext) {
 
-        foreach ($oNext_market->result as $key => $oNext) {
-        
-            $aResult[$key]['marketId'] = $oNext->marketId; 
-            $aResult[$key]['marketName'] = $oNext->marketName;
-            $aResult[$key]['event'] = $oNext->event;
-            $aResult[$key]['runner'] = [];
-            
-            //$oBook =  $bf->getMarketBook($this->APP_KEY, $SESSION_TOKEN, $oNext->marketId);
-            $oBook = $this->getMarketBook($oNext->marketId);
-
-            foreach ($oNext->runners as $k => $bet) {
-                if($bet->selectionId == $oBook[0]->runners[$k]->selectionId && $bet->runnerName == 'The Draw'){
-                    $aRunnerBets = [];
-                    $aRunnerBets['id'] = $oBook[0]->runners[$k]->selectionId;
-                    $aRunnerBets['name'] = $bet->runnerName;
-                    $aRunnerBets['availableToLay'] = !empty($oBook[0]->runners[$k]->ex->availableToLay[0]) ? $oBook[0]->runners[$k]->ex->availableToLay[0] : null;
-                    $aRunnerBets['status'] = $oBook[0]->runners[$k]->status;
-                    $aResult[$key]['runner'][] = $aRunnerBets;
-    
-                }
-                
-            }
+            $oBook =  $bf->getMarketBook($this->APP_KEY, $SESSION_TOKEN, $oNext['marketId']);
+            $oNext['runner'] = $oBook;
         }
 
-        return $aResult;
+        return $oNext_market;
     }
 
 
@@ -124,22 +103,22 @@ class DonkeyController extends Controller
             ]);
         }
 
-        $mRunner = Runner::where('market_id', $mMarket->id)->where('size', $aMarket['runner'][0]['availableToLay']['size'])->first();
-        if( $mRunner == null )
-        {
-            Runner::create([
-                'id' => $aMarket['runner'][0]['id'],
-                'market_id' => $mMarket->id,
-                'name' => $aMarket['runner'][0]['name'],
-                'status' => $aMarket['runner'][0]['status'],
-                'size' => $aMarket['runner'][0]['availableToLay']['size'],
-                'price' => $aMarket['runner'][0]['availableToLay']['price']
-            ]);
+        foreach($aMarket['runner'] as $runner){
+
+            $mRunner = Runner::where('market_id', $mMarket->id)->where('size',$runner['availableToLay']['size'])->first();
+
+            if( $mRunner == null )
+            {
+                Runner::create([
+                    'id' => $runner['id'],
+                    'market_id' => $mMarket->id,
+                    'name' => $runner['name'],
+                    'status' => $runner['status'],
+                    'size' => $runner['availableToLay']['size'],
+                    'price' => $runner['availableToLay']['price']
+                ]);
+            }
         }
-        /*
-        dump($aMarket);
-        exit;
-        */
 
         return response()->json(['market' => $mMarket]);
     }
@@ -195,7 +174,7 @@ class DonkeyController extends Controller
                             'id' => $value->selectionId,
                             'market_id' => $mExistingBook->market_id,
                             'name' =>$mExistingBook->name,
-                            'status' => $value->status,
+                            'status' => $oBook[0]->status,
                             'size' => $lay->size,
                             'price' => $lay->price
                         ];
@@ -208,6 +187,7 @@ class DonkeyController extends Controller
                            'size' => $runner['size'],
                            'price' => $runner['price']
                         ]);
+
                     //}
                     
                 };
@@ -228,41 +208,24 @@ class DonkeyController extends Controller
                'price' => $aMarket['runner'][0]['availableToLay']['price']
             ]);
         */    
-        exit;
+
     }
 
     public function login($userId){
 
         $user = BetFairUser::find($userId);
 
-        $postData = 'username='.$user->betfair_user.'&password='.$user->betfair_password;
-        //$postData = ["username"=>"furryfool", "password"=>"B3tting5ucks"];
+        $bf = new BetFairApi();
 
-        $output = '';
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, "https://identitysso.betfair.com/api/login");
-        curl_setopt($ch, CURLOPT_POST, 1);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $postData);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-        curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-            'X-Application: ' . $this->APP_KEY,
-            'Accept: application/json',
-            'Content-Type: application/x-www-form-urlencoded'
-        ));
-        $response = curl_exec($ch);
-        curl_close($ch);
-
-        $output .= 'Post Data: ' . $postData;
-        $output .= 'Response: ' . $response;
-
-        $decoded = json_decode($response);
+        $decoded = $bf->newSession($user);
 
         $user->betfair_session = $decoded->token;
         $user->save();
 
         return $decoded->token;
     }
+
+
 
 
 }
