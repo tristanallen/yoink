@@ -3,8 +3,17 @@
 <div class="row">
 	<div class="col-sm-12 ">	
     <!-- Small boxes (Stat box) -->
-    <div class="row">
+	<?php
+			$number = 0;
+	?>
      @foreach($markets as $key => $market)
+
+		 @if($number % 2 == 0)
+				<div class="row">
+		 @endif
+		<?php
+			++$number;
+		?>
 	
 		<div class="col-sm-6 ">		  
 		    	<div class="panel">
@@ -63,9 +72,13 @@
 		</div>
 
  	-->
-	
-	@endForEach
-	</div>
+
+		@if($number % 2 == 0)
+			</div>
+		@endif
+
+
+		@endForEach
 	</div>
 </div>	
 @endsection
