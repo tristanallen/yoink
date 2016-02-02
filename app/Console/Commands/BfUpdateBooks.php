@@ -51,7 +51,7 @@ class BfUpdateBooks extends Command
 
         $SESSION_TOKEN = $user->betfair_session;
 
-        $amEvent = Event::where('date', '>',  Carbon::now()->subHour())->where('date', '<',  Carbon::now()->addHour())->get();
+        $amEvent = Event::whereBetween('date', [Carbon::now()->subHour(), Carbon::now()->addHour()])->get();
 
         foreach($amEvent as $mEvent){
 
