@@ -9,6 +9,7 @@ class Market extends Model
         'id',
         'market_id',
         'name',
+        'json',
     );
 
     protected $table = 'bf_markets';

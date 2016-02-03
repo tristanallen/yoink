@@ -10,6 +10,7 @@ class Event extends Model
         'market_id',
         'name',
         'date',
+        'json'
     );
 
     protected $table = 'bf_events';

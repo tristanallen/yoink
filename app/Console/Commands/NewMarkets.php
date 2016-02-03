@@ -56,6 +56,7 @@ class NewMarkets extends Command
 
         $oNext_market = $bf->getNextMarket($this->APP_KEY, $SESSION_TOKEN, $iFootballTypeId);
 
+
         foreach ($oNext_market as $key => &$oNext) {
 
             $oBook =  $bf->getMarketBook($this->APP_KEY, $SESSION_TOKEN, $oNext['marketId']);
@@ -72,7 +73,8 @@ class NewMarkets extends Command
             {
                 $mMarket = Market::create([
                     'market_id' => $aMarket['marketId'],
-                    'name' => $aMarket['marketName']
+                    'name' => $aMarket['marketName'],
+                    'json' => $aMarket['json'],
                 ]);
             }
             $this->info('new market saved');
@@ -84,7 +86,8 @@ class NewMarkets extends Command
                     'id' => $aMarket['event']->id,
                     'market_id' => $mMarket->id,
                     'name' => $aMarket['event']->name,
-                    'date' => $aMarket['event']->openDate
+                    'date' => $aMarket['event']->openDate,
+                    'json' => json_encode($aMarket['event']),
                 ]);
             }
 
@@ -103,7 +106,8 @@ class NewMarkets extends Command
                         'name' => $runner['name'],
                         'status' => $runner['status'],
                         'size' => $runner['availableToLay']->size,
-                        'price' => $runner['availableToLay']->price
+                        'price' => $runner['availableToLay']->price,
+                        'json' => $runner['json'],
                     ]);
                 }
 

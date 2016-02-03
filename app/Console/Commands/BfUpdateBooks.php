@@ -71,6 +71,7 @@ class BfUpdateBooks extends Command
                         'market_id' => $mMarket->id,
                         'name' => $runner['name'],
                         'status' => $runner['status'],
+                        'json' => $runner['json'],
                         'size' => $runner['availableToLay']->size,
                         'price' => $runner['availableToLay']->price
                     ]);

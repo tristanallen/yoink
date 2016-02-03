@@ -62,8 +62,9 @@ class BetFairApi {
 
                 $aResult[$key]['marketId'] = $oNext->marketId;
                 $aResult[$key]['marketName'] = $oNext->marketName;
+                $aResult[$key]['json'] = json_encode($oNext);
                 $aResult[$key]['event'] = $oNext->event;
-                           }
+            }
 
             return $aResult;
 
@@ -97,6 +98,7 @@ class BetFairApi {
                     $aRunnerBets['name'] ='the draw';
                     $aRunnerBets['availableToLay'] = $lay;
                     $aRunnerBets['status'] = $runner->status;
+                    $aRunnerBets['json'] = json_encode($runner);
                     $aReturnArray[] = $aRunnerBets;
                 };
             }
