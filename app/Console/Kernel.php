@@ -27,10 +27,8 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('inspire')
-                 ->hourly();
         $schedule->command('get:newMarket')->hourly();
         $schedule->command('bf:updateBooks')->everyMinute();
-        $schedule->command('bf:newSession')->twiceDaily(1, 13);
+        $schedule->command('bf:newSession')->cron('0 */2 * * *'); // every 2 hours
     }
 }
