@@ -7,7 +7,8 @@ class Event extends Model
 
     protected $fillable = array(
         'id',
-        'market_id',
+        'market_pk',
+        'bf_event_id',
         'name',
         'date',
     );

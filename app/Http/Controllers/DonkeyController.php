@@ -47,7 +47,7 @@ class DonkeyController extends Controller
 
         $bf = new BetFairApi();
 
-        $SESSION_TOKEN = $this->getSessionToken();;
+        $SESSION_TOKEN = $this->getSessionToken();
 
         $aAllEventTypes = $bf->getAllEventTypes($this->APP_KEY, $SESSION_TOKEN);
 
@@ -100,42 +100,15 @@ class DonkeyController extends Controller
         return $oBook;
     }
 
+    public function storeAllMarkets()
+    {
+        $this->storeMarket();
+    }
+
     public function storeMarket(){
         $aMarket = $this->request->input('market');
 
-        $mMarket = Market::where('market_id', $aMarket['marketId'])->first();
-
-        if( $mMarket == null )
-        {
-            $mMarket = Market::create([
-                'market_id' => $aMarket['marketId'],
-                'name' => $aMarket['marketName']
-            ]);
-        }
-
-        $mEvent = Event::where('market_id', $mMarket->id)->where('date', $aMarket['event']['openDate'])->first();
-        if( $mEvent == null )
-        {
-            Event::create([
-                'id' => $aMarket['event']['id'],
-                'market_id' => $mMarket->id,
-                'name' => $aMarket['event']['name'],
-                'date' => $aMarket['event']['openDate']
-            ]);
-        }
-
-        $mRunner = Runner::where('market_id', $mMarket->id)->where('size', $aMarket['runner'][0]['availableToLay']['size'])->first();
-        if( $mRunner == null )
-        {
-            Runner::create([
-                'id' => $aMarket['runner'][0]['id'],
-                'market_id' => $mMarket->id,
-                'name' => $aMarket['runner'][0]['name'],
-                'status' => $aMarket['runner'][0]['status'],
-                'size' => $aMarket['runner'][0]['availableToLay']['size'],
-                'price' => $aMarket['runner'][0]['availableToLay']['price']
-            ]);
-        }
+        $mMarket = Market::storeMarket($aMarket);
         /*
         dump($aMarket);
         exit;
@@ -152,11 +125,11 @@ class DonkeyController extends Controller
         $aMarket = $mMarket->toArray();
         // todo : talk to tris about models as market_id in event and runners is the market pk but market has a market_id so is confusing
         foreach ($aMarket as $key => &$market) {
-            $mEvent = Event::where('market_id', $market['id'])->first();
+            $mEvent = Event::where('market_pk', $market['id'])->first();
             if( !empty($mEvent)){
                 $market['event'] = $mEvent->toArray();
             }
-            $amRunner = Runner::where('market_id', $market['id'])->get();
+            $amRunner = Runner::where('market_pk', $market['id'])->get();
              if( !empty($amRunner)){
                 $market['runner'] = $amRunner->toArray();
             }
@@ -179,21 +152,21 @@ class DonkeyController extends Controller
 
         $dMarketId = (double)$this->request->input('marketId');
 
-        $mMarket = Market::where('market_id', $dMarketId)->first();
+        $mMarket = Market::where('market_pk', $dMarketId)->first();
 
         $oBook = $this->getMarketBook($dMarketId);
 
         foreach ($oBook[0]->runners as $key => $value) {
 
-            $mExistingBook = Runner::where('market_id', $mMarket->id )->where('id' , $value->selectionId)->first();
+            $mExistingRunner = Runner::where('market_pk', $mMarket->id )->where('id' , $value->selectionId)->first();
 
-            if($mExistingBook){
+            if($mExistingRunner){
                 foreach($value->ex->availableToLay as $lay ){
-                    if( $lay->size != $mExistingBook->size && $lay->price != $mExistingBook->price && $value->status != $mExistingBook->status ){
+                    if( $lay->size != $mExistingRunner->size && $lay->price != $mExistingRunner->price && $value->status != $mExistingRunner->status ){
                         $runner = [
                             'id' => $value->selectionId,
-                            'market_id' => $mExistingBook->market_id,
-                            'name' =>$mExistingBook->name,
+                            'market_pk' => $mExistingRunner->market_pk,
+                            'name' =>$mExistingRunner->name,
                             'status' => $value->status,
                             'size' => $lay->size,
                             'price' => $lay->price
@@ -201,7 +174,7 @@ class DonkeyController extends Controller
  
                         Runner::create([
                            'id' => $runner['id'],
-                           'market_id' => $runner['market_id'],
+                           'market_pk' => $runner['market_pk'],
                            'name' => $runner['name'],
                            'status' => $runner['status'],
                            'size' => $runner['size'],
@@ -220,7 +193,7 @@ class DonkeyController extends Controller
         /*
         Runner::create([
                'id' => $aMarket['runner'][0]['id'],
-               'market_id' => $mMarket->id,
+               'market_pk' => $mMarket->id,
                'name' => $aMarket['runner'][0]['name'],
                'status' => $aMarket['runner'][0]['status'],
                'size' => $aMarket['runner'][0]['availableToLay']['size'],

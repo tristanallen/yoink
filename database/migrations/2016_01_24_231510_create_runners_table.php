@@ -13,8 +13,9 @@ class CreateRunnersTable extends Migration
     public function up()
     {
         Schema::create('bf_runners', function (Blueprint $table) {
-            $table->integer('id');
-            $table->integer('market_id');
+            $table->increments('id');
+            $table->integer('market_pk');
+            $table->integer('bf_runner_id');
             $table->string('name');
             $table->string('size');
             $table->string('price');

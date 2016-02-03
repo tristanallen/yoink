@@ -13,8 +13,9 @@ class CreateEventsTable extends Migration
     public function up()
     {
         Schema::create('bf_events', function (Blueprint $table) {
-            $table->integer('id');
-            $table->integer('market_id');
+            $table->increments('id');
+            $table->integer('market_pk');
+            $table->integer('bf_event_id');
             $table->string('name');
             $table->string('date');
             $table->timestamps();
