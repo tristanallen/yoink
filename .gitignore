@@ -6,3 +6,5 @@ Homestead.json
 .idea/
 public/debug_log.txt
 public/log.txt
+debug_log.txt
+log.txt

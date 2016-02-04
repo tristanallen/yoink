@@ -11,6 +11,7 @@ class Event extends Model
         'bf_event_id',
         'name',
         'date',
+        'json'
     );
 
     protected $table = 'bf_events';

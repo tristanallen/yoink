@@ -12,6 +12,7 @@ namespace App;
 class BetFairApi {
 
     private $DEBUG = true;
+    private $APP_KEY = "oxnRnsZGGOjOwj3L";
 
     public function getAllEventTypes($appKey, $sessionToken)
     {
@@ -49,10 +50,26 @@ class BetFairApi {
 
         $jsonResponse = $this->sportsApingRequest($appKey, $sessionToken, 'listMarketCatalogue', $params);
         
-        if (!array_key_exists(0,  $jsonResponse[0]->result))
+        if (!array_key_exists(0,  $jsonResponse[0]->result)){
             return 'No results!';
-        else
-            return $jsonResponse[0];
+        }
+        else{
+            $oNext_market =  $jsonResponse[0];
+
+            $aResult = [];
+            foreach ($oNext_market->result as $key => $oNext) {
+
+
+                $aResult[$key]['marketId'] = $oNext->marketId;
+                $aResult[$key]['marketName'] = $oNext->marketName;
+                $aResult[$key]['json'] = json_encode($oNext);
+                $aResult[$key]['event'] = $oNext->event;
+            }
+
+            return $aResult;
+
+        }
+
     }
 
 
@@ -69,7 +86,27 @@ class BetFairApi {
                 "priceProjection":{"priceData":["EX_BEST_OFFERS"]}
             }';
         $jsonResponse = $this->sportsApingRequest($appKey, $sessionToken, 'listMarketBook', $params);
-        return $jsonResponse[0];
+
+        $aReturnArray = [];
+        foreach ($jsonResponse[0]->result[0]->runners as $k => $runner) {
+
+            if($runner->selectionId == 58805){
+                foreach($runner->ex->availableToLay as $lay ){
+
+                    $aRunnerBets = [];
+                    $aRunnerBets['id'] = $runner->selectionId;
+                    $aRunnerBets['name'] ='the draw';
+                    $aRunnerBets['availableToLay'] = $lay;
+                    $aRunnerBets['status'] = $runner->status;
+                    $aRunnerBets['json'] = json_encode($runner);
+                    $aReturnArray[] = $aRunnerBets;
+                };
+            }
+
+
+        }
+
+        return $aReturnArray;
     }
 
     public function getEventDetails($appKey, $sessionToken, $marketId)
@@ -115,6 +152,33 @@ class BetFairApi {
             return $response;
         }
     }
+
+    /**
+     * @param $user
+     * @return mixed
+     */
+    public function newSession($user)
+    {
+        $postData = 'username=' . $user->betfair_user . '&password=' . $user->betfair_password;
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, "https://identitysso.betfair.com/api/login");
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $postData);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+            'X-Application: ' . $this->APP_KEY,
+            'Accept: application/json',
+            'Content-Type: application/x-www-form-urlencoded'
+        ));
+        $response = curl_exec($ch);
+        curl_close($ch);
+
+
+        $decoded = json_decode($response);
+        return $decoded;
+    }
+
     public function debug($debugString)
     {
         if ($this->DEBUG) {

@@ -12,7 +12,8 @@ class Runner extends Model
         'name',
         'size',
         'price',
-        'status'
+        'status',
+        'json'
     );
 
     protected $table = 'bf_runners';
