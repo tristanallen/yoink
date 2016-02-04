@@ -2,12 +2,15 @@
 
 namespace App\Console\Commands;
 
+use App\Models\AvailableToLay;
 use Illuminate\Console\Command;
 use App\BetFairApi;
 use App\Models\BetFairUser;
 use App\Models\Event;
 use App\Models\Market;
 use App\Models\Runner;
+use App\Models\BfAvailableToBack;
+use App\Models\BfAvailableToLay;
 
 class NewMarkets extends Command
 {
@@ -67,24 +70,23 @@ class NewMarkets extends Command
 
         foreach($oNext_market as $aMarket){
 
-            $mMarket = Market::where('market_id', $aMarket['marketId'])->first();
+            $mMarket = Market::where('bf_market_id', $aMarket['marketId'])->first();
 
             if( $mMarket == null )
             {
                 $mMarket = Market::create([
-                    'market_id' => $aMarket['marketId'],
+                    'bf_market_id' => $aMarket['marketId'],
                     'name' => $aMarket['marketName'],
                     'json' => $aMarket['json'],
                 ]);
             }
             $this->info('new market saved');
 
-            $mEvent = Event::where('market_id', $mMarket->id)->where('date', $aMarket['event']->openDate)->first();
+            $mEvent = Event::where('market_pk', $mMarket->id)->where('date', $aMarket['event']->openDate)->first();
             if( $mEvent == null )
             {
                 Event::create([
-                    'id' => $aMarket['event']->id,
-                    'market_id' => $mMarket->id,
+                    'market_pk' => $mMarket->id,
                     'name' => $aMarket['event']->name,
                     'date' => $aMarket['event']->openDate,
                     'json' => json_encode($aMarket['event']),
@@ -96,20 +98,38 @@ class NewMarkets extends Command
 
             foreach($aMarket['runner'] as $runner){
 
-                $mRunner = Runner::where('market_id', $mMarket->id)->where('size',$runner['availableToLay']->size)->where('size',$runner['availableToLay']->size)->where('status', $runner['status'])->first();
+
+                $mRunner = Runner::where('market_pk', $mMarket->id)->first();
 
                 if( $mRunner == null )
                 {
-                    Runner::create([
-                        'id' => $runner['id'],
-                        'market_id' => $mMarket->id,
+                    $mRunner = Runner::create([
+                        'bf_runner_id' => $runner['id'],
+                        'market_pk' => $mMarket->id,
                         'name' => $runner['name'],
                         'status' => $runner['status'],
-                        'size' => $runner['availableToLay']->size,
-                        'price' => $runner['availableToLay']->price,
                         'json' => $runner['json'],
                     ]);
+
+                    foreach($runner['availableToLay'] as $l => $lay){
+                        BfAvailableToLay::create([
+                            'runner_pk' =>  $mRunner->id,
+                            'size' => $lay['size'],
+                            'price' => $lay['price'],
+                        ]);
+                    }
+
+                    foreach($runner['availableToBack'] as $l => $back){
+                        BfAvailableToBack::create([
+                            'runner_pk' =>  $mRunner->id,
+                            'size' => $back['size'],
+                            'price' => $back['price'],
+                        ]);
+                    }
                 }
+
+
+
 
                 $this->info('new runner saved');
             }

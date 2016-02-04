@@ -91,16 +91,33 @@ class BetFairApi {
         foreach ($jsonResponse[0]->result[0]->runners as $k => $runner) {
 
             if($runner->selectionId == 58805){
-                foreach($runner->ex->availableToLay as $lay ){
 
-                    $aRunnerBets = [];
-                    $aRunnerBets['id'] = $runner->selectionId;
-                    $aRunnerBets['name'] ='the draw';
-                    $aRunnerBets['availableToLay'] = $lay;
-                    $aRunnerBets['status'] = $runner->status;
-                    $aRunnerBets['json'] = json_encode($runner);
-                    $aReturnArray[] = $aRunnerBets;
+                $aRunnerBets = [];
+                $aRunnerBets['id'] = $runner->selectionId;
+                $aRunnerBets['name'] ='the draw';
+
+                $aRunnerBets['status'] = $runner->status;
+                $aRunnerBets['json'] = json_encode($runner);
+
+
+                foreach($runner->ex->availableToLay as $k => $lay ){
+
+                    $aRunnerBets['availableToLay'][$k]['price'] = $lay->price;
+                    $aRunnerBets['availableToLay'][$k]['size'] = $lay->size;
+
+
                 };
+
+                foreach($runner->ex->availableToBack as $k => $back ){
+                    $aRunnerBets['availableToBack'][$k]['price'] = $back->price;
+                    $aRunnerBets['availableToBack'][$k]['size'] = $back->size;
+
+
+                };
+
+                $aReturnArray[] = $aRunnerBets;
+
+
             }
 
 

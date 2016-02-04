@@ -9,6 +9,8 @@ use App\Models\Event;
 use Carbon\Carbon;
 use App\Models\Market;
 use App\Models\Runner;
+use App\Models\BfAvailableToBack;
+use App\Models\BfAvailableToLay;
 
 class BfUpdateBooks extends Command
 {
@@ -51,16 +53,17 @@ class BfUpdateBooks extends Command
 
         $SESSION_TOKEN = $user->betfair_session;
 
-        $amEvent = Event::whereBetween('date', [Carbon::now()->subHour(), Carbon::now()->addHours(2)])->get();
+        $amEvent = Event::whereBetween('date', [Carbon::now()->subHour(), Carbon::now()->addHours(200)])->get();
 
         foreach($amEvent as $mEvent){
 
-            $mMarket = Market::where('id', $mEvent->market_id)->first();
+            $mMarket = Market::where('id', $mEvent->market_pk)->first();
 
-            $aBook =  $bf->getMarketBook($this->APP_KEY, $SESSION_TOKEN, $mMarket->market_id);
+            $aBook =  $bf->getMarketBook($this->APP_KEY, $SESSION_TOKEN, $mMarket->bf_market_id);
 
             foreach($aBook as $runner){
 
+                /*
                 $mRunner = Runner::where('market_id', $mMarket->id)->where('size',$runner['availableToLay']->size)->where('size',$runner['availableToLay']->size)->where('status', $runner['status'])->first();
 
                 if( $mRunner == null )
@@ -74,6 +77,30 @@ class BfUpdateBooks extends Command
                         'json' => $runner['json'],
                         'size' => $runner['availableToLay']->size,
                         'price' => $runner['availableToLay']->price
+                    ]);
+                }
+                */
+                $mRunner = Runner::create([
+                    'bf_runner_id' => $runner['id'],
+                    'market_pk' => $mMarket->id,
+                    'name' => $runner['name'],
+                    'status' => $runner['status'],
+                    'json' => $runner['json'],
+                ]);
+
+                foreach($runner['availableToLay'] as $l => $lay){
+                    BfAvailableToLay::create([
+                        'runner_pk' =>  $mRunner->id,
+                        'size' => $lay['size'],
+                        'price' => $lay['price'],
+                    ]);
+                }
+
+                foreach($runner['availableToBack'] as $l => $back){
+                    BfAvailableToBack::create([
+                        'runner_pk' =>  $mRunner->id,
+                        'size' => $back['size'],
+                        'price' => $back['price'],
                     ]);
                 }
             };

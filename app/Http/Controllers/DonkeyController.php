@@ -87,13 +87,7 @@ class DonkeyController extends Controller
     public function storeMarket(){
         $aMarket = $this->request->input('market');
 
-<<<<<<< HEAD
-        $mMarket = Market::storeMarket($aMarket);
-        /*
-        dump($aMarket);
-        exit;
-        */
-=======
+
         $mMarket = Market::where('market_id', $aMarket['marketId'])->first();
 
         if( $mMarket == null )
@@ -131,7 +125,6 @@ class DonkeyController extends Controller
                 ]);
             }
         }
->>>>>>> 86a418ce586b4a51003143d62da4971b98d7817f
 
         return response()->json(['market' => $mMarket]);
     }
@@ -181,14 +174,7 @@ class DonkeyController extends Controller
 
             if($mExistingRunner){
                 foreach($value->ex->availableToLay as $lay ){
-<<<<<<< HEAD
-                    if( $lay->size != $mExistingRunner->size && $lay->price != $mExistingRunner->price && $value->status != $mExistingRunner->status ){
-                        $runner = [
-                            'id' => $value->selectionId,
-                            'market_pk' => $mExistingRunner->market_pk,
-                            'name' =>$mExistingRunner->name,
-                            'status' => $value->status,
-=======
+
 
                     //if( $lay->size != $mExistingBook->size && $lay->price != $mExistingBook->price && $value->status != $mExistingBook->status ){
                         $runner = [
@@ -196,7 +182,6 @@ class DonkeyController extends Controller
                             'market_id' => $mExistingBook->market_id,
                             'name' =>$mExistingBook->name,
                             'status' => $oBook[0]->status,
->>>>>>> 86a418ce586b4a51003143d62da4971b98d7817f
                             'size' => $lay->size,
                             'price' => $lay->price
                         ];
