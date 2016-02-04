@@ -96,13 +96,13 @@ class NewMarkets extends Command
 
             $this->info('new event saved');
 
-            foreach($aMarket['runner'] as $runner){
-
+            foreach($aMarket['runner'] as $key => $runner){
 
                 $mRunner = Runner::where('market_pk', $mMarket->id)->first();
 
                 if( $mRunner == null )
                 {
+                    dump($mMarket->id);
                     $mRunner = Runner::create([
                         'bf_runner_id' => $runner['id'],
                         'market_pk' => $mMarket->id,
