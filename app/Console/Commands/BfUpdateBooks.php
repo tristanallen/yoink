@@ -53,10 +53,6 @@ class BfUpdateBooks extends Command
 
         $SESSION_TOKEN = $user->betfair_session;
 
-        dump(Carbon::now());
-        dump(Carbon::now(new DateTimeZone('Europe/London')));
-        exit;
-
         $amEvent = Event::whereBetween('date', [Carbon::now()->subMinutes(10), Carbon::now()->addHours(2)])->get();
 
         foreach($amEvent as $mEvent){
