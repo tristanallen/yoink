@@ -15,6 +15,7 @@ Route::resource('/', 'DonkeyController');
 
 Route::resource('/new-markets', 'DonkeyController');
 
+Route::get('saved-markets/{market_id}', 'DonkeyController@getStoredMarket');
 Route::resource('saved-markets', 'DonkeyController@getStoredMartkets');
 
 Route::get('market/{id}', 'DonkeyController@getStoredMarket');

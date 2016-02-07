@@ -154,8 +154,19 @@ class DonkeyController extends Controller
     public function getStoredMarket($id){
 
         $mMarket = Market::where('id', $id)->first();
+        $aMarket = $mMarket->toArray();
 
-        return view('market')->with('market', $mMarket->toArray());
+        $mEvent = Event::where('market_pk', $id)->first();
+        if( !empty($mEvent)){
+            $aMarket['event'] = $mEvent->toArray();
+        }
+        $amRunner = Runner::where('market_pk', $id)->with('Lays')->with('Backs')->get();
+
+        if( !empty($amRunner)){
+            $aMarket['runner'] = $amRunner->toArray();
+        }
+
+        return view('market')->with('market', $aMarket);
     }
 
     /**
