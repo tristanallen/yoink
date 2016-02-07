@@ -135,13 +135,14 @@ class DonkeyController extends Controller
         $mMarket = Market::all();
 
         $aMarket = $mMarket->toArray();
-        // todo : talk to tris about models as market_id in event and runners is the market pk but market has a market_id so is confusing
+
         foreach ($aMarket as $key => &$market) {
             $mEvent = Event::where('market_pk', $market['id'])->first();
             if( !empty($mEvent)){
                 $market['event'] = $mEvent->toArray();
             }
-            $amRunner = Runner::where('market_pk', $market['id'])->get();
+            $amRunner = Runner::where('market_pk', $market['id'])->with('Lays')->with('Backs')->get();
+
              if( !empty($amRunner)){
                 $market['runner'] = $amRunner->toArray();
             }

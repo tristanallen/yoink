@@ -102,7 +102,6 @@ class NewMarkets extends Command
 
                 if( $mRunner == null )
                 {
-                    dump($mMarket->id);
                     $mRunner = Runner::create([
                         'bf_runner_id' => $runner['id'],
                         'market_pk' => $mMarket->id,

@@ -18,4 +18,11 @@ class Runner extends Model
 
     protected $table = 'bf_runners';
 
+    public function lays(){
+        return $this->hasMany('App\Models\BfAvailableToLay', 'runner_pk', 'id');
+    }
+
+    public function backs(){
+        return $this->hasMany('App\Models\BfAvailableToBack', 'runner_pk', 'id');
+    }
 }
