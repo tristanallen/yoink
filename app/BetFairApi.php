@@ -198,14 +198,18 @@ class BetFairApi {
 
     public function debug($debugString)
     {
+        /*
         if ($this->DEBUG) {
             file_put_contents("debug_log.txt", $debugString."\n\n", FILE_APPEND | LOCK_EX);
         }
+        */
     }
     public function log($logString)
     {
+        /*
         if ($this->DEBUG) {
             file_put_contents("log.txt", $logString."", FILE_APPEND | LOCK_EX);
         }
+        */
     }
 }
