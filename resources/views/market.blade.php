@@ -18,9 +18,6 @@
 						<th>odds</th>
 					</tr>
 
-            </div><!-- /.col (LEFT) -->
-            <div class="col-md-6">
-              <!-- LINE CHART -->
               <div class="box box-info">
                 <div class="box-header with-border">
                   <h3 class="box-title">Line Chart</h3>
@@ -77,6 +74,13 @@
 			</div>
 		</div>
 
+		<script src="{{ asset('plugins/chartjs/Chart.js') }}"></script>
+		<script>
+			var data = JSON.parse( '<?php echo $chartData ?>' );
+			console.log(data);
+			var ctx = document.getElementById("lineChart").getContext("2d");
+			var myLineChart = new Chart(ctx).Line(data);
+		</script>
 
 	</div>
 </div>	
