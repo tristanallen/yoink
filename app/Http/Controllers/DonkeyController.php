@@ -173,22 +173,22 @@ class DonkeyController extends Controller
         $runnerLay = [];
         $runnerBack = [];
         foreach($aMarket['runner'] as $key => $runner){
-            if($runner['lays'][0]['price'] > 40){
-                if(array_key_exists(0, $runner['lays'])) {
-                    $runnerDate[] = [(date_diff($startDate, date_create($runner['lays'][0]['created_at']))->format('%i'))];
-                    $runnerLay[] = [$runner['lays'][0]['price']];
-                    $runnerBack[] = [$runner['backs'][0]['price']];
-                }
 
-                if (sizeof($runnerLay) > 1){
-                    if($runnerLay[sizeof($runnerLay)-1] == $runnerLay[sizeof($runnerLay)-2]  ) {
+            if(array_key_exists(0, $runner['lays']) && $runner['lays'][0]['price'] < 40) {
+                $runnerDate[] = [(date_diff($startDate, date_create($runner['lays'][0]['created_at']))->format('%i'))];
+                $runnerLay[] = [$runner['lays'][0]['price']];
+                $runnerBack[] = [$runner['backs'][0]['price']];
+            }
 
-                        array_pop($runnerDate);
-                        array_pop($runnerLay);
-                        array_pop($runnerBack);
-                    }
+            if (sizeof($runnerLay) > 1){
+                if($runnerLay[sizeof($runnerLay)-1] == $runnerLay[sizeof($runnerLay)-2]  ) {
+
+                    array_pop($runnerDate);
+                    array_pop($runnerLay);
+                    array_pop($runnerBack);
                 }
-            };
+            }
+
 
         }
 
