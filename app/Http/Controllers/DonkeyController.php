@@ -166,7 +166,56 @@ class DonkeyController extends Controller
             $aMarket['runner'] = $amRunner->toArray();
         }
 
-        return view('market')->with('market', $aMarket);
+        $startDate = date_create($aMarket['event']['date']);
+
+        $runnerDate = [];
+        $runnerLay = [];
+        $runnerBack = [];
+        foreach($aMarket['runner'] as $key => $runner){
+            if(array_key_exists(2, $runner['lays'])) {
+                $runnerDate[] = [(date_diff($startDate, date_create($runner['lays'][2]['created_at']))->format('%i'))];
+                $runnerLay[] = [$runner['lays'][2]['price']];
+                $runnerBack[] = [$runner['backs'][0]['price']];
+            }
+            if (sizeof($runnerLay) > 1){
+                if($runnerLay[sizeof($runnerLay)-1] == $runnerLay[sizeof($runnerLay)-2]) {
+                    array_pop($runnerDate);
+                    array_pop($runnerLay);
+                    array_pop($runnerBack);
+                }
+            }
+        }
+        //return var_dump($runner1);
+        //return var_dump($aMarket);
+
+        $chartData = [
+            'labels' => $runnerDate,
+				'datasets' => [
+					[
+                        'label' => 'LAY',
+						'fillColor'=> 'rgba(220,220,220,0.2)',
+						'strokeColor'=> 'rgba(220,220,220,1)',
+						'pointColor'=> 'rgba(220,220,220,1)',
+						'pointStrokeColor'=> '#fff',
+						'pointHighlightFill'=> '#fff',
+						'pointHighlightStroke'=> 'rgba(220,220,220,1)',
+						'data'=> $runnerLay
+					],
+                    [
+                        'label' => 'BACK',
+                        'fillColor'=> 'rgba(151,187,205,0.2)',
+                        'strokeColor'=> 'rgba(151,187,205,1)',
+                        'pointColor'=> 'rgba(151,187,205,1)',
+                        'pointStrokeColor'=> '#fff',
+                        'pointHighlightFill'=> '#fff',
+                        'pointHighlightStroke'=> 'rgba(151,187,205,1)',
+                        'data'=> $runnerBack
+                    ]
+
+				]
+			];
+
+        return view('market')->with('market', $aMarket)->with('chartData', json_encode($chartData));
     }
 
     /**
