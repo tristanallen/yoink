@@ -71,7 +71,7 @@
 <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
 
 
-{{--
+<!--
 
 <script>
 $.widget.bridge('uibutton', $.ui.button);
@@ -103,7 +103,7 @@ $.widget.bridge('uibutton', $.ui.button);
 <script src="{{ asset('dist/js/pages/dashboard.js') }}"></script>
 
 <script src="{{ asset('dist/js/demo.js') }}"></script>
---}}
+-->
 
 
 </body>
