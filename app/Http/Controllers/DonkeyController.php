@@ -141,6 +141,7 @@ class DonkeyController extends Controller
             if( !empty($mEvent)){
                 $market['event'] = $mEvent->toArray();
             }
+
             $amRunner = Runner::where('market_pk', $market['id'])->with('Lays')->with('Backs')->get();
 
              if( !empty($amRunner)){
@@ -172,9 +173,9 @@ class DonkeyController extends Controller
         $runnerLay = [];
         $runnerBack = [];
         foreach($aMarket['runner'] as $key => $runner){
-            if(array_key_exists(2, $runner['lays'])) {
-                $runnerDate[] = [(date_diff($startDate, date_create($runner['lays'][2]['created_at']))->format('%i'))];
-                $runnerLay[] = [$runner['lays'][2]['price']];
+            if(array_key_exists(0, $runner['lays'])) {
+                $runnerDate[] = [(date_diff($startDate, date_create($runner['lays'][0]['created_at']))->format('%i'))];
+                $runnerLay[] = [$runner['lays'][0]['price']];
                 $runnerBack[] = [$runner['backs'][0]['price']];
             }
             if (sizeof($runnerLay) > 1){
@@ -193,9 +194,9 @@ class DonkeyController extends Controller
 				'datasets' => [
 					[
                         'label' => 'LAY',
-						'fillColor'=> 'rgba(220,220,220,0.2)',
-						'strokeColor'=> 'rgba(220,220,220,1)',
-						'pointColor'=> 'rgba(220,220,220,1)',
+						'fillColor'=> 'rgba(255,255,255,0)',
+						'strokeColor'=> 'rgba(246, 148, 170, 1)',
+						'pointColor'=> 'rgba(246, 148, 170, 1)',
 						'pointStrokeColor'=> '#fff',
 						'pointHighlightFill'=> '#fff',
 						'pointHighlightStroke'=> 'rgba(220,220,220,1)',
@@ -203,9 +204,9 @@ class DonkeyController extends Controller
 					],
                     [
                         'label' => 'BACK',
-                        'fillColor'=> 'rgba(151,187,205,0.2)',
-                        'strokeColor'=> 'rgba(151,187,205,1)',
-                        'pointColor'=> 'rgba(151,187,205,1)',
+                        'fillColor'=> 'rgba(255,255,255,0)',
+                        'strokeColor'=> 'rgba(166, 216, 255, 1)',
+                        'pointColor'=> 'rgba(166, 216, 255, 1)',
                         'pointStrokeColor'=> '#fff',
                         'pointHighlightFill'=> '#fff',
                         'pointHighlightStroke'=> 'rgba(151,187,205,1)',
