@@ -249,6 +249,7 @@ class DonkeyController extends Controller
 
 				]
 			];
+        $liability = isset($liability) ? $liability : 0;
 
         return view('market')->with('market', $aMarket)->with('chartData', json_encode($chartData))->with('liability', $liability);
     }
