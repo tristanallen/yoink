@@ -187,7 +187,7 @@ class DonkeyController extends Controller
                 }
 
                 if( !empty($liability) ){
-                    $backStake = $liability - ($runner['backs'][0]['price'] - 1);
+                    $backStake = $liability / ($runner['backs'][0]['price'] - 1);
                     $runnerProfit[] = 10 - $backStake;
 
                 }
