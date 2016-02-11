@@ -172,12 +172,28 @@ class DonkeyController extends Controller
         $runnerDate = [];
         $runnerLay = [];
         $runnerBack = [];
+        $runnerProfit = [];
+        $stakeAdded = false;
         foreach($aMarket['runner'] as $key => $runner){
 
             if(array_key_exists(0, $runner['lays']) && $runner['lays'][0]['price'] < 40) {
                 $runnerDate[] = [(date_diff($startDate, date_create($runner['lays'][0]['created_at']))->format('%i'))];
                 $runnerLay[] = [$runner['lays'][0]['price']];
                 $runnerBack[] = [$runner['backs'][0]['price']];
+
+                if((date_diff($startDate, date_create($runner['lays'][0]['created_at']))->format('%i')) < 5 && !$stakeAdded){
+                    $stakeAdded = true;
+                    $liability = ($runner['lays'][0]['price'] - 1);
+                }
+
+                if( !empty($liability) ){
+                    $backStake = $liability - ($runner['backs'][0]['price'] - 1);
+                    $runnerProfit[] = 10 - $backStake;
+                }
+                else{
+                    $runnerProfit[] = 0;
+                }
+
             }
 
             if (sizeof($runnerLay) > 1){
@@ -186,11 +202,13 @@ class DonkeyController extends Controller
                     array_pop($runnerDate);
                     array_pop($runnerLay);
                     array_pop($runnerBack);
+                    array_pop($runnerProfit);
                 }
             }
 
 
         }
+      //  exit;
 
         //return var_dump($runner1);
         //return var_dump($aMarket);
@@ -205,7 +223,6 @@ class DonkeyController extends Controller
 						'pointColor'=> 'rgba(246, 148, 170, 1)',
 						'pointStrokeColor'=> '#fff',
 						'pointHighlightFill'=> '#fff',
-						'pointHighlightStroke'=> 'rgba(220,220,220,1)',
 						'data'=> $runnerLay
 					],
                     [
@@ -215,9 +232,18 @@ class DonkeyController extends Controller
                         'pointColor'=> 'rgba(166, 216, 255, 1)',
                         'pointStrokeColor'=> '#fff',
                         'pointHighlightFill'=> '#fff',
-                        'pointHighlightStroke'=> 'rgba(151,187,205,1)',
                         'data'=> $runnerBack
+                    ],
+                    [
+                        'label' => 'PROFIT',
+                        'fillColor'=> 'rgba(255,255,255,0)',
+                        'strokeColor'=> 'rgba(166, 200, 255, 1)',
+                        'pointColor'=> 'rgba(166,, 255, 1)',
+                        'pointStrokeColor'=> '#fff',
+                        'pointHighlightFill'=> '#fff',
+                        'data'=> $runnerProfit
                     ]
+
 
 				]
 			];
