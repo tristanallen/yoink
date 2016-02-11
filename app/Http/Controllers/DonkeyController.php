@@ -183,7 +183,7 @@ class DonkeyController extends Controller
 
                 if((date_diff($startDate, date_create($runner['lays'][0]['created_at']))->format('%i')) < 5 && !$stakeAdded){
                     $stakeAdded = true;
-                    $liability = ($runner['lays'][0]['price'] - 1);
+                    $liability = ($runner['lays'][0]['price'] - 1) * 10;
                 }
 
                 if( !empty($liability) ){
