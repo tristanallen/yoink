@@ -21,8 +21,9 @@
 					</div><!-- /.box-body -->
 				</div><!-- /.box -->
 				<div class="row">
-					<div class="col-sm-offset-10 col-sm-1"><strong style="color: rgba(166, 216, 255, 1)">Back</strong></div>
+					<div class="col-sm-offset-9 col-sm-1"><strong style="color: rgba(166, 216, 255, 1)">Back</strong></div>
 					<div class="col-sm-1"><strong style="color: rgba(246, 148, 170, 1)">Lay</strong></div>
+					<div class="col-sm-1"><strong >Liability: {{$liability}}</strong></div>
 				</div>
 
 			</div>

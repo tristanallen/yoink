@@ -189,10 +189,12 @@ class DonkeyController extends Controller
                 if( !empty($liability) ){
                     $backStake = $liability - ($runner['backs'][0]['price'] - 1);
                     $runnerProfit[] = 10 - $backStake;
+
                 }
                 else{
                     $runnerProfit[] = 0;
                 }
+
 
             }
 
@@ -248,7 +250,7 @@ class DonkeyController extends Controller
 				]
 			];
 
-        return view('market')->with('market', $aMarket)->with('chartData', json_encode($chartData));
+        return view('market')->with('market', $aMarket)->with('chartData', json_encode($chartData))->with('liability', $liability);
     }
 
     /**
