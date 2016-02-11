@@ -239,8 +239,8 @@ class DonkeyController extends Controller
                     [
                         'label' => 'PROFIT',
                         'fillColor'=> 'rgba(255,255,255,0)',
-                        'strokeColor'=> 'rgba(166, 200, 255, 1)',
-                        'pointColor'=> 'rgba(166,, 255, 1)',
+                        'strokeColor'=> 'rgba(0, 0, 0, 1)',
+                        'pointColor'=> 'rgba(0,0, 0, 1)',
                         'pointStrokeColor'=> '#fff',
                         'pointHighlightFill'=> '#fff',
                         'data'=> $runnerProfit
